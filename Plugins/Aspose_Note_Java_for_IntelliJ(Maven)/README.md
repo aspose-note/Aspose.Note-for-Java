@@ -24,4 +24,4 @@ For more info about the **Aspose.Note for Java API**, [please check the api docu
 
 ## Plugin Documentation
 
-For the complete documentation of this Intellij IDEA plugin, [please go through this wiki - click here](http://www.aspose.com/docs/display/wordsjava/7.+Aspose.Words+Java+for+IntelliJ+IDEA+%28Maven%29)
+For the complete documentation of this Intellij IDEA plugin, [please go through this wiki - click here]()
