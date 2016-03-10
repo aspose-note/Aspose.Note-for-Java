@@ -1,7 +1,7 @@
 /*
  * The MIT License (MIT)
  *
- * Copyright (c) 1998-2015 Aspose Pty Ltd.
+ * Copyright (c) 1998-2016 Aspose Pty Ltd.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
  *
@@ -13,6 +13,7 @@
 package com.aspose.examples;
 
 
+import com.aspose.utils.AsposeConstants;
 import com.aspose.utils.AsposeJavaAPI;
 import com.aspose.utils.AsposeNoteJavaAPI;
 import com.aspose.utils.execution.CallBackHandler;
@@ -42,15 +43,15 @@ public class AsposeExampleCallback implements CallBackHandler {
         // Set the progress bar percentage and text
         progressIndicator.setFraction(0.10);
 
-        progressIndicator.setText("Preparing to refresh examples");
+        progressIndicator.setText(AsposeConstants.EXAMPLES_PREPARING_REFRESH);
 
        final String item = (String) page.getComponentSelection().getSelectedItem();
 
-               if (item != null && !item.equals("Select Java API")) {
+               if (item != null && !item.equals(AsposeConstants.EXAMPLES_SELECT_JAVA_API)) {
                    ApplicationManager.getApplication().invokeAndWait(new Runnable() {
                        @Override
                        public void run() {
-                           page.diplayMessage("Please wait. Preparing to refresh examples", true);
+                           page.diplayMessage(AsposeConstants.EXAMPLES_PLEASE_WAIT_PREPARING_REFRESH, true);
                        }
                    }, ModalityState.defaultModalityState());
 

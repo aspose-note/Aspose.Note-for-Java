@@ -2,7 +2,7 @@
 /*
  * The MIT License (MIT)
  *
- * Copyright (c) 2001-2015 Aspose Pty Ltd.
+ * Copyright (c) 2001-2016 Aspose Pty Ltd.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
  *
@@ -121,15 +121,15 @@ public class AsposeMavenModuleWizardStep extends ModuleWizardStep {
     @Override
     public boolean validate() throws ConfigurationException {
         if (StringUtil.isEmptyOrSpaces(myGroupIdField.getText())) {
-            throw new ConfigurationException("Please, specify groupId");
+            throw new ConfigurationException(AsposeConstants.WIZARD_SPECIFY_GROUP_ID);
         }
 
         if (StringUtil.isEmptyOrSpaces(myArtifactIdField.getText())) {
-            throw new ConfigurationException("Please, specify artifactId");
+            throw new ConfigurationException(AsposeConstants.WIZARD_SPECIFY_ARTIFACT_ID);
         }
 
         if (StringUtil.isEmptyOrSpaces(myVersionField.getText())) {
-            throw new ConfigurationException("Please, specify version");
+            throw new ConfigurationException(AsposeConstants.WIZARD_SPECIFY_VERSION);
         }
 
         return true;

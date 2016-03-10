@@ -1,7 +1,7 @@
 /*
  * The MIT License (MIT)
  *
- * Copyright (c) 1998-2015 Aspose Pty Ltd.
+ * Copyright (c) 1998-2016 Aspose Pty Ltd.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
  *
@@ -57,7 +57,7 @@ public final class AsposeExamplePanel extends JPanel {
 
     @Override
     public String getName() {
-        return AsposeConstants.API_NAME + " for Java API and Examples";
+        return AsposeConstants.API_NAME + AsposeConstants.EXAMPLES_FOR_JAVA_API_AND_EXAMPLES;
     }
 
     private void initComponents() {
@@ -219,7 +219,7 @@ public final class AsposeExamplePanel extends JPanel {
         if (item == null || item.equals(AsposeConstants.API_DEPENDENCY_NOT_FOUND)) {
             if (dialog != null)
                 dialog.updateControls(false);
-            diplayMessage("Please first add maven dependency of " + AsposeConstants.API_NAME + " for java API", true);
+            diplayMessage(AsposeConstants.EXAMPLES_ADD_MAVEN_DEPENDENCY + AsposeConstants.API_NAME + AsposeConstants.EXAMPLES_FOR_JAVA_API, true);
             return false;
         } else if (!isExampleSelected()) {
             if (dialog != null)
