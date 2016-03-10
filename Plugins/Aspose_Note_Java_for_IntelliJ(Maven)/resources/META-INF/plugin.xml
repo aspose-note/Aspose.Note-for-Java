@@ -1,0 +1,30 @@
+<idea-plugin version="2">
+  <id>com.aspose.Note.java.intellij.maven</id>
+  <name>Aspose.Note Java for IntelliJ IDEA Maven</name>
+  <version>1.0</version>
+  <vendor email="marketplace@aspose.com" url="http://www.aspose.com">Aspose Pty Ltd.</vendor>
+
+  <description><![CDATA[<br/><b>Aspose.Note</b> is a feature-rich Java class library that enables java applications to programmatically interact with OneNote documents without requiring Microsoft Office OneNote having installed on the server. The Java API of <b>Aspose.Note</b> empowers developers to Create, Read, Export and Manipulate the contents of the Microsoft OneNote file format by working with attachments, text, hyperlinks, tables, tags and text styles. Easily extract images from OneNote documents and convert them to PDF, BMP, JPG, GIF and TIFF image file formats with high fidelity.<br/><br/>With <b>Aspose.Note for Java</b>, it is possible to program with Microsoft OneNote files without Microsoft Office Automation. The OneNote API is easy to use, saves time and developers can create robust solutions with less code.<br/>
+    ]]></description>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="141.0"/>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <!-- uncomment to enable plugin in all products
+  <depends>com.intellij.modules.lang</depends>
+  -->
+
+  <extensions defaultExtensionNs="com.intellij">
+    <moduleBuilder builderClass="com.aspose.wizards.maven.AsposeMavenModuleBuilder"/>
+  </extensions>
+
+  <actions>
+    <action id="aspose.note.example" class="com.aspose.examples.AsposeExampleAction" text="Aspose.Note Example" icon="/resources/asposeNote.png"
+            description="Aspose.Note Examples allow you to add Aspose sourcecode examples to demonstrate Aspose.Note Java API usage. Available samples are displayed in tree format from where you can select one. Selected category examples will be added to current project including source files and required data files.">
+      <add-to-group group-id="NewGroup" anchor="first"/>
+    </action>
+  </actions>
+
+</idea-plugin>
