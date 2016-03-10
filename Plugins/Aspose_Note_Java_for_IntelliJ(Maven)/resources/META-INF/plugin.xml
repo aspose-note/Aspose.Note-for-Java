@@ -21,7 +21,7 @@
   </extensions>
 
   <actions>
-    <action id="aspose.note.example" class="com.aspose.examples.AsposeExampleAction" text="Aspose.Note Example" icon="/resources/asposeSmall.png"
+    <action id="aspose.note.example" class="com.aspose.examples.AsposeExampleAction" text="Aspose.Note Example" icon="/resources/asposeNote.png"
             description="Aspose.Note Examples allow you to add Aspose sourcecode examples to demonstrate Aspose.Note Java API usage. Available samples are displayed in tree format from where you can select one. Selected category examples will be added to current project including source files and required data files.">
       <add-to-group group-id="NewGroup" anchor="first"/>
     </action>

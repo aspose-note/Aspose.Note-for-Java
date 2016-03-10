@@ -340,5 +340,9 @@ public class AsposeMavenModuleWizardStep extends ModuleWizardStep {
     public JComponent $$$getRootComponent$$$() {
         return myMainPanel;
     }
+
+    private void createUIComponents() {
+        // TODO: place custom component creation code here
+    }
 }
 

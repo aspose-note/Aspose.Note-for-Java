@@ -3,7 +3,7 @@
   <grid id="27dc6" binding="myMainPanel" layout-manager="GridLayoutManager" row-count="4" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
     <margin top="0" left="0" bottom="0" right="0"/>
     <constraints>
-      <xy x="20" y="20" width="661" height="386"/>
+      <xy x="20" y="20" width="994" height="386"/>
     </constraints>
     <properties/>
     <border type="none"/>
@@ -35,10 +35,10 @@
       </grid>
       <component id="4c7a2" class="javax.swing.JLabel" binding="bannerLbl">
         <constraints>
-          <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="1" fill="1" indent="1" use-parent-layout="false">
-            <minimum-size width="10" height="-1"/>
-            <preferred-size width="390" height="-1"/>
-            <maximum-size width="66666" height="-1"/>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="9" fill="0" indent="1" use-parent-layout="false">
+            <minimum-size width="940" height="-1"/>
+            <preferred-size width="940" height="-1"/>
+            <maximum-size width="940" height="-1"/>
           </grid>
         </constraints>
         <properties>
@@ -55,7 +55,11 @@
       <grid id="2021" layout-manager="GridLayoutManager" row-count="3" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
         <margin top="10" left="10" bottom="10" right="10"/>
         <constraints>
-          <grid row="1" column="0" row-span="1" col-span="2" vsize-policy="3" hsize-policy="7" anchor="1" fill="1" indent="0" use-parent-layout="false"/>
+          <grid row="1" column="0" row-span="1" col-span="2" vsize-policy="3" hsize-policy="0" anchor="9" fill="0" indent="0" use-parent-layout="false">
+            <minimum-size width="943" height="-1"/>
+            <preferred-size width="943" height="-1"/>
+            <maximum-size width="943" height="-1"/>
+          </grid>
         </constraints>
         <properties>
           <alignmentX value="0.0"/>

@@ -2,28 +2,82 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d7547e80-e605-4574-b680-cd6767a9063b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/copyright/Aspose_Pty_Ltd.xml" afterPath="$PROJECT_DIR$/.idea/copyright/Aspose_Pty_Ltd.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/aspose@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/asposeNote.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/asposeNote@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/resources/long_bannerIntelliJ_small.png" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Aspose.Note Java for IntelliJ (Maven)/Bundle.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Aspose.Note Java for IntelliJ (Maven)/META-INF/plugin.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Aspose.Note Java for IntelliJ (Maven)/com/aspose/examples/AsposeExampleAction.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Aspose.Note Java for IntelliJ (Maven)/com/aspose/examples/AsposeExampleCallback$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Aspose.Note Java for IntelliJ (Maven)/com/aspose/examples/AsposeExampleCallback.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Aspose.Note Java for IntelliJ (Maven)/com/aspose/examples/AsposeExampleDialog.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Aspose.Note Java for IntelliJ (Maven)/com/aspose/examples/AsposeExamplePanel$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Aspose.Note Java for IntelliJ (Maven)/com/aspose/examples/AsposeExamplePanel$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Aspose.Note Java for IntelliJ (Maven)/com/aspose/examples/AsposeExamplePanel$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Aspose.Note Java for IntelliJ (Maven)/com/aspose/examples/AsposeExamplePanel.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Aspose.Note Java for IntelliJ (Maven)/com/aspose/examples/CustomMutableTreeNode.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Aspose.Note Java for IntelliJ (Maven)/com/aspose/maven/apis/artifacts/Metadata$Versioning$Versions.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Aspose.Note Java for IntelliJ (Maven)/com/aspose/maven/apis/artifacts/Metadata$Versioning.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Aspose.Note Java for IntelliJ (Maven)/com/aspose/maven/apis/artifacts/Metadata.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Aspose.Note Java for IntelliJ (Maven)/com/aspose/maven/apis/artifacts/ObjectFactory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Aspose.Note Java for IntelliJ (Maven)/com/aspose/maven/apis/artifacts/maven-metada.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Aspose.Note Java for IntelliJ (Maven)/com/aspose/maven/apis/artifacts/maven-metadata.xsd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Aspose.Note Java for IntelliJ (Maven)/com/aspose/utils/AsposeConstants.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Aspose.Note Java for IntelliJ (Maven)/com/aspose/utils/AsposeJavaAPI.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Aspose.Note Java for IntelliJ (Maven)/com/aspose/utils/AsposeMavenProjectManager.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Aspose.Note Java for IntelliJ (Maven)/com/aspose/utils/AsposeMavenUtil.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Aspose.Note Java for IntelliJ (Maven)/com/aspose/utils/AsposeNoteJavaAPI.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Aspose.Note Java for IntelliJ (Maven)/com/aspose/utils/FormatExamples.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Aspose.Note Java for IntelliJ (Maven)/com/aspose/utils/GitHelper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Aspose.Note Java for IntelliJ (Maven)/com/aspose/utils/execution/CallBackHandler.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Aspose.Note Java for IntelliJ (Maven)/com/aspose/utils/execution/ModalTaskImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Aspose.Note Java for IntelliJ (Maven)/com/aspose/utils/execution/RunnableHelper$ReadAction.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Aspose.Note Java for IntelliJ (Maven)/com/aspose/utils/execution/RunnableHelper$WriteAction$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Aspose.Note Java for IntelliJ (Maven)/com/aspose/utils/execution/RunnableHelper$WriteAction.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Aspose.Note Java for IntelliJ (Maven)/com/aspose/utils/execution/RunnableHelper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Aspose.Note Java for IntelliJ (Maven)/com/aspose/wizards/maven/AsposeIntroWizardStep.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Aspose.Note Java for IntelliJ (Maven)/com/aspose/wizards/maven/AsposeMavenModuleBuilder$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Aspose.Note Java for IntelliJ (Maven)/com/aspose/wizards/maven/AsposeMavenModuleBuilder.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Aspose.Note Java for IntelliJ (Maven)/com/aspose/wizards/maven/AsposeMavenModuleBuilderHelper$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Aspose.Note Java for IntelliJ (Maven)/com/aspose/wizards/maven/AsposeMavenModuleBuilderHelper$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Aspose.Note Java for IntelliJ (Maven)/com/aspose/wizards/maven/AsposeMavenModuleBuilderHelper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Aspose.Note Java for IntelliJ (Maven)/com/aspose/wizards/maven/AsposeMavenModuleWizardStep$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Aspose.Note Java for IntelliJ (Maven)/com/aspose/wizards/maven/AsposeMavenModuleWizardStep$2.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Aspose.Note Java for IntelliJ (Maven)/com/aspose/wizards/maven/AsposeMavenModuleWizardStep$3.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Aspose.Note Java for IntelliJ (Maven)/com/aspose/wizards/maven/AsposeMavenModuleWizardStep$4.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Aspose.Note Java for IntelliJ (Maven)/com/aspose/wizards/maven/AsposeMavenModuleWizardStep.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Aspose.Note Java for IntelliJ (Maven)/com/aspose/wizards/maven/CreateMavenProjectCallback.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Aspose.Note Java for IntelliJ (Maven)/com/aspose/wizards/maven/DownloadExamplesCallback.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Aspose.Note Java for IntelliJ (Maven)/com/aspose/wizards/maven/MavenId.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Aspose.Note Java for IntelliJ (Maven)/com/intellij/uiDesigner/core/AbstractLayout.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Aspose.Note Java for IntelliJ (Maven)/com/intellij/uiDesigner/core/DimensionInfo.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Aspose.Note Java for IntelliJ (Maven)/com/intellij/uiDesigner/core/GridConstraints.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Aspose.Note Java for IntelliJ (Maven)/com/intellij/uiDesigner/core/GridLayoutManager.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Aspose.Note Java for IntelliJ (Maven)/com/intellij/uiDesigner/core/HorizontalInfo.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Aspose.Note Java for IntelliJ (Maven)/com/intellij/uiDesigner/core/LayoutState.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Aspose.Note Java for IntelliJ (Maven)/com/intellij/uiDesigner/core/Spacer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Aspose.Note Java for IntelliJ (Maven)/com/intellij/uiDesigner/core/SupportCode$TextWithMnemonic.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Aspose.Note Java for IntelliJ (Maven)/com/intellij/uiDesigner/core/SupportCode.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Aspose.Note Java for IntelliJ (Maven)/com/intellij/uiDesigner/core/Util.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Aspose.Note Java for IntelliJ (Maven)/com/intellij/uiDesigner/core/VerticalInfo.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Aspose.Note Java for IntelliJ (Maven)/icons/AsposeIcons.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Aspose.Note Java for IntelliJ (Maven)/resources/aspose.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Aspose.Note Java for IntelliJ (Maven)/resources/asposeMedium.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Aspose.Note Java for IntelliJ (Maven)/resources/asposeSmall.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Aspose.Note Java for IntelliJ (Maven)/resources/long_bannerIntelliJ.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Aspose.Note Java for IntelliJ (Maven)/resources/maven/compiler.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Aspose.Note Java for IntelliJ (Maven)/resources/maven/untitled.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/asposeMedium.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/resources/asposeSmall.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/resources/aspose.png" afterPath="$PROJECT_DIR$/src/resources/aspose.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/resources/long_bannerIntelliJ.png" afterPath="$PROJECT_DIR$/src/resources/long_bannerIntelliJ.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/META-INF/plugin.xml" afterPath="$PROJECT_DIR$/resources/META-INF/plugin.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/aspose/examples/AsposeExampleAction.java" afterPath="$PROJECT_DIR$/src/com/aspose/examples/AsposeExampleAction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/aspose/examples/AsposeExampleCallback.java" afterPath="$PROJECT_DIR$/src/com/aspose/examples/AsposeExampleCallback.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/aspose/examples/AsposeExampleDialog.java" afterPath="$PROJECT_DIR$/src/com/aspose/examples/AsposeExampleDialog.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/aspose/examples/AsposeExamplePanel.java" afterPath="$PROJECT_DIR$/src/com/aspose/examples/AsposeExamplePanel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/aspose/examples/CustomMutableTreeNode.java" afterPath="$PROJECT_DIR$/src/com/aspose/examples/CustomMutableTreeNode.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/aspose/utils/AsposeConstants.java" afterPath="$PROJECT_DIR$/src/com/aspose/utils/AsposeConstants.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/aspose/utils/AsposeJavaAPI.java" afterPath="$PROJECT_DIR$/src/com/aspose/utils/AsposeJavaAPI.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/aspose/utils/AsposeMavenProjectManager.java" afterPath="$PROJECT_DIR$/src/com/aspose/utils/AsposeMavenProjectManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/aspose/utils/AsposeNoteJavaAPI.java" afterPath="$PROJECT_DIR$/src/com/aspose/utils/AsposeNoteJavaAPI.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/aspose/utils/FormatExamples.java" afterPath="$PROJECT_DIR$/src/com/aspose/utils/FormatExamples.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/aspose/utils/execution/CallBackHandler.java" afterPath="$PROJECT_DIR$/src/com/aspose/utils/execution/CallBackHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/aspose/utils/execution/ModalTaskImpl.java" afterPath="$PROJECT_DIR$/src/com/aspose/utils/execution/ModalTaskImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/aspose/utils/execution/RunnableHelper.java" afterPath="$PROJECT_DIR$/src/com/aspose/utils/execution/RunnableHelper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/aspose/wizards/maven/AsposeIntroWizardStep.java" afterPath="$PROJECT_DIR$/src/com/aspose/wizards/maven/AsposeIntroWizardStep.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/aspose/wizards/maven/AsposeMavenModuleBuilder.java" afterPath="$PROJECT_DIR$/src/com/aspose/wizards/maven/AsposeMavenModuleBuilder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/aspose/wizards/maven/AsposeMavenModuleBuilderHelper.java" afterPath="$PROJECT_DIR$/src/com/aspose/wizards/maven/AsposeMavenModuleBuilderHelper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/aspose/wizards/maven/AsposeMavenModuleWizardStep.form" afterPath="$PROJECT_DIR$/src/com/aspose/wizards/maven/AsposeMavenModuleWizardStep.form" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/aspose/wizards/maven/AsposeMavenModuleWizardStep.java" afterPath="$PROJECT_DIR$/src/com/aspose/wizards/maven/AsposeMavenModuleWizardStep.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/aspose/wizards/maven/DownloadExamplesCallback.java" afterPath="$PROJECT_DIR$/src/com/aspose/wizards/maven/DownloadExamplesCallback.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/icons/AsposeIcons.java" afterPath="$PROJECT_DIR$/src/icons/AsposeIcons.java" />
     </list>
     <ignored path="Aspose_Node_Java_for_IntelliJ(Maven) [Aspose.Node Java for IntelliJ (Maven)].iws" />
     <ignored path=".idea/workspace.xml" />
@@ -58,7 +112,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/aspose/utils/AsposeConstants.java" />
-        <option value="$PROJECT_DIR$/src/icons/AsposeIcons.java" />
         <option value="$PROJECT_DIR$/src/com/aspose/maven/apis/artifacts/maven-metada.xml" />
         <option value="$PROJECT_DIR$/src/Bundle.properties" />
         <option value="$PROJECT_DIR$/README.md" />
@@ -66,7 +119,6 @@
         <option value="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
         <option value="$PROJECT_DIR$/.idea/dictionaries/Sohail_Ismail.xml" />
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
-        <option value="$PROJECT_DIR$/src/com/aspose/wizards/maven/AsposeMavenModuleWizardStep.form" />
         <option value="$PROJECT_DIR$/src/com/aspose/examples/AsposeExampleAction.java" />
         <option value="$PROJECT_DIR$/src/com/aspose/examples/AsposeExampleDialog.java" />
         <option value="$PROJECT_DIR$/src/com/aspose/examples/CustomMutableTreeNode.java" />
@@ -81,12 +133,14 @@
         <option value="$PROJECT_DIR$/src/com/aspose/wizards/maven/DownloadExamplesCallback.java" />
         <option value="$PROJECT_DIR$/src/com/aspose/utils/execution/CallBackHandler.java" />
         <option value="$PROJECT_DIR$/.idea/copyright/Aspose_Pty_Ltd.xml" />
-        <option value="$PROJECT_DIR$/resources/META-INF/plugin.xml" />
         <option value="$PROJECT_DIR$/src/com/aspose/examples/AsposeExampleCallback.java" />
-        <option value="$PROJECT_DIR$/src/com/aspose/examples/AsposeExamplePanel.java" />
         <option value="$PROJECT_DIR$/src/com/aspose/wizards/maven/AsposeMavenModuleBuilderHelper.java" />
         <option value="$PROJECT_DIR$/src/com/aspose/utils/AsposeConstants.java" />
         <option value="$PROJECT_DIR$/src/com/aspose/wizards/maven/AsposeMavenModuleWizardStep.java" />
+        <option value="$PROJECT_DIR$/src/com/aspose/wizards/maven/AsposeMavenModuleWizardStep.form" />
+        <option value="$PROJECT_DIR$/src/icons/AsposeIcons.java" />
+        <option value="$PROJECT_DIR$/resources/META-INF/plugin.xml" />
+        <option value="$PROJECT_DIR$/src/com/aspose/examples/AsposeExamplePanel.java" />
       </list>
     </option>
   </component>
@@ -98,7 +152,7 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="582" />
+    <option name="x" value="53" />
     <option name="y" value="23" />
     <option name="width" value="1387" />
     <option name="height" value="877" />
@@ -128,8 +182,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -148,32 +200,129 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Aspose.Note Java for IntelliJ Maven" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Aspose_Note_Java_for_IntelliJ(Maven)" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Aspose.Note Java for IntelliJ Maven" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Aspose_Note_Java_for_IntelliJ(Maven)" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Aspose.Note Java for IntelliJ Maven" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Aspose_Note_Java_for_IntelliJ(Maven)" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="aspose" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="maven" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Aspose.Note Java for IntelliJ Maven" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Aspose_Note_Java_for_IntelliJ(Maven)" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="aspose" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Aspose.Note Java for IntelliJ Maven" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Aspose_Note_Java_for_IntelliJ(Maven)" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="aspose" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="examples" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="Images" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.35287356" />
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="486" />
     <property name="UI_DESIGNER_EDITOR_MODE.PaletteManager.SHOW" value="false" />
+    <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="icons" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/resources" />
       <recent name="$PROJECT_DIR$/src/com/aspose/wizards/maven" />
       <recent name="$PROJECT_DIR$/.idea" />
       <recent name="$PROJECT_DIR$/.idea/copyright" />
       <recent name="$PROJECT_DIR$/lib" />
-      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunManager" selected="Plugin.Aspose.Note Java for IntelliJ">
@@ -471,15 +620,17 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="582" y="23" width="1387" height="877" extended-state="0" />
+    <frame x="53" y="23" width="1387" height="877" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287841" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287841" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23762377" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30281183" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -487,15 +638,13 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287841" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23762377" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24945927" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3279703" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -535,6 +684,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -552,28 +702,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/asposeMedium.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/aspose.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/icons/AsposeIcons.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/long_bannerIntelliJ.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/uiDesigner.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -585,39 +713,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.375">
           <caret line="658" column="3" selection-start-line="658" selection-start-column="3" selection-end-line="658" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resources/asposeSmall.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/aspose/wizards/maven/AsposeMavenModuleWizardStep.form">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12135922">
-          <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="MultiMarkdownFxPreviewEditor">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="split-provider[text-editor;MultiMarkdownPreviewEditor]">
-        <state split_layout="FIRST">
-          <first_editor vertical-scroll-proportion="0.537931">
-            <caret line="26" column="139" selection-start-line="26" selection-start-column="139" selection-end-line="26" selection-end-column="139" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.03846154">
-          <caret line="2" column="97" selection-start-line="2" selection-start-column="97" selection-end-line="2" selection-end-column="97" />
         </state>
       </provider>
     </entry>
@@ -684,13 +779,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/META-INF/plugin.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.42769858">
-          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/aspose/maven/apis/artifacts/maven-metada.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0">
@@ -698,27 +786,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Bundle.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.25">
-          <caret line="13" column="58" selection-start-line="13" selection-start-column="58" selection-end-line="13" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/aspose/examples/AsposeExampleAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.40384614">
-          <caret line="28" column="52" selection-start-line="28" selection-start-column="52" selection-end-line="28" selection-end-column="52" />
-          <folding>
-            <element signature="e#0#2190#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/aspose/examples/AsposeExampleCallback.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.19417475">
           <caret line="35" column="63" selection-start-line="35" selection-start-column="63" selection-end-line="35" selection-end-column="63" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -727,15 +801,8 @@
         <state vertical-scroll-proportion="-1.5048543">
           <caret line="55" column="58" selection-start-line="55" selection-start-column="58" selection-end-line="55" selection-end-column="58" />
           <folding>
-            <element signature="e#0#5923#0" expanded="true" />
+            <element signature="e#0#5923#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/aspose/examples/AsposeExamplePanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.884462">
-          <caret line="221" column="117" selection-start-line="221" selection-start-column="117" selection-end-line="221" selection-end-column="117" />
         </state>
       </provider>
     </entry>
@@ -750,6 +817,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.6923077">
           <caret line="92" column="25" selection-start-line="92" selection-start-column="24" selection-end-line="92" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#10810#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -785,6 +855,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6613546">
           <caret line="115" column="14" selection-start-line="115" selection-start-column="14" selection-end-line="115" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#4054#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -792,6 +865,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0996016">
           <caret line="5" column="138" selection-start-line="5" selection-start-column="137" selection-end-line="5" selection-end-column="138" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -799,6 +873,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.059760958">
           <caret line="3" column="56" selection-start-line="3" selection-start-column="55" selection-end-line="3" selection-end-column="56" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -823,59 +898,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/aspose/wizards/maven/AsposeIntroWizardStep.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334">
-          <caret line="58" column="102" selection-start-line="58" selection-start-column="101" selection-end-line="58" selection-end-column="102" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/aspose/wizards/maven/AsposeMavenModuleBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.84063745">
-          <caret line="162" column="75" selection-start-line="162" selection-start-column="74" selection-end-line="162" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/aspose/wizards/maven/AsposeMavenModuleBuilderHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.023904383">
-          <caret line="319" column="9" selection-start-line="319" selection-start-column="9" selection-end-line="319" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/aspose/utils/AsposeConstants.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="20" column="28" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/aspose/wizards/maven/AsposeMavenModuleWizardStep.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.333333">
-          <caret line="42" column="32" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/aspose/wizards/maven/CreateMavenProjectCallback.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/aspose/wizards/maven/DownloadExamplesCallback.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/aspose/wizards/maven/MavenId.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.09615385">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -890,6 +916,160 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.09920635">
           <caret line="5" column="10" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/icons/AsposeIcons.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/aspose/wizards/maven/CreateMavenProjectCallback.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/aspose/wizards/maven/DownloadExamplesCallback.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#1983#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/aspose/wizards/maven/MavenId.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_73.jdk/Contents/Home/src.zip!/javax/swing/GroupLayout.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="234" column="28" selection-start-line="234" selection-start-column="28" selection-end-line="234" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_73.jdk/Contents/Home/src.zip!/java/lang/Short.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="54" column="32" selection-start-line="54" selection-start-column="32" selection-end-line="54" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/aspose/wizards/maven/AsposeMavenModuleWizardStep.form">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.12135922">
+          <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/aspose/examples/AsposeExamplePanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.54010695">
+          <caret line="329" column="0" selection-start-line="329" selection-start-column="0" selection-end-line="329" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Bundle.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33163264">
+          <caret line="13" column="26" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="MultiMarkdownFxPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;MultiMarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor vertical-scroll-proportion="0.42213884">
+            <caret line="15" column="92" selection-start-line="15" selection-start-column="92" selection-end-line="15" selection-end-column="92" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.03846154">
+          <caret line="2" column="97" selection-start-line="2" selection-start-column="97" selection-end-line="2" selection-end-column="97" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/META-INF/plugin.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.63829786">
+          <caret line="24" column="25" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/aspose/wizards/maven/AsposeIntroWizardStep.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33163264">
+          <caret line="55" column="0" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#3535#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/aspose/wizards/maven/AsposeMavenModuleWizardStep.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.26530612">
+          <caret line="45" column="78" selection-start-line="45" selection-start-column="78" selection-end-line="45" selection-end-column="78" />
+          <folding>
+            <element signature="e#0#14552#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/aspose/examples/AsposeExampleAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/aspose/wizards/maven/AsposeMavenModuleBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.81632656">
+          <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#5562#0" expanded="true" />
+            <element signature="e#2669#2670#0" expanded="true" />
+            <element signature="e#2716#2717#0" expanded="true" />
+            <element signature="e#2763#2764#0" expanded="true" />
+            <element signature="e#2808#2809#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/aspose/wizards/maven/AsposeMavenModuleBuilderHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="7.321429">
+          <caret line="319" column="9" selection-start-line="319" selection-start-column="9" selection-end-line="319" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#14670#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -339,7 +339,7 @@ public final class AsposeExamplePanel extends JPanel {
     private JLabel jLabelMessage;
     private JPanel jPanel1;
     private JScrollPane jScrollPane1;
-    private ImageIcon icon = new ImageIcon(getClass().getResource("/resources/long_bannerIntelliJ.png"));
+    private ImageIcon icon = new ImageIcon(getClass().getResource("/resources/long_bannerIntelliJ_small.png"));
     // End of variables declaration
 
     /**
