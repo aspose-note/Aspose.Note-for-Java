@@ -4,7 +4,7 @@ The project is **Intellij IDEA (JetBrains IDE) plugin** that enables you to prog
 
 ## **About** **Plugin**
 
-The plugins is for those who wants to utilize / use **Aspose.Note for Java API** (to create, read, export and manipulate the contents of the Microsoft OneNote file format) in their projects.  
+The plugin is for those who wants to utilize / use **Aspose.Note for Java API** (to create, read, export and manipulate the contents of the Microsoft OneNote file format) in their projects.  
 
 The plugin contains two wizards:
 
@@ -24,4 +24,4 @@ For more info about the **Aspose.Note for Java API**, [please check the api docu
 
 ## Plugin Documentation
 
-For the complete documentation of this Intellij IDEA plugin, [please go through this wiki - click here]()
+For the complete documentation of this Intellij IDEA plugin, [please go through this wiki - click here](http://www.aspose.com/docs/display/notejava/Aspose.Note+Project+Wizard+for+IntelliJ+IDEA+-+Maven)
