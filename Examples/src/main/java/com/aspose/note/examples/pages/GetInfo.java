@@ -1,6 +1,7 @@
 package com.aspose.note.examples.pages;
 
 import com.aspose.note.Document;
+import com.aspose.note.LoadOptions;
 import com.aspose.note.Page;
 import com.aspose.note.examples.Utils;
 
@@ -14,9 +15,10 @@ public class GetInfo {
 
         String inputFile = "Sample1.one";
         Path inputPath = Utils.getPath(GetInfo.class, inputFile);
-
+        //ExStart:GetInformationOfEachPageFromOneNoteDocument
         // Load the document into Aspose.Note
-        Document doc = new Document(inputPath.toString());
+        LoadOptions options = new LoadOptions();
+        Document doc = new Document(inputPath.toString(), options);
 
         // Get page revisions
         List<Page> pages = doc.getChildNodes(Page.class);
@@ -27,9 +29,9 @@ public class GetInfo {
             System.out.println("CreationTime: " + pageRevision.getCreationTime());
             System.out.println("Title: " + pageRevision.getTitle());
             System.out.println("Level: " + pageRevision.getLevel());
-            System.out.println("Author: " + pageRevision.getAuthor());
-            System.out.println();
+            System.out.println("Author: " + pageRevision.getAuthor());            
         }
+        //ExEnd:GetInformationOfEachPageFromOneNoteDocument
     }
 }
 

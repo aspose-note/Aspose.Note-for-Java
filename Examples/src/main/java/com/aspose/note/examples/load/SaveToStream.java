@@ -4,7 +4,7 @@ import com.aspose.note.Document;
 import com.aspose.note.PdfSaveOptions;
 import com.aspose.note.SaveFormat;
 import com.aspose.note.examples.Utils;
-import com.aspose.note.internal.ms.core.mscorlib.d.ds;
+
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
