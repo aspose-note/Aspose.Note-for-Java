@@ -9,27 +9,28 @@ import java.io.IOException;
 import java.nio.file.Path;
 
 public class ConvertSpecificPageToImage {
-    public static void main(String... args)
-            throws IOException {
+	public static void main(String... args) throws IOException {
 
-        String inputFile = "Sample1.one";
-        Path inputPath = Utils.getPath(ConvertSpecificPageToImage.class, inputFile);
-        String outputFile = "Output.jpg";
-        Path outputPath = Utils.getPath(ConvertSpecificPageToImage.class, outputFile);
+		// ExStart:ConvertSpecificPageToImage
 
-        // Load the document into Aspose.Note
-        Document oneFile = new Document(inputPath.toString());
+		String inputFile = "Sample1.one";
+		Path inputPath = Utils.getPath(ConvertSpecificPageToImage.class, inputFile);
+		String outputFile = "Output.jpg";
+		Path outputPath = Utils.getPath(ConvertSpecificPageToImage.class, outputFile);
 
-        // Initialize PdfSaveOptions object
-        ImageSaveOptions options = new ImageSaveOptions(SaveFormat.Jpeg);
+		// Load the document into Aspose.Note
+		Document oneFile = new Document(inputPath.toString());
 
-        // Specify second page for conversion
-        options.setPageIndex(1);
+		// Initialize PdfSaveOptions object
+		ImageSaveOptions options = new ImageSaveOptions(SaveFormat.Jpeg);
 
-        // Save the document as PNG
-        oneFile.save(outputPath.toString(), options);
+		// Specify second page for conversion
+		options.setPageIndex(1);
 
-        System.out.println("File saved: " + outputPath);
-    }
+		// Save the document as PNG
+		oneFile.save(outputPath.toString(), options);
+
+		System.out.println("File saved: " + outputPath);
+		// ExEnd:ConvertSpecificPageToImage
+	}
 }
-

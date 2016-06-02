@@ -12,31 +12,33 @@ import java.nio.file.StandardOpenOption;
 import java.util.List;
 
 public class ExtractImages {
-    public static void main(String... args)
-            throws IOException {
+	public static void main(String... args) throws IOException {
 
-        String inputFile = "Sample1.one";
-        Path inputPath = Utils.getPath(ExtractImages.class, inputFile);
+		// ExStart:ExtractImages
 
-        // Load the document into Aspose.Note
-        Document doc = new Document(inputPath.toString());
+		String inputFile = "Sample1.one";
+		Path inputPath = Utils.getPath(ExtractImages.class, inputFile);
 
-        // Get all images
-        List<Image> list = doc.getChildNodes(Image.class);
-        System.out.printf("Total Images: %s\n\n", list.size());
+		// Load the document into Aspose.Note
+		Document doc = new Document(inputPath.toString());
 
-        // Traverse the list
-        for (int i = 0; i < list.size(); i++) {
-            Image image = list.get(i);
+		// Get all images
+		List<Image> list = doc.getChildNodes(Image.class);
+		System.out.printf("Total Images: %s\n\n", list.size());
 
-            String outputFile = "Output-" + i + "_" + image.getFileName();
-            Path outputPath = Utils.getPath(ExtractImages.class, outputFile);
+		// Traverse the list
+		for (int i = 0; i < list.size(); i++) {
+			Image image = list.get(i);
 
-            byte[] buffer = image.getBytes();
-            Files.write(outputPath, buffer);
+			String outputFile = "Output-" + i + "_" + image.getFileName();
+			Path outputPath = Utils.getPath(ExtractImages.class, outputFile);
 
-            System.out.printf("File saved: %s\n", outputPath);
-        }
-    }
+			byte[] buffer = image.getBytes();
+			Files.write(outputPath, buffer);
+
+			System.out.printf("File saved: %s\n", outputPath);
+		}
+
+		// ExEnd:ExtractImages
+	}
 }
-
