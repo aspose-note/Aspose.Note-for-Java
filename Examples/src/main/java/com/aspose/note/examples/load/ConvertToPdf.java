@@ -8,30 +8,33 @@ import java.io.IOException;
 import java.nio.file.Path;
 
 public class ConvertToPdf {
-    public static void main(String... args)
-            throws IOException {
+	public static void main(String... args) throws IOException {
 
-        String inputFile = "Sample1.one";
-        Path inputPath = Utils.getPath(ConvertToPdf.class, inputFile);
-        String outputFile = "Output.pdf";
-        Path outputPath = Utils.getPath(ConvertToPdf.class, outputFile);
+		// ExStart:ConvertToPdf
 
-        // Load the document into Aspose.Note
-        Document oneFile = new Document(inputPath.toString());
+		String inputFile = "Sample1.one";
+		Path inputPath = Utils.getPath(ConvertToPdf.class, inputFile);
+		String outputFile = "Output.pdf";
+		Path outputPath = Utils.getPath(ConvertToPdf.class, outputFile);
 
-        // Initialize PdfSaveOptions object
-        PdfSaveOptions options = new PdfSaveOptions();
+		// Load the document into Aspose.Note
+		Document oneFile = new Document(inputPath.toString());
 
-        // Set page index. Uncomment to skip first two pages
-        //options.setPageIndex(2);
+		// Initialize PdfSaveOptions object
+		PdfSaveOptions options = new PdfSaveOptions();
 
-        // Set page count. Uncomment to convert only 3 pages, starting from options.getPageIndex().
-        //options.setPageCount(3);
+		// Set page index. Uncomment to skip first two pages
+		// options.setPageIndex(2);
 
-        // Save the document as PDF
-        oneFile.save(outputPath.toString(), options);
+		// Set page count. Uncomment to convert only 3 pages, starting from
+		// options.getPageIndex().
+		// options.setPageCount(3);
 
-        System.out.println("File saved: " + outputPath);
-    }
+		// Save the document as PDF
+		oneFile.save(outputPath.toString(), options);
+
+		System.out.println("File saved: " + outputPath);
+
+		// ExEnd:ConvertToPdf
+	}
 }
-

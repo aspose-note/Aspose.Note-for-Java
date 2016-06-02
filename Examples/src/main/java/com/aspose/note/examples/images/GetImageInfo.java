@@ -10,30 +10,31 @@ import java.nio.file.Path;
 import java.util.List;
 
 public class GetImageInfo {
-    public static void main(String... args)
-            throws IOException {
+	public static void main(String... args) throws IOException {
 
-        String inputFile = "Sample1.one";
-        Path inputPath = Utils.getPath(GetImageInfo.class, inputFile);
+		// ExStart:GetImageInfo
 
-        // Load the document into Aspose.Note
-        Document doc = new Document(inputPath.toString());
+		String inputFile = "Sample1.one";
+		Path inputPath = Utils.getPath(GetImageInfo.class, inputFile);
 
-        // Get all images
-        List<Image> list = doc.getChildNodes(Image.class);
-        System.out.printf("Total Images: %s\n\n", list.size());
+		// Load the document into Aspose.Note
+		Document doc = new Document(inputPath.toString());
 
-        // Traverse the list
-        for (Image image : list) {
-            System.out.println("Width: " + image.getWidth());
-            System.out.println("Height: " + image.getHeight());
-            System.out.println("OriginalWidth: " + image.getOriginalWidth());
-            System.out.println("OriginalHeight: " + image.getOriginalHeight());
-            System.out.println("FileName: " + image.getFileName());
-            System.out.println("Extension: " + image.getExtension());
-            System.out.println("LastModifiedTime: " + image.getLastModifiedTime());
-            System.out.println();
-        }
-    }
+		// Get all images
+		List<Image> list = doc.getChildNodes(Image.class);
+		System.out.printf("Total Images: %s\n\n", list.size());
+
+		// Traverse the list
+		for (Image image : list) {
+			System.out.println("Width: " + image.getWidth());
+			System.out.println("Height: " + image.getHeight());
+			System.out.println("OriginalWidth: " + image.getOriginalWidth());
+			System.out.println("OriginalHeight: " + image.getOriginalHeight());
+			System.out.println("FileName: " + image.getFileName());
+			System.out.println("Extension: " + image.getExtension());
+			System.out.println("LastModifiedTime: " + image.getLastModifiedTime());
+			System.out.println();
+		}
+		// ExEnd:GetImageInfo
+	}
 }
-

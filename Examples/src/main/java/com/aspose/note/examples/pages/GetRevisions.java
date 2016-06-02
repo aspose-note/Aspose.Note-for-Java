@@ -9,30 +9,32 @@ import java.nio.file.Path;
 import java.util.List;
 
 public class GetRevisions {
-    public static void main(String... args)
-            throws IOException {
+	public static void main(String... args) throws IOException {
 
-        String inputFile = "Sample1.one";
-        Path inputPath = Utils.getPath(GetRevisions.class, inputFile);
+		// ExStart:GetRevisions
 
-        // Load the document into Aspose.Note
-        Document doc = new Document(inputPath.toString());
+		String inputFile = "Sample1.one";
+		Path inputPath = Utils.getPath(GetRevisions.class, inputFile);
 
-        // Get first page
-        Page firstPage = doc.getFirstChild();
+		// Load the document into Aspose.Note
+		Document doc = new Document(inputPath.toString());
 
-        // Get page revisions
-        List<Page> revisions = doc.getPageHistory(firstPage);
+		// Get first page
+		Page firstPage = doc.getFirstChild();
 
-        // Traverse list of page revisions
-        for (Page pageRevision : revisions) {
-            System.out.println("LastModifiedTime: " + pageRevision.getLastModifiedTime());
-            System.out.println("CreationTime: " + pageRevision.getCreationTime());
-            System.out.println("Title: " + pageRevision.getTitle());
-            System.out.println("Level: " + pageRevision.getLevel());
-            System.out.println("Author: " + pageRevision.getAuthor());
-            System.out.println();
-        }
-    }
+		// Get page revisions
+		List<Page> revisions = doc.getPageHistory(firstPage);
+
+		// Traverse list of page revisions
+		for (Page pageRevision : revisions) {
+			System.out.println("LastModifiedTime: " + pageRevision.getLastModifiedTime());
+			System.out.println("CreationTime: " + pageRevision.getCreationTime());
+			System.out.println("Title: " + pageRevision.getTitle());
+			System.out.println("Level: " + pageRevision.getLevel());
+			System.out.println("Author: " + pageRevision.getAuthor());
+			System.out.println();
+		}
+
+		// ExEnd:GetRevisions
+	}
 }
-

@@ -12,32 +12,33 @@ import java.nio.file.StandardCopyOption;
 import java.util.List;
 
 public class RetrieveAttachment {
-    public static void main(String... args)
-            throws IOException {
+	public static void main(String... args) throws IOException {
 
-        String inputFile = "Sample1.one";
-        Path inputPath = Utils.getPath(RetrieveAttachment.class, inputFile);
+		// ExStart:RetrieveAttachment
 
-        // Load the document into Aspose.Note
-        Document doc = new Document(inputPath.toString());
+		String inputFile = "Sample1.one";
+		Path inputPath = Utils.getPath(RetrieveAttachment.class, inputFile);
 
-        // Get list of attachments
-        List<AttachedFile> attachments = doc.getChildNodes(AttachedFile.class);
-        System.out.println("Total attachments: " + attachments.size());
+		// Load the document into Aspose.Note
+		Document doc = new Document(inputPath.toString());
 
-        for (AttachedFile a : attachments) {
-            // Load attachment into memory
-            byte[] buffer = a.getBytes();
-            ByteArrayInputStream stream = new ByteArrayInputStream(buffer);
+		// Get list of attachments
+		List<AttachedFile> attachments = doc.getChildNodes(AttachedFile.class);
+		System.out.println("Total attachments: " + attachments.size());
 
-            // Save it to output location
-            String outputFile = "Output_" + a.getFileName();
-            Path outputPath = Utils.getPath(RetrieveAttachment.class, outputFile);
-            Files.copy(stream, outputPath, StandardCopyOption.REPLACE_EXISTING);
+		for (AttachedFile a : attachments) {
+			// Load attachment into memory
+			byte[] buffer = a.getBytes();
+			ByteArrayInputStream stream = new ByteArrayInputStream(buffer);
 
-            // :)
-            System.out.println("File saved: " + outputPath);
-        }
-    }
+			// Save it to output location
+			String outputFile = "Output_" + a.getFileName();
+			Path outputPath = Utils.getPath(RetrieveAttachment.class, outputFile);
+			Files.copy(stream, outputPath, StandardCopyOption.REPLACE_EXISTING);
+
+			// :)
+			System.out.println("File saved: " + outputPath);
+		}
+		// ExEnd:RetrieveAttachment
+	}
 }
-

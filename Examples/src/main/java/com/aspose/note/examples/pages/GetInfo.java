@@ -10,28 +10,26 @@ import java.nio.file.Path;
 import java.util.List;
 
 public class GetInfo {
-    public static void main(String... args)
-            throws IOException {
+	public static void main(String... args) throws IOException {
 
-        String inputFile = "Sample1.one";
-        Path inputPath = Utils.getPath(GetInfo.class, inputFile);
-        //ExStart:GetInformationOfEachPageFromOneNoteDocument
-        // Load the document into Aspose.Note
-        LoadOptions options = new LoadOptions();
-        Document doc = new Document(inputPath.toString(), options);
+		String inputFile = "Sample1.one";
+		Path inputPath = Utils.getPath(GetInfo.class, inputFile);
+		// ExStart:GetInformationOfEachPageFromOneNoteDocument
+		// Load the document into Aspose.Note
+		LoadOptions options = new LoadOptions();
+		Document doc = new Document(inputPath.toString(), options);
 
-        // Get page revisions
-        List<Page> pages = doc.getChildNodes(Page.class);
+		// Get page revisions
+		List<Page> pages = doc.getChildNodes(Page.class);
 
-        // Traverse list of pages
-        for (Page pageRevision : pages) {
-            System.out.println("LastModifiedTime: " + pageRevision.getLastModifiedTime());
-            System.out.println("CreationTime: " + pageRevision.getCreationTime());
-            System.out.println("Title: " + pageRevision.getTitle());
-            System.out.println("Level: " + pageRevision.getLevel());
-            System.out.println("Author: " + pageRevision.getAuthor());            
-        }
-        //ExEnd:GetInformationOfEachPageFromOneNoteDocument
-    }
+		// Traverse list of pages
+		for (Page pageRevision : pages) {
+			System.out.println("LastModifiedTime: " + pageRevision.getLastModifiedTime());
+			System.out.println("CreationTime: " + pageRevision.getCreationTime());
+			System.out.println("Title: " + pageRevision.getTitle());
+			System.out.println("Level: " + pageRevision.getLevel());
+			System.out.println("Author: " + pageRevision.getAuthor());
+		}
+		// ExEnd:GetInformationOfEachPageFromOneNoteDocument
+	}
 }
-

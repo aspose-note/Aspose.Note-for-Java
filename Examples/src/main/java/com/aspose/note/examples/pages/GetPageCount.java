@@ -8,21 +8,19 @@ import java.io.IOException;
 import java.nio.file.Path;
 
 public class GetPageCount {
-    public static void main(String... args)
-            throws IOException {
+	public static void main(String... args) throws IOException {
 
-        String inputFile = "Sample1.one";
-        Path inputPath = Utils.getPath(GetPageCount.class, inputFile);
-        //ExStart:GetPageCount 
-        // Load the document into Aspose.Note
-        Document doc = new Document(inputPath.toString());
+		String inputFile = "Sample1.one";
+		Path inputPath = Utils.getPath(GetPageCount.class, inputFile);
+		// ExStart:GetPageCount
+		// Load the document into Aspose.Note
+		Document doc = new Document(inputPath.toString());
 
-        // Get number of pages 
-        int count = doc.getChildNodes(Page.class).size(); 
+		// Get number of pages
+		int count = doc.getChildNodes(Page.class).size();
 
-        // Print page count
-        System.out.printf("Total Pages: %s", count);
-        //ExEnd:GetPageCount
-    }
+		// Print page count
+		System.out.printf("Total Pages: %s", count);
+		// ExEnd:GetPageCount
+	}
 }
-

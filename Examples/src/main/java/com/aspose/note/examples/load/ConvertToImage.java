@@ -10,24 +10,26 @@ import java.io.IOException;
 import java.nio.file.Path;
 
 public class ConvertToImage {
-    public static void main(String... args)
-            throws IOException {
+	public static void main(String... args) throws IOException {
 
-        String inputFile = "Sample1.one";
-        Path inputPath = Utils.getPath(ConvertToImage.class, inputFile);
-        String outputFile = "Output.png";
-        Path outputPath = Utils.getPath(ConvertToImage.class, outputFile);
+		// ExStart:ConvertToImage
 
-        // Load the document into Aspose.Note
-        Document oneFile = new Document(inputPath.toString());
+		String inputFile = "Sample1.one";
+		Path inputPath = Utils.getPath(ConvertToImage.class, inputFile);
+		String outputFile = "Output.png";
+		Path outputPath = Utils.getPath(ConvertToImage.class, outputFile);
 
-        // Initialize PdfSaveOptions object
-        ImageSaveOptions options = new ImageSaveOptions(SaveFormat.Png);
+		// Load the document into Aspose.Note
+		Document oneFile = new Document(inputPath.toString());
 
-        // Save the document as PNG
-        oneFile.save(outputPath.toString(), options);
+		// Initialize PdfSaveOptions object
+		ImageSaveOptions options = new ImageSaveOptions(SaveFormat.Png);
 
-        System.out.println("File saved: " + outputPath);
-    }
+		// Save the document as PNG
+		oneFile.save(outputPath.toString(), options);
+
+		System.out.println("File saved: " + outputPath);
+
+		// ExEnd:ConvertToImage
+	}
 }
-
