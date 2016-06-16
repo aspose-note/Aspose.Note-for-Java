@@ -9,7 +9,6 @@ import java.nio.file.Path;
 public class SaveDocToOneNoteFormatUsingOnesaveoptions {
 
 	public static void main(String... args) throws IOException {
-		// ExStart:SaveDocToOneNoteFormatUsingOneSaveOptions
 
 		String inputFile = "Sample1.one";
 		Path inputPath = Utils.getPath(SaveDocToOneNoteFormat.class, inputFile);
@@ -19,6 +18,5 @@ public class SaveDocToOneNoteFormatUsingOnesaveoptions {
 		Document document = new Document(inputPath.toString());
 
 		document.save(outputPath.toString(), new OneSaveOptions());
-		// ExEnd:SaveDocToOneNoteFormatUsingOneSaveOptions
 	}
 }

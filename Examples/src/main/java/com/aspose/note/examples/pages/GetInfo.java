@@ -14,7 +14,6 @@ public class GetInfo {
 
 		String inputFile = "Sample1.one";
 		Path inputPath = Utils.getPath(GetInfo.class, inputFile);
-		// ExStart:GetInformationOfEachPageFromOneNoteDocument
 		// Load the document into Aspose.Note
 		LoadOptions options = new LoadOptions();
 		Document doc = new Document(inputPath.toString(), options);
@@ -30,6 +29,5 @@ public class GetInfo {
 			System.out.println("Level: " + pageRevision.getLevel());
 			System.out.println("Author: " + pageRevision.getAuthor());
 		}
-		// ExEnd:GetInformationOfEachPageFromOneNoteDocument
 	}
 }

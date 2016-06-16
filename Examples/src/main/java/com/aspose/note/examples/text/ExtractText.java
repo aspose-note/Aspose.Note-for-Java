@@ -10,7 +10,6 @@ import java.util.List;
 
 public class ExtractText {
 	public static void main(String... args) throws IOException {
-		// ExStart:ExtractText
 
 		String inputFile = "Sample1.one";
 		Path inputPath = Utils.getPath(ExtractText.class, inputFile);
@@ -24,6 +23,5 @@ public class ExtractText {
 		for (Page p : pages) {
 			System.out.println(p.getText());
 		}
-		// ExEnd:ExtractText
 	}
 }

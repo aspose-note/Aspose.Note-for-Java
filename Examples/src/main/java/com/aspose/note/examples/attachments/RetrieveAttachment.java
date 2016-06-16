@@ -14,8 +14,6 @@ import java.util.List;
 public class RetrieveAttachment {
 	public static void main(String... args) throws IOException {
 
-		// ExStart:RetrieveAttachment
-
 		String inputFile = "Sample1.one";
 		Path inputPath = Utils.getPath(RetrieveAttachment.class, inputFile);
 
@@ -36,9 +34,7 @@ public class RetrieveAttachment {
 			Path outputPath = Utils.getPath(RetrieveAttachment.class, outputFile);
 			Files.copy(stream, outputPath, StandardCopyOption.REPLACE_EXISTING);
 
-			// :)
 			System.out.println("File saved: " + outputPath);
 		}
-		// ExEnd:RetrieveAttachment
 	}
 }

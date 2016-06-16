@@ -12,8 +12,6 @@ import java.util.List;
 public class GetImageInfo {
 	public static void main(String... args) throws IOException {
 
-		// ExStart:GetImageInfo
-
 		String inputFile = "Sample1.one";
 		Path inputPath = Utils.getPath(GetImageInfo.class, inputFile);
 
@@ -35,6 +33,5 @@ public class GetImageInfo {
 			System.out.println("LastModifiedTime: " + image.getLastModifiedTime());
 			System.out.println();
 		}
-		// ExEnd:GetImageInfo
 	}
 }

@@ -9,7 +9,6 @@ import java.nio.file.Path;
 
 public class SetOutputImageResolution {
 	public static void main(String... args) throws IOException {
-		// ExStart:SetOutputImageResolution
 		String inputFile = "Sample1.one";
 		Path inputPath = Utils.getPath(SetOutputImageResolution.class, inputFile);
 
@@ -23,6 +22,5 @@ public class SetOutputImageResolution {
 		imageSaveOptions.setResolution(120);
 
 		doc.save(outputPath.toString(), imageSaveOptions);
-		// ExEnd:SetOutputImageResolution
 	}
 }

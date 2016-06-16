@@ -11,7 +11,6 @@ import java.util.List;
 public class ExtractTextFromTable {
 	public static void main(String... args) throws IOException {
 
-		// ExStart:ExtractTextFromTable
 		String inputFile = "Sample1.one";
 		Path inputPath = Utils.getPath(ExtractTextFromTable.class, inputFile);
 
@@ -34,6 +33,5 @@ public class ExtractTextFromTable {
 			// Print text on the output screen
 			System.out.println(text);
 		}
-		// ExEnd:ExtractTextFromTable
 	}
 }

@@ -9,8 +9,6 @@ import java.nio.file.Path;
 public class InsertPages {
 	public static void main(String... args) throws IOException {
 
-		// ExStart:InsertPages
-
 		// create an object of the Document class
 		Document doc = new Document();
 
@@ -104,6 +102,5 @@ public class InsertPages {
 		doc.save(outputTiff.toString(), SaveFormat.Tiff);
 		System.out.printf("File Saved: %s\n", outputTiff);
 
-		// ExEnd:InsertPages
 	}
 }

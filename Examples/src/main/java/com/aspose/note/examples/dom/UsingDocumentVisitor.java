@@ -9,7 +9,6 @@ import java.nio.file.Path;
 public class UsingDocumentVisitor {
 	public static void main(String... args) throws IOException {
 
-		// ExStart:UsingDocumentVisitor
 		String inputFile = "Sample1.one";
 		Path inputPath = Utils.getPath(UsingDocumentVisitor.class, inputFile);
 
@@ -37,7 +36,6 @@ public class UsingDocumentVisitor {
 		System.out.println("Total Nodes: " + myConverter.getNodeCount());
 		System.out.println(myConverter.getText());
 
-		// ExEnd:UsingDocumentVisitor
 	}
 }
 

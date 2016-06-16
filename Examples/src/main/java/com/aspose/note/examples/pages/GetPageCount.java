@@ -12,7 +12,6 @@ public class GetPageCount {
 
 		String inputFile = "Sample1.one";
 		Path inputPath = Utils.getPath(GetPageCount.class, inputFile);
-		// ExStart:GetPageCount
 		// Load the document into Aspose.Note
 		Document doc = new Document(inputPath.toString());
 
@@ -21,6 +20,5 @@ public class GetPageCount {
 
 		// Print page count
 		System.out.printf("Total Pages: %s", count);
-		// ExEnd:GetPageCount
 	}
 }

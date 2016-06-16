@@ -12,7 +12,6 @@ import java.io.FileNotFoundException;
 
 public class BuildOneNoteDocumentfromtheScratchandInsertanImageusinganImageStream {
 	public static void main(String... args) throws IOException {
-		// ExStart:BuildOneNoteDocumentfromtheScratchandInsertanImageusinganImageStream
 
 		String inputFile = "image.jpg";
 		Path inputPath = Utils.getPath(BuildOneNoteDocumentfromtheScratchandInsertanImageusinganImageStream.class,
@@ -69,7 +68,6 @@ public class BuildOneNoteDocumentfromtheScratchandInsertanImageusinganImageStrea
 			e.printStackTrace();
 		}
 
-		// ExEnd:BuildOneNoteDocumentfromtheScratchandInsertanImageusinganImageStream
 	}
 
 }

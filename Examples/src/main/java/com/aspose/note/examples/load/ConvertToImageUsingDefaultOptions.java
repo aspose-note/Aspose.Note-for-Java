@@ -9,7 +9,6 @@ import java.nio.file.Path;
 
 public class ConvertToImageUsingDefaultOptions {
 	public static void main(String... args) throws IOException {
-		// ExStart:ConvertToImageUsingDefaultOptions
 		// Load the document into Aspose.Note.
 
 		String inputFile = "Sample1.one";
@@ -21,6 +20,6 @@ public class ConvertToImageUsingDefaultOptions {
 
 		// Save the document as Gif.
 		oneFile.save(outputPath.toString(), SaveFormat.Gif);
-		// ExEnd:ConvertToImageUsingDefaultOptions
-	}
+
+        }
 }

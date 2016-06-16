@@ -6,8 +6,6 @@ import com.aspose.note.*;
 public class CheckVersionofAsposeNoteAPI {
 	public static void main(String... args) throws IOException {
 
-		// ExStart:CheckVersionofAsposeNoteAPI
-
 		// For complete examples and data files, please go to
 		// https://github.com/aspose-note/Aspose.Note-for-Java
 		System.out.println("Family: " + AssemblyConstants.getFamily());
@@ -18,7 +16,6 @@ public class CheckVersionofAsposeNoteAPI {
 
 		System.out.println("Release date: " + AssemblyConstants.getReleaseDate());
 
-		// ExEnd:CheckVersionofAsposeNoteAPI
 	}
 
 }

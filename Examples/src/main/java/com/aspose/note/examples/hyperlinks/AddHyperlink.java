@@ -8,8 +8,7 @@ import java.nio.file.Path;
 
 public class AddHyperlink {
 	public static void main(String... args) throws IOException {
-		// ExStart:AddHyperlink
-
+            
 		String outputFile = "Output.pdf";
 		Path outputPath = Utils.getPath(AddHyperlink.class, outputFile);
 
@@ -74,6 +73,5 @@ public class AddHyperlink {
 
 		System.out.printf("File saved: %s\n", outputPath);
 
-		// ExEnd:AddHyperlink
 	}
 }

@@ -14,8 +14,8 @@ import java.io.IOException;
 public class CreateDocWithFormattedRichText {
 
 	public static void main(String... args) throws IOException {
-		// ExStart:CreateOneNoteDocWithFormattedRichText
-		// create an object of the Document class
+
+                // create an object of the Document class
 		Document doc = new Document();
 		// initialize Page class object
 		Page page = new Page(doc);
@@ -87,6 +87,6 @@ public class CreateDocWithFormattedRichText {
 		doc.appendChild(page);
 		// save OneNote document
 		doc.save("out.pdf", SaveFormat.Pdf);
-		// ExEnd:CreateOneNoteDocWithFormattedRichText
-	}
+
+        }
 }

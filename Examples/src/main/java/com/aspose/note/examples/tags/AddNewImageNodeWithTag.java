@@ -13,8 +13,6 @@ import java.io.FileNotFoundException;
 public class AddNewImageNodeWithTag {
 	public static void main(String... args) throws IOException {
 
-		// ExStart:AddNewImageNodeWithTag
-
 		String inputFile = "Input.jpg";
 		Path inputPath = Utils.getPath(AddNewImageNodeWithTag.class, inputFile);
 
@@ -46,7 +44,6 @@ public class AddNewImageNodeWithTag {
 		// save OneNote document
 		doc.save(outputPath.toString(), SaveFormat.Pdf);
 
-		// ExEnd:AddNewImageNodeWithTag
 	}
 
 }

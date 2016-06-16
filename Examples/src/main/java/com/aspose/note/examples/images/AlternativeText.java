@@ -13,7 +13,6 @@ public class AlternativeText {
     
     public static void main(String... args) throws IOException {
         
-        // ExStart:AlternativeText
         String outputFile = "output.one";
         Path outputPath = Utils.getPath(AlternativeText.class, outputFile);
         
@@ -34,6 +33,5 @@ public class AlternativeText {
 
         document.save(outputPath.toString());
         
-        // ExEnd:AlternativeText
     }
 }

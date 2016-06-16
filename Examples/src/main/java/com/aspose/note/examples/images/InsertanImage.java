@@ -10,7 +10,6 @@ import java.nio.file.Path;
 public class InsertanImage {
 	public static void main(String... args) throws IOException {
 
-		// ExStart:InsertanImage
 
 		// load document from the stream.
 		LoadOptions options = new LoadOptions();
@@ -49,7 +48,6 @@ public class InsertanImage {
 			e.printStackTrace();
 		}
 
-		// ExEnd:InsertanImage
 
 	}
 }

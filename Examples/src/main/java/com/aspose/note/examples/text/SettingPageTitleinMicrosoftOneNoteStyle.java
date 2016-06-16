@@ -13,7 +13,6 @@ import java.util.*;
 public class SettingPageTitleinMicrosoftOneNoteStyle {
 
 	public static void main(String... args) throws IOException {
-		// ExStart:SettingPageTitleinMicrosoftOneNoteStyle
 
 		String inputFile = "Sample1.one";
 		Path inputPath = Utils.getPath(ExtractText.class, inputFile);
@@ -47,7 +46,6 @@ public class SettingPageTitleinMicrosoftOneNoteStyle {
 		// append page node
 		doc.appendChild(page);
 
-		// ExEnd:SettingPageTitleinMicrosoftOneNoteStyle
 	}
 
 }

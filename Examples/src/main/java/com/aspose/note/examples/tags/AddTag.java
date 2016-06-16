@@ -10,8 +10,6 @@ import java.nio.file.Path;
 public class AddTag {
 	public static void main(String... args) throws IOException {
 
-		// ExStart:LoadDocIntoAsposeNoteUsingPdfSaveOptions
-
 		// create an object of the Document class
 		Document doc = new Document();
 
@@ -49,6 +47,5 @@ public class AddTag {
 		doc.save(outputPdf.toString(), SaveFormat.Pdf);
 		System.out.printf("File Saved: %s\n", outputPdf);
 
-		// ExEnd:LoadDocIntoAsposeNoteUsingPdfSaveOptions
 	}
 }

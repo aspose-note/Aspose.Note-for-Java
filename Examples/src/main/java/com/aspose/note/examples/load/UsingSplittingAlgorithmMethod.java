@@ -11,7 +11,6 @@ import java.nio.file.Path;
 
 public class UsingSplittingAlgorithmMethod {
 	public static void main(String... args) throws IOException {
-		// ExStart:UsingSplittingAlgorithmMethod
 
 		String inputFile = "Sample1.one";
 		Path inputPath = Utils.getPath(UsingSplittingAlgorithmMethod.class, inputFile);
@@ -32,6 +31,5 @@ public class UsingSplittingAlgorithmMethod {
 		} catch (Exception ex) {
 			System.out.println("Exception: " + ex.getMessage());
 		}
-		// ExEnd:UsingSplittingAlgorithmMethod
 	}
 }

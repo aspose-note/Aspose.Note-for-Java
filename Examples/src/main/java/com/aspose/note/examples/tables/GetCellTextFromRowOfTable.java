@@ -13,8 +13,6 @@ import java.util.*;
 public class GetCellTextFromRowOfTable {
 	public static void main(String... args) throws IOException {
 
-		// ExStart:GetCellTextFromRowOfTable
-
 		String inputFile = "Sample1.one";
 		Path inputPath = Utils.getPath(ExtractTextFromTable.class, inputFile);
 
@@ -42,7 +40,6 @@ public class GetCellTextFromRowOfTable {
 			}
 		}
 
-		// ExEnd:GetCellTextFromRowOfTable
 
 	}
 

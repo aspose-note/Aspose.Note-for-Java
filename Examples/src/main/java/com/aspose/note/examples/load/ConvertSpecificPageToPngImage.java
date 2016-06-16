@@ -10,7 +10,6 @@ import java.nio.file.Path;
 
 public class ConvertSpecificPageToPngImage {
 	public static void main(String... args) throws IOException {
-		// ExStart:ConvertSpecificPageToPngImage
 		// Load the document into Aspose.Note.
 
 		String inputFile = "Sample1.one";
@@ -27,6 +26,6 @@ public class ConvertSpecificPageToPngImage {
 
 		// Save the document as PNG.
 		oneFile.save(outputPath.toString(), opts);
-		// ExEnd:ConvertSpecificPageToPngImage
-	}
+
+        }
 }

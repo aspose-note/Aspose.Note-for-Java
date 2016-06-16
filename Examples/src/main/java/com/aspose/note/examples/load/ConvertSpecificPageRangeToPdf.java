@@ -10,7 +10,6 @@ import com.aspose.note.examples.Utils;
 public class ConvertSpecificPageRangeToPdf {
 	public static void main(String... args) throws IOException {
 
-		// ExStart:ConvertSpecificPageRangeToPdf
 		// Load the document into Aspose.Note.
 
 		String inputFile = "Sample1.one";
@@ -30,6 +29,5 @@ public class ConvertSpecificPageRangeToPdf {
 		// Save the document as PDF
 		oneFile.save(outputPath.toString(), opts);
 		System.out.println("File saved: " + outputPath);
-		// ExEnd:ConvertSpecificPageRangeToPdf
 	}
 }

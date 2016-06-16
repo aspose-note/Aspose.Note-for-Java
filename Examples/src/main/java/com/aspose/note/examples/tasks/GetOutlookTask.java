@@ -13,8 +13,6 @@ import java.util.List;
 public class GetOutlookTask {
 	public static void main(String... args) throws IOException {
 
-		// ExStart:GetOutlookTask
-
 		String inputFile = "Sample1.one";
 		Path inputPath = Utils.getPath(GetOutlookTask.class, inputFile);
 
@@ -40,7 +38,6 @@ public class GetOutlookTask {
 			}
 		}
 
-		// ExEnd:GetOutlookTask
 
 	}
 }

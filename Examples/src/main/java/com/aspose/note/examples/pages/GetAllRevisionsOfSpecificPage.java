@@ -11,7 +11,6 @@ import java.nio.file.Path;
 public class GetAllRevisionsOfSpecificPage {
 
 	public static void main(String... args) throws IOException {
-		// ExStart:GetAllRevisionsOfSpecificPage
 
 		String inputFile = "Sample1.one";
 		Path inputPath = Utils.getPath(GetAllRevisionsOfSpecificPage.class, inputFile);
@@ -31,7 +30,6 @@ public class GetAllRevisionsOfSpecificPage {
 			System.out.println("Author: " + pageRevision.getAuthor());
 			System.out.println();
 		}
-		// ExEnd:GetAllRevisionsOfSpecificPage
 	}
 
 }

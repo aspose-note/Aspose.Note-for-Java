@@ -12,7 +12,6 @@ import java.nio.file.Path;
 public class SaveToStream {
 	public static void main(String... args) throws IOException {
 
-		// ExStart:SaveToStream
 		String inputFile = "Sample1.one";
 		Path inputPath = Utils.getPath(SaveToStream.class, inputFile);
 
@@ -26,6 +25,5 @@ public class SaveToStream {
 		doc.save(stream, SaveFormat.Pdf);
 
 		System.out.println("Stream Size: " + stream.size() + " bytes");
-		// ExEnd:SaveToStream
 	}
 }

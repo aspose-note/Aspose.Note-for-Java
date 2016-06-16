@@ -8,7 +8,7 @@ import java.nio.file.Path;
 
 public class CreateOneNoteDocumentWithFormattedRichText {
 	public static void main(String... args) throws IOException {
-		// ExStart:CreateOneNoteDocumentWithFormattedRichText
+            
 		String outputFile = "Output.pdf";
 		Path outputPath = Utils.getPath(CreateOneNoteDocumentWithFormattedRichText.class, outputFile);
 
@@ -87,7 +87,6 @@ public class CreateOneNoteDocumentWithFormattedRichText {
 		// save OneNote document
 		doc.save(outputPath.toString(), SaveFormat.Pdf);
 
-		// ExEnd:CreateOneNoteDocumentWithFormattedRichText
 
 	}
 
