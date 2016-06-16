@@ -14,8 +14,6 @@ import java.util.List;
 public class ExtractImages {
 	public static void main(String... args) throws IOException {
 
-		// ExStart:ExtractImages
-
 		String inputFile = "Sample1.one";
 		Path inputPath = Utils.getPath(ExtractImages.class, inputFile);
 
@@ -39,6 +37,5 @@ public class ExtractImages {
 			System.out.printf("File saved: %s\n", outputPath);
 		}
 
-		// ExEnd:ExtractImages
 	}
 }

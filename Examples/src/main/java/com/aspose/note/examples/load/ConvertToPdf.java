@@ -10,8 +10,6 @@ import java.nio.file.Path;
 public class ConvertToPdf {
 	public static void main(String... args) throws IOException {
 
-		// ExStart:ConvertToPdf
-
 		String inputFile = "Sample1.one";
 		Path inputPath = Utils.getPath(ConvertToPdf.class, inputFile);
 		String outputFile = "Output.pdf";
@@ -35,6 +33,5 @@ public class ConvertToPdf {
 
 		System.out.println("File saved: " + outputPath);
 
-		// ExEnd:ConvertToPdf
 	}
 }

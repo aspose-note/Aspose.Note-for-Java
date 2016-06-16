@@ -13,8 +13,6 @@ import java.util.*;
 public class ReplaceTextonAllPages {
 	public static void main(String... args) throws IOException {
 
-		// ExStart:ReplaceTextonAllPages
-
 		String inputFile = "Sample1.one";
 		Path inputPath = Utils.getPath(ReplaceTextonAllPages.class, inputFile);
 
@@ -44,7 +42,6 @@ public class ReplaceTextonAllPages {
 		// Save to any supported file format
 		oneFile.save(outputPath.toString(), SaveFormat.Pdf);
 
-		// ExEnd:ReplaceTextonAllPages
 
 	}
 }

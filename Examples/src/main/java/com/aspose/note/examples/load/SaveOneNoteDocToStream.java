@@ -9,7 +9,6 @@ import java.nio.file.Path;
 
 public class SaveOneNoteDocToStream {
 	public static void main(String... args) throws IOException {
-		// ExStart:SaveOneNoteDocToStream
 		// Load the document into Aspose.Note.
 
 		String inputFile = "Sample1.one";
@@ -20,6 +19,5 @@ public class SaveOneNoteDocToStream {
 		ByteArrayOutputStream dstStream = new ByteArrayOutputStream();
 
 		doc.save(dstStream, SaveFormat.Pdf);
-		// ExEnd:SaveOneNoteDocToStream
 	}
 }

@@ -9,7 +9,6 @@ import java.nio.file.Path;
 
 public class OptimizeExportPerformance {
 	public static void main(String... args) throws IOException {
-		// ExStart:OptimizeExportPerformance
 		// initialize the new Document
 		Document doc = new Document();
 
@@ -72,6 +71,5 @@ public class OptimizeExportPerformance {
 		Path outputBmp = Utils.getPath(OptimizeExportPerformance.class, "Output.bmp");
 		doc.save(outputBmp.toString());
 
-		// ExEnd:OptimizeExportPerformance
 	}
 }

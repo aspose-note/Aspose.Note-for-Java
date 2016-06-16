@@ -12,8 +12,6 @@ import java.nio.file.Path;
 public class ConvertToImage {
 	public static void main(String... args) throws IOException {
 
-		// ExStart:ConvertToImage
-
 		String inputFile = "Sample1.one";
 		Path inputPath = Utils.getPath(ConvertToImage.class, inputFile);
 		String outputFile = "Output.png";
@@ -30,6 +28,5 @@ public class ConvertToImage {
 
 		System.out.println("File saved: " + outputPath);
 
-		// ExEnd:ConvertToImage
 	}
 }

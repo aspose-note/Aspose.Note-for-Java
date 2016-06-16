@@ -10,8 +10,6 @@ import java.nio.file.Path;
 public class NewOneNotedocument {
 	public static void main(String... args) throws IOException {
 
-		// ExStart:NewOneNotedocument
-
 		String inputFile = "Input.jpg";
 		Path inputPath = Utils.getPath(NewOneNotedocument.class, inputFile);
 
@@ -50,6 +48,5 @@ public class NewOneNotedocument {
 			e.printStackTrace();
 		}
 
-		// ExEnd:NewOneNotedocument
 	}
 }

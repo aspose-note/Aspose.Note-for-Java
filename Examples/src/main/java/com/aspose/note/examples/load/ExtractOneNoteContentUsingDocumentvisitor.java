@@ -14,7 +14,6 @@ import com.aspose.note.examples.Utils;
 import java.io.IOException;
 import java.nio.file.Path;
 
-// ExStart:ExtractOneNoteContentUsingDocumentvisitor
 public class ExtractOneNoteContentUsingDocumentvisitor extends DocumentVisitor {
 
 	final private StringBuilder mBuilder;
@@ -115,4 +114,3 @@ public class ExtractOneNoteContentUsingDocumentvisitor extends DocumentVisitor {
 	}
 
 }
-// ExEnd:ExtractOneNoteContentUsingDocumentvisitor

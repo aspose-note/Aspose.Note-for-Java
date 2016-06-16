@@ -11,7 +11,6 @@ import java.nio.file.Path;
 public class ConvertSpecificPageToImage {
 	public static void main(String... args) throws IOException {
 
-		// ExStart:ConvertSpecificPageToImage
 
 		String inputFile = "Sample1.one";
 		Path inputPath = Utils.getPath(ConvertSpecificPageToImage.class, inputFile);

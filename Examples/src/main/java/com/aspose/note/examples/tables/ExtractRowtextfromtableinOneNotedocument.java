@@ -22,8 +22,6 @@ import java.util.*;
 public class ExtractRowtextfromtableinOneNotedocument {
 	public static void main(String... args) throws IOException {
 
-		// ExStart:ExtractRowtextfromtableinOneNotedocument
-
 		String inputFile = "Sample1.one";
 		Path inputPath = Utils.getPath(ExtractTextFromTable.class, inputFile);
 
@@ -46,8 +44,6 @@ public class ExtractRowtextfromtableinOneNotedocument {
 				System.out.println(text);
 			}
 		}
-
-		// ExEnd:ExtractRowtextfromtableinOneNotedocument
 
 	}
 

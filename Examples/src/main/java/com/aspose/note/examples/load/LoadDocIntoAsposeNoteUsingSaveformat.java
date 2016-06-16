@@ -8,7 +8,6 @@ import java.nio.file.Path;
 
 public class LoadDocIntoAsposeNoteUsingSaveformat {
 	public static void main(String... args) throws IOException {
-		// ExStart:LoadDocIntoAsposeNoteUsingSaveFormat
 		// Load the document into Aspose.Note.
 
 		String inputFile = "Sample1.one";
@@ -20,6 +19,5 @@ public class LoadDocIntoAsposeNoteUsingSaveformat {
 
 		// Save the document as PDF
 		oneFile.save(outputPath.toString(), SaveFormat.Pdf);
-		// ExEnd:LoadDocIntoAsposeNoteUsingSaveFormat
 	}
 }

@@ -11,7 +11,6 @@ import java.util.List;
 public class GetRevisions {
 	public static void main(String... args) throws IOException {
 
-		// ExStart:GetRevisions
 
 		String inputFile = "Sample1.one";
 		Path inputPath = Utils.getPath(GetRevisions.class, inputFile);
@@ -35,6 +34,5 @@ public class GetRevisions {
 			System.out.println();
 		}
 
-		// ExEnd:GetRevisions
 	}
 }

@@ -10,8 +10,6 @@ import java.nio.file.Path;
 public class CreateBulletedList {
 	public static void main(String... args) throws IOException {
 
-		// ExStart:CreateBulletedList
-
 		String outputFile = "Output.pdf";
 		Path outputPath = Utils.getPath(CreateBulletedList.class, outputFile);
 
@@ -71,6 +69,5 @@ public class CreateBulletedList {
 
 		System.out.printf("File saved: %s\n", outputPath);
 
-		// ExEnd:CreateBulletedList
 	}
 }

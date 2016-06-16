@@ -12,7 +12,6 @@ import java.io.IOException;
 public class GenerateRootAndSubLevelPagesInOneNote {
 
 	public static void main(String... args) {
-		// ExStart:GenerateRootAndSubLevelPagesInOneNote
 		// create an object of the Document class
 		Document doc = new Document();
 		// initialize Page class object and set its level
@@ -84,16 +83,11 @@ public class GenerateRootAndSubLevelPagesInOneNote {
 
 		try {
 			doc.save("D://Aspose_JavaProjects//OneNote//out100.bmp", SaveFormat.Bmp);
-			// doc.save("D://Aspose_JavaProjects//OneNote//out100.pdf",SaveFormat.Pdf);
-			// doc.save("D://Aspose_JavaProjects//OneNote//out100.gif",SaveFormat.Gif);
-			// doc.save("D://Aspose_JavaProjects//OneNote//out100.jpg",SaveFormat.Jpeg);
-			// doc.save("D://Aspose_JavaProjects//OneNote//out100.png",SaveFormat.Png);
-			// doc.save("D://Aspose_JavaProjects//OneNote//out100.tiff",SaveFormat.Tiff);
 
 		} catch (IOException e) {
 
 		}
-		// ExEnd:GenerateRootAndSubLevelPagesInOneNote
-	}
+
+        }
 
 }

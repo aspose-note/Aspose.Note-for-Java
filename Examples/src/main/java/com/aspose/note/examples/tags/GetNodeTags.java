@@ -13,8 +13,6 @@ import java.util.List;
 public class GetNodeTags {
 	public static void main(String... args) throws IOException {
 
-		// ExStart:GetNodeTags
-
 		String inputFile = "Sample1.one";
 		Path inputPath = Utils.getPath(GetNodeTags.class, inputFile);
 
@@ -41,6 +39,5 @@ public class GetNodeTags {
 			}
 		}
 
-		// ExEnd:GetNodeTags
 	}
 }

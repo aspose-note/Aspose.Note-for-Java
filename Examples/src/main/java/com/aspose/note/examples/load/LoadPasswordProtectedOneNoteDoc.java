@@ -8,7 +8,6 @@ import java.nio.file.Path;
 
 public class LoadPasswordProtectedOneNoteDoc {
 	public static void main(String... args) throws IOException {
-		// ExStart:LoadPasswordProtectedOneNoteDoc
 
 		String inputFile = "Sample1.one";
 		Path inputPath = Utils.getPath(LoadDocIntoAsposeNoteUsingSaveformat.class, inputFile);
@@ -18,6 +17,5 @@ public class LoadPasswordProtectedOneNoteDoc {
 		loadOptions.setDocumentPassword("password");
 
 		Document doc = new Document(inputPath.toString(), loadOptions);
-		// ExEnd:LoadPasswordProtectedOneNoteDoc
 	}
 }

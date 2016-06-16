@@ -13,7 +13,6 @@ import java.util.List;
 public class ChangeTextStyle {
 	public static void main(String... args) throws IOException {
 
-		// ExStart:ChangeTextStyle
 		String inputFile = "Sample1.one";
 		Path inputPath = Utils.getPath(ChangeTextStyle.class, inputFile);
 		String outputFile = "Output.pdf";
@@ -38,6 +37,5 @@ public class ChangeTextStyle {
 		document.save(outputPath.toString());
 		System.out.printf("File saved: %s\n", outputPath);
 
-		// ExEnd:ChangeTextStyle
 	}
 }

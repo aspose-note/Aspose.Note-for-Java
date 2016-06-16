@@ -9,7 +9,6 @@ import java.awt.Color;
 
 public class OptimizePerformanceForConsequentExportOperations {
 	public static void main(String... args) {
-		// ExStart:OptimizePerformanceForConsequentExportOperations
 		// initialize the new Document
 		Document doc = new Document();
 		doc.setAutomaticLayoutChangesDetectionEnabled(false);
@@ -81,6 +80,5 @@ public class OptimizePerformanceForConsequentExportOperations {
 			// e.printStackTrace();
 			System.out.println("Saving as bmp: " + e.getMessage());
 		}
-		// ExEnd:OptimizePerformanceForConsequentExportOperations
 	}
 }

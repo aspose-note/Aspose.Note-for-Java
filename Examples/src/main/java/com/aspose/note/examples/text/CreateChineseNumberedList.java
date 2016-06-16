@@ -10,8 +10,6 @@ import java.nio.file.Path;
 public class CreateChineseNumberedList {
 	public static void main(String... args) throws IOException {
 
-		// ExStart:CreateChineseNumberedList
-
 		String outputFile = "Output.pdf";
 		Path outputPath = Utils.getPath(CreateChineseNumberedList.class, outputFile);
 
@@ -71,6 +69,5 @@ public class CreateChineseNumberedList {
 
 		System.out.printf("File saved: %s\n", outputPath);
 
-		// ExEnd:CreateChineseNumberedList
 	}
 }

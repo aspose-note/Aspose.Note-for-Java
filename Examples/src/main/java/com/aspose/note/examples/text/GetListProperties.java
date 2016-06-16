@@ -11,7 +11,6 @@ import java.util.List;
 
 public class GetListProperties {
 	public static void main(String... args) throws IOException {
-		// ExStart:GetListProperties
 
 		String inputFile = "Sample1.one";
 		Path inputPath = Utils.getPath(GetListProperties.class, inputFile);
@@ -44,6 +43,5 @@ public class GetListProperties {
 				System.out.println();
 			}
 		}
-		// ExEnd:GetListProperties
 	}
 }
