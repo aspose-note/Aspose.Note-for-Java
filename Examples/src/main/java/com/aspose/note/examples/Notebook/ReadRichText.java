@@ -11,7 +11,6 @@ import com.aspose.note.system.collections.Generic.IGenericList;
 public class ReadRichText {
 	public static void main(String... args) throws IOException {
 
-		// ExStart:ReadRichText
 		String inputFile = "Open Notebook.onetoc2";
 		Path inputPath = Utils.getPath(ReadRichText.class, inputFile);
 		Notebook rootNotebook = new Notebook(inputPath.toString());
@@ -20,7 +19,7 @@ public class ReadRichText {
 		for (RichText richTextNode : allRichTextNodes) {
 			System.out.println(richTextNode.getText());
 		}
-		// ExEnd:ReadRichText
+		
 	}
 
 }

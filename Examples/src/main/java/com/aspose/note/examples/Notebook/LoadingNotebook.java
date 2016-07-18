@@ -10,7 +10,7 @@ import com.aspose.note.examples.Utils;
 
 public class LoadingNotebook {
 	public static void main(String... args) throws IOException {
-		// ExStart:LoadingNotebook
+		
 		String inputFile = "Open_Notebook.onetoc2";
 		
 		Path inputPath = Utils.getPath(LoadingNotebook.class, inputFile);
@@ -26,7 +26,7 @@ public class LoadingNotebook {
 				// Do something with child notebook
 			}
 		}
-		// ExEnd:LoadingNotebook
+		
 	}
 
 }
