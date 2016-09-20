@@ -1,5 +1,6 @@
 package com.aspose.note.examples;
 
+import java.io.File;
 import java.io.IOException;
 import java.nio.file.FileSystems;
 import java.nio.file.Files;
@@ -35,6 +36,15 @@ public class Utils {
 
         return p;
     }
+    
+    public static String getSharedDataDir(Class c) {
+		File dir = new File(System.getProperty("user.dir"));
+		dir = new File(dir, "src");
+		dir = new File(dir, "main");
+		dir = new File(dir, "resources");
+
+		return dir.toString() + File.separator;
+	}
 
 }
 

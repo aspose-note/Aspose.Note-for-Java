@@ -1,7 +1,6 @@
 package com.aspose.note.examples.Notebook;
 
 import java.io.IOException;
-import java.nio.file.Path;
 
 import com.aspose.note.Document;
 import com.aspose.note.INotebookChildNode;
@@ -10,11 +9,9 @@ import com.aspose.note.examples.Utils;
 
 public class LoadingNotebook {
 	public static void main(String... args) throws IOException {
-		
-		String inputFile = "Open_Notebook.onetoc2";
-		
-		Path inputPath = Utils.getPath(LoadingNotebook.class, inputFile);
-		Notebook notebook = new Notebook(inputPath.toString());
+
+		String dataDir = Utils.getSharedDataDir(LoadingNotebook.class) + "Notebook/";
+		Notebook notebook = new Notebook(dataDir + "Notizbuch öffnen.onetoc2");
         
         
 		for (INotebookChildNode notebookChildNode : notebook) {
@@ -26,7 +23,6 @@ public class LoadingNotebook {
 				// Do something with child notebook
 			}
 		}
-		
 	}
 
 }

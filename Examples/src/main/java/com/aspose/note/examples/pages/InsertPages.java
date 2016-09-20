@@ -1,14 +1,21 @@
 package com.aspose.note.examples.pages;
 
-import com.aspose.note.*;
-import com.aspose.note.examples.Utils;
-
 import java.io.IOException;
-import java.nio.file.Path;
+
+import com.aspose.note.Document;
+import com.aspose.note.Outline;
+import com.aspose.note.OutlineElement;
+import com.aspose.note.Page;
+import com.aspose.note.RichText;
+import com.aspose.note.SaveFormat;
+import com.aspose.note.TextStyle;
+import com.aspose.note.examples.Utils;
 
 public class InsertPages {
 	public static void main(String... args) throws IOException {
 
+		String dataDir = Utils.getSharedDataDir(InsertPages.class) + "pages/";
+		
 		// create an object of the Document class
 		Document doc = new Document();
 
@@ -78,29 +85,23 @@ public class InsertPages {
 		doc.appendChild(page2);
 		doc.appendChild(page3);
 
-		Path outputBmp = Utils.getPath(InsertPages.class, "Output.bmp");
-		doc.save(outputBmp.toString(), SaveFormat.Bmp);
-		System.out.printf("File Saved: %s\n", outputBmp);
+		doc.save(dataDir + "InsertPages_out.bmp" , SaveFormat.Bmp);
+		System.out.printf("File Saved: %s\n", dataDir + "InsertPages.bmp");
 
-		Path outputPdf = Utils.getPath(InsertPages.class, "Output.pdf");
-		doc.save(outputPdf.toString(), SaveFormat.Pdf);
-		System.out.printf("File Saved: %s\n", outputPdf);
+		doc.save(dataDir + "InsertPages_out.pdf", SaveFormat.Pdf);
+		System.out.printf("File Saved: %s\n", dataDir + "InsertPages.pdf");
 
-		Path outputGif = Utils.getPath(InsertPages.class, "Output.gif");
-		doc.save(outputGif.toString(), SaveFormat.Gif);
-		System.out.printf("File Saved: %s\n", outputGif);
+		doc.save(dataDir + "InsertPages_out.gif", SaveFormat.Gif);
+		System.out.printf("File Saved: %s\n", dataDir + "InsertPages.gif");
 
-		Path outputJpg = Utils.getPath(InsertPages.class, "Output.jpg");
-		doc.save(outputJpg.toString(), SaveFormat.Jpeg);
-		System.out.printf("File Saved: %s\n", outputJpg);
+		doc.save(dataDir + "InsertPages_out.jpeg", SaveFormat.Jpeg);
+		System.out.printf("File Saved: %s\n", dataDir + "InsertPages.jpeg");
 
-		Path outputPng = Utils.getPath(InsertPages.class, "Output.png");
-		doc.save(outputPng.toString(), SaveFormat.Png);
-		System.out.printf("File Saved: %s\n", outputPng);
+		doc.save(dataDir + "InsertPages_out.png", SaveFormat.Png);
+		System.out.printf("File Saved: %s\n", dataDir + "InsertPages.png");
 
-		Path outputTiff = Utils.getPath(InsertPages.class, "Output.tiff");
-		doc.save(outputTiff.toString(), SaveFormat.Tiff);
-		System.out.printf("File Saved: %s\n", outputTiff);
+		doc.save(dataDir + "InsertPages_out.tiff", SaveFormat.Tiff);
+		System.out.printf("File Saved: %s\n", dataDir + "InsertPages.tiff");
 
 	}
 }

@@ -1,17 +1,21 @@
 package com.aspose.note.examples.text;
 
-import com.aspose.note.*;
-import com.aspose.note.examples.Utils;
-
-import java.awt.*;
+import java.awt.Color;
 import java.io.IOException;
-import java.nio.file.Path;
+
+import com.aspose.note.Document;
+import com.aspose.note.NumberList;
+import com.aspose.note.Outline;
+import com.aspose.note.OutlineElement;
+import com.aspose.note.Page;
+import com.aspose.note.RichText;
+import com.aspose.note.TextStyle;
+import com.aspose.note.examples.Utils;
 
 public class CreateBulletedList {
 	public static void main(String... args) throws IOException {
 
-		String outputFile = "Output.pdf";
-		Path outputPath = Utils.getPath(CreateBulletedList.class, outputFile);
+		String dataDir = Utils.getSharedDataDir(CreateBulletedList.class) + "text/";
 
 		// create an object of the Document class
 		Document doc = new Document();
@@ -65,9 +69,9 @@ public class CreateBulletedList {
 		doc.appendChild(page);
 
 		// save the document
-		doc.save(outputPath.toString());
+		doc.save(dataDir + "CreateBulletedList_out.pdf");
 
-		System.out.printf("File saved: %s\n", outputPath);
+		System.out.printf("File saved: %s\n", dataDir + "CreateBulletedList_out.pdf");
 
 	}
 }

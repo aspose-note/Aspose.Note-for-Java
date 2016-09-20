@@ -1,7 +1,6 @@
 package com.aspose.note.examples.Notebook;
 
 import java.io.IOException;
-import java.nio.file.Path;
 
 import com.aspose.note.ImageSaveOptions;
 import com.aspose.note.Notebook;
@@ -12,9 +11,7 @@ import com.aspose.note.examples.Utils;
 public class ExportImageasFlattenedNotebook {
 	public static void main(String... args) throws IOException {
 		
-		Path dataDirPath = Utils.getPath(ExportImageasFlattenedNotebook.class,"");
-		
-		String dataDir = dataDirPath.toString() + '/';
+		String dataDir = Utils.getSharedDataDir(ExportImageasFlattenedNotebook.class) + "Notebook/";
 		
 		Notebook notebook = new Notebook(dataDir + "test.onetoc2");
 
@@ -26,7 +23,7 @@ public class ExportImageasFlattenedNotebook {
 
 		saveOptions.setFlatten(true);
 
-		notebook.save(dataDir + "test.png", saveOptions);
+		notebook.save(dataDir + "ExportImageasFlattenedNotebook_out.png", saveOptions);
 	}
 
 }

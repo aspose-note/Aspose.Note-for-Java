@@ -1,5 +1,7 @@
 package com.aspose.note.examples.load;
 
+import java.io.IOException;
+
 import com.aspose.note.Document;
 import com.aspose.note.DocumentVisitor;
 import com.aspose.note.Image;
@@ -11,8 +13,6 @@ import com.aspose.note.Page;
 import com.aspose.note.RichText;
 import com.aspose.note.Title;
 import com.aspose.note.examples.Utils;
-import java.io.IOException;
-import java.nio.file.Path;
 
 public class ExtractOneNoteContentUsingDocumentvisitor extends DocumentVisitor {
 
@@ -86,10 +86,9 @@ public class ExtractOneNoteContentUsingDocumentvisitor extends DocumentVisitor {
 	public static void main(String... args) throws IOException {
 		// Open the document we want to convert.
 
-		String inputFile = "Sample1.one";
-		Path inputPath = Utils.getPath(ExtractOneNoteContentUsingDocumentvisitor.class, inputFile);
+		String dataDir = Utils.getSharedDataDir(ExtractOneNoteContentUsingDocumentvisitor.class) + "load/";
 
-		Document doc = new Document(inputPath.toString(), new LoadOptions());
+		Document doc = new Document(dataDir + "Sample1.one", new LoadOptions());
 
 		// Create an object that inherits from the DocumentVisitor class.
 		ExtractOneNoteContentUsingDocumentvisitor myConverter = new ExtractOneNoteContentUsingDocumentvisitor();

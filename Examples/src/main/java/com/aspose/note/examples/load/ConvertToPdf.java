@@ -1,22 +1,18 @@
 package com.aspose.note.examples.load;
 
+import java.io.IOException;
+
 import com.aspose.note.Document;
 import com.aspose.note.PdfSaveOptions;
 import com.aspose.note.examples.Utils;
 
-import java.io.IOException;
-import java.nio.file.Path;
-
 public class ConvertToPdf {
 	public static void main(String... args) throws IOException {
 
-		String inputFile = "Sample1.one";
-		Path inputPath = Utils.getPath(ConvertToPdf.class, inputFile);
-		String outputFile = "Output.pdf";
-		Path outputPath = Utils.getPath(ConvertToPdf.class, outputFile);
-
+		String dataDir = Utils.getSharedDataDir(ConvertToPdf.class) + "load/";
+		
 		// Load the document into Aspose.Note
-		Document oneFile = new Document(inputPath.toString());
+		Document oneFile = new Document(dataDir+"Sample1.one");
 
 		// Initialize PdfSaveOptions object
 		PdfSaveOptions options = new PdfSaveOptions();
@@ -29,9 +25,9 @@ public class ConvertToPdf {
 		// options.setPageCount(3);
 
 		// Save the document as PDF
-		oneFile.save(outputPath.toString(), options);
+		oneFile.save(dataDir + "ConvertToPdf_out.pdf", options);
 
-		System.out.println("File saved: " + outputPath);
+		System.out.println("File saved: " + dataDir + "ConvertToPdf_out.pdf");
 
 	}
 }

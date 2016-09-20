@@ -1,7 +1,6 @@
 package com.aspose.note.examples.introduction;
 
 import java.io.IOException;
-import com.aspose.note.*;
 
 public class CheckVersionofAsposeNoteAPI {
 	public static void main(String... args) throws IOException {

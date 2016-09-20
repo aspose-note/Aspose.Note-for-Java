@@ -1,30 +1,28 @@
 package com.aspose.note.examples.text;
 
-import com.aspose.note.*;
 import java.io.IOException;
-import com.aspose.note.Document;
-import com.aspose.note.Page;
-import com.aspose.note.LoadOptions;
-import com.aspose.note.examples.Utils;
-import java.nio.file.Path;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
-import java.util.*;
+import com.aspose.note.Document;
+import com.aspose.note.LoadOptions;
+import com.aspose.note.Page;
+import com.aspose.note.RichText;
+import com.aspose.note.SaveFormat;
+import com.aspose.note.examples.Utils;
 
 public class ReplaceTextonParticularPage {
 
 	public static void main(String... args) throws IOException {
 
-		String inputFile = "Sample1.one";
-		Path inputPath = Utils.getPath(ReplaceTextonAllPages.class, inputFile);
-
-		String outputFile = "Output.pdf";
-		Path outputPath = Utils.getPath(ReplaceTextonAllPages.class, outputFile);
+		String dataDir = Utils.getSharedDataDir(ReplaceTextonParticularPage.class) + "text/";
 
 		Map<String, String> replacements = new HashMap<String, String>();
 		replacements.put("2. Get organized", "New Text Here");
 
 		// Load the document into Aspose.Note.
-		Document oneFile = new Document(inputPath.toString(), new LoadOptions());
+		Document oneFile = new Document(dataDir + "Sample1.one", new LoadOptions());
 
 		List<Page> pageNodes = (List<Page>) oneFile.getChildNodes(Page.class);
 
@@ -41,7 +39,7 @@ public class ReplaceTextonParticularPage {
 		}
 
 		// Save to any supported file format
-		oneFile.save(outputPath.toString(), SaveFormat.Pdf);
+		oneFile.save(dataDir + "ReplaceTextonParticularPage_out.pdf", SaveFormat.Pdf);
 
 	}
 

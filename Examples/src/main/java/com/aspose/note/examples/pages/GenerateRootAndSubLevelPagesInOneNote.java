@@ -1,5 +1,7 @@
 package com.aspose.note.examples.pages;
 
+import java.io.IOException;
+
 import com.aspose.note.Document;
 import com.aspose.note.Outline;
 import com.aspose.note.OutlineElement;
@@ -7,11 +9,14 @@ import com.aspose.note.Page;
 import com.aspose.note.RichText;
 import com.aspose.note.SaveFormat;
 import com.aspose.note.TextStyle;
-import java.io.IOException;
+import com.aspose.note.examples.Utils;
 
 public class GenerateRootAndSubLevelPagesInOneNote {
 
 	public static void main(String... args) {
+		
+		String dataDir = Utils.getSharedDataDir(GenerateRootAndSubLevelPagesInOneNote.class) + "pages/";
+		
 		// create an object of the Document class
 		Document doc = new Document();
 		// initialize Page class object and set its level
@@ -82,7 +87,7 @@ public class GenerateRootAndSubLevelPagesInOneNote {
 		doc.appendChild(page3);
 
 		try {
-			doc.save("D://Aspose_JavaProjects//OneNote//out100.bmp", SaveFormat.Bmp);
+			doc.save(dataDir + "GenerateRootAndSubLevelPagesInOneNote_out.bmp", SaveFormat.Bmp);
 
 		} catch (IOException e) {
 

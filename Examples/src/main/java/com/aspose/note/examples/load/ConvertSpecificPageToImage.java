@@ -1,24 +1,19 @@
 package com.aspose.note.examples.load;
 
+import java.io.IOException;
+
 import com.aspose.note.Document;
 import com.aspose.note.ImageSaveOptions;
 import com.aspose.note.SaveFormat;
 import com.aspose.note.examples.Utils;
 
-import java.io.IOException;
-import java.nio.file.Path;
-
 public class ConvertSpecificPageToImage {
 	public static void main(String... args) throws IOException {
 
-
-		String inputFile = "Sample1.one";
-		Path inputPath = Utils.getPath(ConvertSpecificPageToImage.class, inputFile);
-		String outputFile = "Output.jpg";
-		Path outputPath = Utils.getPath(ConvertSpecificPageToImage.class, outputFile);
+		String dataDir = Utils.getSharedDataDir(ConvertSpecificPageToImage.class) + "load/";
 
 		// Load the document into Aspose.Note
-		Document oneFile = new Document(inputPath.toString());
+		Document oneFile = new Document(dataDir + "Sample1.one");
 
 		// Initialize PdfSaveOptions object
 		ImageSaveOptions options = new ImageSaveOptions(SaveFormat.Jpeg);
@@ -27,9 +22,9 @@ public class ConvertSpecificPageToImage {
 		options.setPageIndex(1);
 
 		// Save the document as PNG
-		oneFile.save(outputPath.toString(), options);
+		oneFile.save(dataDir + "ConvertSpecificPageToImage_out.jpg", options);
 
-		System.out.println("File saved: " + outputPath);
+		System.out.println("File saved: " + dataDir + "ConvertSpecificPageToImage_out.jpg");
 		// ExEnd:ConvertSpecificPageToImage
 	}
 }

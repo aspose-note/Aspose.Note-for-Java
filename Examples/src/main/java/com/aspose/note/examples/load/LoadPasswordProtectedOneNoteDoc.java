@@ -1,21 +1,20 @@
 package com.aspose.note.examples.load;
 
+import java.io.IOException;
+
 import com.aspose.note.Document;
 import com.aspose.note.LoadOptions;
 import com.aspose.note.examples.Utils;
-import java.io.IOException;
-import java.nio.file.Path;
 
 public class LoadPasswordProtectedOneNoteDoc {
 	public static void main(String... args) throws IOException {
 
-		String inputFile = "Sample1.one";
-		Path inputPath = Utils.getPath(LoadDocIntoAsposeNoteUsingSaveformat.class, inputFile);
+		String dataDir = Utils.getSharedDataDir(LoadPasswordProtectedOneNoteDoc.class) + "load/";
 
 		LoadOptions loadOptions = new LoadOptions();
 
 		loadOptions.setDocumentPassword("password");
 
-		Document doc = new Document(inputPath.toString(), loadOptions);
+		Document doc = new Document(dataDir + "Sample1.one", loadOptions);
 	}
 }

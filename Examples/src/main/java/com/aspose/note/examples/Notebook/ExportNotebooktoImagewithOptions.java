@@ -1,7 +1,6 @@
 package com.aspose.note.examples.Notebook;
 
 import java.io.IOException;
-import java.nio.file.Path;
 
 import com.aspose.note.ImageSaveOptions;
 import com.aspose.note.Notebook;
@@ -12,10 +11,7 @@ import com.aspose.note.examples.Utils;
 public class ExportNotebooktoImagewithOptions {
 	public static void main(String... args) throws IOException {
 		
-		Path dataDirPath = Utils.getPath(ExportNotebooktoImagewithOptions.class,"");
-		
-		String dataDir = dataDirPath.toString() + '/';
-		
+		String dataDir = Utils.getSharedDataDir(ExportNotebooktoImagewithOptions.class) + "Notebook/";
 		// Load a OneNote Notebook
 		Notebook notebook = new Notebook(dataDir + "test.onetoc2");
 
@@ -25,7 +21,7 @@ public class ExportNotebooktoImagewithOptions {
 
 		documentSaveOptions.setResolution(400);
 
-		dataDir = dataDir + "ConvertToImageWithOptions_out_.png";
+		dataDir = dataDir + "ExportNotebooktoImagewithOptions_out.png";
 
 		// Save the Notebook
 		notebook.save(dataDir, notebookSaveOptions);

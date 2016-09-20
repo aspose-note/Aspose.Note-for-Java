@@ -1,24 +1,22 @@
 package com.aspose.note.examples.pages;
 
+import java.io.IOException;
+
 import com.aspose.note.Document;
 import com.aspose.note.LoadOptions;
 import com.aspose.note.Page;
 import com.aspose.note.examples.Utils;
-import com.aspose.note.examples.load.UsingSplittingAlgorithmMethod;
-import java.io.IOException;
-import java.nio.file.Path;
 
 public class GetAllRevisionsOfSpecificPage {
 
 	public static void main(String... args) throws IOException {
 
-		String inputFile = "Sample1.one";
-		Path inputPath = Utils.getPath(GetAllRevisionsOfSpecificPage.class, inputFile);
+		String dataDir = Utils.getSharedDataDir(GetAllRevisionsOfSpecificPage.class) + "pages/";
 
 		LoadOptions loadOptions = new LoadOptions();
 		loadOptions.setLoadHistory(true);
 		// load OneNote document
-		Document document = new Document(inputPath.toString(), loadOptions);
+		Document document = new Document(dataDir + "Sample1.one", loadOptions);
 		// get first page
 		Page firstPage = document.getFirstChild();
 		for (Page pageRevision : document.getPageHistory(firstPage)) {
