@@ -1,7 +1,5 @@
 package com.aspose.note.examples.load;
 
-import com.aspose.note.AssemblyConstants;
-
 public class GetApiInfo {
 
 	public static void main(String... args) {

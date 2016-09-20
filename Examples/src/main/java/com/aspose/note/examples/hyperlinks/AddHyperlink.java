@@ -1,17 +1,21 @@
 package com.aspose.note.examples.hyperlinks;
 
-import com.aspose.note.*;
-import com.aspose.note.examples.Utils;
-
 import java.io.IOException;
-import java.nio.file.Path;
+
+import com.aspose.note.Document;
+import com.aspose.note.Outline;
+import com.aspose.note.OutlineElement;
+import com.aspose.note.Page;
+import com.aspose.note.RichText;
+import com.aspose.note.TextStyle;
+import com.aspose.note.Title;
+import com.aspose.note.examples.Utils;
 
 public class AddHyperlink {
 	public static void main(String... args) throws IOException {
-            
-		String outputFile = "Output.pdf";
-		Path outputPath = Utils.getPath(AddHyperlink.class, outputFile);
-
+		
+		String dataDir = Utils.getSharedDataDir(AddHyperlink.class) + "hyperlinks/";
+		
 		// create an object of the Document class
 		Document doc = new Document();
 
@@ -69,9 +73,9 @@ public class AddHyperlink {
 		// add Page node
 		doc.appendChild(page);
 
-		doc.save(outputPath.toString());
+		doc.save(dataDir + "AddHyperlink_out.pdf");
 
-		System.out.printf("File saved: %s\n", outputPath);
+		System.out.printf("File saved: %s\n", dataDir + "AddHyperlink_out.pdf");
 
 	}
 }

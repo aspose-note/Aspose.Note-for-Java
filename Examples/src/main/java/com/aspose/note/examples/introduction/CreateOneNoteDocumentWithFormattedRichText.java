@@ -1,16 +1,22 @@
 package com.aspose.note.examples.introduction;
 
+import java.awt.Color;
 import java.io.IOException;
-import com.aspose.note.*;
+
+import com.aspose.note.Document;
+import com.aspose.note.Outline;
+import com.aspose.note.OutlineElement;
+import com.aspose.note.Page;
+import com.aspose.note.RichText;
+import com.aspose.note.SaveFormat;
+import com.aspose.note.TextStyle;
+import com.aspose.note.Title;
 import com.aspose.note.examples.Utils;
-import java.awt.*;
-import java.nio.file.Path;
 
 public class CreateOneNoteDocumentWithFormattedRichText {
 	public static void main(String... args) throws IOException {
             
-		String outputFile = "Output.pdf";
-		Path outputPath = Utils.getPath(CreateOneNoteDocumentWithFormattedRichText.class, outputFile);
+		String dataDir = Utils.getSharedDataDir(CreateOneNoteDocumentWithFormattedRichText.class) + "introduction/";
 
 		// For complete examples and data files, please go to
 		// https://github.com/aspose-note/Aspose.Note-for-Java
@@ -85,9 +91,7 @@ public class CreateOneNoteDocumentWithFormattedRichText {
 		// add Page node
 		doc.appendChild(page);
 		// save OneNote document
-		doc.save(outputPath.toString(), SaveFormat.Pdf);
-
-
+		doc.save(dataDir + "CreateOneNoteDocument_out.pdf", SaveFormat.Pdf);
 	}
 
 }

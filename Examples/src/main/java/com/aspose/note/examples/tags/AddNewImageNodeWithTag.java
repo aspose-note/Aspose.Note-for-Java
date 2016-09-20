@@ -1,23 +1,21 @@
 package com.aspose.note.examples.tags;
 
-import com.aspose.note.*;
-import com.aspose.note.Document;
 import java.io.IOException;
-import com.aspose.note.LoadOptions;
+
+import com.aspose.note.Document;
+import com.aspose.note.Image;
+import com.aspose.note.NoteTag;
+import com.aspose.note.Outline;
+import com.aspose.note.OutlineElement;
+import com.aspose.note.Page;
+import com.aspose.note.SaveFormat;
+import com.aspose.note.TagIcon;
 import com.aspose.note.examples.Utils;
-import java.nio.file.Path;
-import java.io.InputStream;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 
 public class AddNewImageNodeWithTag {
 	public static void main(String... args) throws IOException {
 
-		String inputFile = "Input.jpg";
-		Path inputPath = Utils.getPath(AddNewImageNodeWithTag.class, inputFile);
-
-		String outputFile = "Output.pdf";
-		Path outputPath = Utils.getPath(AddNewImageNodeWithTag.class, outputFile);
+		String dataDir = Utils.getSharedDataDir(AddNewImageNodeWithTag.class) + "tags/";
 
 		// create an object of the Document class
 		Document doc = new Document();
@@ -28,7 +26,7 @@ public class AddNewImageNodeWithTag {
 		// initialize OutlineElement class object
 		OutlineElement outlineElem = new OutlineElement(doc);
 		// load an image
-		Image image = new Image(doc, inputPath.toString());
+		Image image = new Image(doc, dataDir + "Input.jpg");
 		// insert image in the document node
 		outlineElem.appendChild(image);
 		NoteTag noteTag = new NoteTag();
@@ -42,7 +40,7 @@ public class AddNewImageNodeWithTag {
 		// add page node
 		doc.appendChild(page);
 		// save OneNote document
-		doc.save(outputPath.toString(), SaveFormat.Pdf);
+		doc.save(dataDir + "AddNewImageNodeWithTag_out.pdf", SaveFormat.Pdf);
 
 	}
 

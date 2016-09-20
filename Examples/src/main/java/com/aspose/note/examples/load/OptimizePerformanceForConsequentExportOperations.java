@@ -1,14 +1,18 @@
 package com.aspose.note.examples.load;
 
+import java.awt.Color;
+
 import com.aspose.note.Document;
 import com.aspose.note.Page;
 import com.aspose.note.RichText;
 import com.aspose.note.TextStyle;
 import com.aspose.note.Title;
-import java.awt.Color;
+import com.aspose.note.examples.Utils;
 
 public class OptimizePerformanceForConsequentExportOperations {
 	public static void main(String... args) {
+		
+		String dataDir = Utils.getSharedDataDir(OptimizePerformanceForConsequentExportOperations.class) + "load/";
 		// initialize the new Document
 		Document doc = new Document();
 		doc.setAutomaticLayoutChangesDetectionEnabled(false);
@@ -46,7 +50,7 @@ public class OptimizePerformanceForConsequentExportOperations {
 		doc.appendChild(page);
 		// save OneNote document in the HTML format
 		try {
-			doc.save("OptimizePerformanceForConsequentExportOperations.html");
+			doc.save(dataDir + "OptimizePerformanceForConsequentExportOperations_out.html");
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			// e.printStackTrace();
@@ -54,7 +58,7 @@ public class OptimizePerformanceForConsequentExportOperations {
 		}
 		// save OneNote document in the PDF format
 		try {
-			doc.save("OptimizePerformanceForConsequentExportOperations.pdf");
+			doc.save(dataDir + "OptimizePerformanceForConsequentExportOperations_out.pdf");
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			// e.printStackTrace();
@@ -62,7 +66,7 @@ public class OptimizePerformanceForConsequentExportOperations {
 		}
 		// save OneNote document in the JPG format
 		try {
-			doc.save("OptimizePerformanceForConsequentExportOperations.jpg");
+			doc.save(dataDir + "OptimizePerformanceForConsequentExportOperations_out.jpg");
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			// e.printStackTrace();
@@ -74,7 +78,7 @@ public class OptimizePerformanceForConsequentExportOperations {
 		doc.detectLayoutChanges();
 		// save OneNote document in the BMP format
 		try {
-			doc.save("OptimizePerformanceForConsequentExportOperations.bmp");
+			doc.save(dataDir + "OptimizePerformanceForConsequentExportOperations_out.bmp");
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			// e.printStackTrace();

@@ -1,7 +1,6 @@
 package com.aspose.note.examples.Notebook;
 
 import java.io.IOException;
-import java.nio.file.Path;
 
 import com.aspose.note.INotebookChildNode;
 import com.aspose.note.Notebook;
@@ -11,9 +10,7 @@ import com.aspose.note.system.collections.Generic.List;
 public class RemoveChildNodeFromOneNoteNotebook {
 	public static void main(String... args) throws IOException {
 		
-		Path dataDirPath = Utils.getPath(RemoveChildNodeFromOneNoteNotebook.class,"");
-		
-		String dataDir = dataDirPath.toString() + '/';
+		String dataDir = Utils.getSharedDataDir(RemoveChildNodeFromOneNoteNotebook.class) + "Notebook/";
 		
 		// Load a OneNote Notebook
 		Notebook notebook = new Notebook(dataDir + "test.onetoc2");
@@ -28,7 +25,7 @@ public class RemoveChildNodeFromOneNoteNotebook {
 		    }
 		}
 
-		dataDir = dataDir + "RemoveChildNode_out_.onetoc2";
+		dataDir = dataDir + "RemoveChildNodeFromOneNoteNotebook_out.onetoc2";
 
 		// Save the Notebook
 		notebook.save(dataDir);

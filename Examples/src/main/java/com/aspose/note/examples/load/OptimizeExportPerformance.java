@@ -1,14 +1,20 @@
 package com.aspose.note.examples.load;
 
-import com.aspose.note.*;
-import com.aspose.note.examples.Utils;
-
-import java.awt.*;
+import java.awt.Color;
 import java.io.IOException;
-import java.nio.file.Path;
+
+import com.aspose.note.Document;
+import com.aspose.note.Page;
+import com.aspose.note.RichText;
+import com.aspose.note.TextStyle;
+import com.aspose.note.Title;
+import com.aspose.note.examples.Utils;
 
 public class OptimizeExportPerformance {
 	public static void main(String... args) throws IOException {
+
+		String dataDir = Utils.getSharedDataDir(OptimizeExportPerformance.class) + "load/";
+
 		// initialize the new Document
 		Document doc = new Document();
 
@@ -50,16 +56,13 @@ public class OptimizeExportPerformance {
 		doc.appendChild(page);
 
 		// save OneNote document in the PDF format
-		Path outputPdf = Utils.getPath(OptimizeExportPerformance.class, "Output.pdf");
-		doc.save(outputPdf.toString());
+		doc.save(dataDir + "OptimizeExportPerformance_out.pdf");
 
 		// Save document in the TIFF format
-		Path outputTiff = Utils.getPath(OptimizeExportPerformance.class, "Output.tiff");
-		doc.save(outputTiff.toString());
+		doc.save(dataDir + "OptimizeExportPerformance_out.tiff");
 
 		// save OneNote document in the JPG format
-		Path outputJpg = Utils.getPath(OptimizeExportPerformance.class, "Output.jpg");
-		doc.save(outputJpg.toString());
+		doc.save(dataDir + "OptimizeExportPerformance_out.jpg");
 
 		// set text font size
 		textStyle.setFontSize(24);
@@ -68,8 +71,6 @@ public class OptimizeExportPerformance {
 		doc.detectLayoutChanges();
 
 		// save OneNote document in the BMP format
-		Path outputBmp = Utils.getPath(OptimizeExportPerformance.class, "Output.bmp");
-		doc.save(outputBmp.toString());
-
+		doc.save(dataDir + "OptimizeExportPerformance_out.bmp");
 	}
 }

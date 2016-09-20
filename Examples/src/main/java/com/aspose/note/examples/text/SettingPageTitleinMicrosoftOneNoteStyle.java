@@ -1,24 +1,22 @@
 package com.aspose.note.examples.text;
 
-import com.aspose.note.*;
 import java.io.IOException;
+
 import com.aspose.note.Document;
 import com.aspose.note.Page;
-import com.aspose.note.LoadOptions;
+import com.aspose.note.RichText;
+import com.aspose.note.TextStyle;
+import com.aspose.note.Title;
 import com.aspose.note.examples.Utils;
-import java.nio.file.Path;
-
-import java.util.*;
 
 public class SettingPageTitleinMicrosoftOneNoteStyle {
 
 	public static void main(String... args) throws IOException {
 
-		String inputFile = "Sample1.one";
-		Path inputPath = Utils.getPath(ExtractText.class, inputFile);
+		String dataDir = Utils.getSharedDataDir(SettingPageTitleinMicrosoftOneNoteStyle.class) + "text/";
 
 		// initialize new Document
-		Document doc = new Document(inputPath.toString());
+		Document doc = new Document(dataDir + "Sample1.one");
 		// initialize new Page
 		Page page = new Page(doc);
 

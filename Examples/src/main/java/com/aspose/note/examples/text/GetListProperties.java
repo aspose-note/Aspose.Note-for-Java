@@ -1,22 +1,20 @@
 package com.aspose.note.examples.text;
 
+import java.io.IOException;
+import java.util.List;
+
 import com.aspose.note.Document;
 import com.aspose.note.NumberList;
 import com.aspose.note.OutlineElement;
 import com.aspose.note.examples.Utils;
 
-import java.io.IOException;
-import java.nio.file.Path;
-import java.util.List;
-
 public class GetListProperties {
 	public static void main(String... args) throws IOException {
 
-		String inputFile = "Sample1.one";
-		Path inputPath = Utils.getPath(GetListProperties.class, inputFile);
+		String dataDir = Utils.getSharedDataDir(GetListProperties.class) + "text/";
 
 		// Load the document into Aspose.Note
-		Document oneFile = new Document(inputPath.toString());
+		Document oneFile = new Document(dataDir + "Sample1.one");
 
 		// Retrieve a collection nodes of the outline element
 		List<OutlineElement> nodes = oneFile.getChildNodes(OutlineElement.class);

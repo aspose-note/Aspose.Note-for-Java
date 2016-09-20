@@ -1,22 +1,19 @@
 package com.aspose.note.examples.load;
 
+import java.io.IOException;
+
 import com.aspose.note.Document;
 import com.aspose.note.OneSaveOptions;
 import com.aspose.note.examples.Utils;
-import java.io.IOException;
-import java.nio.file.Path;
 
 public class SaveDocToOneNoteFormatUsingOnesaveoptions {
 
 	public static void main(String... args) throws IOException {
 
-		String inputFile = "Sample1.one";
-		Path inputPath = Utils.getPath(SaveDocToOneNoteFormat.class, inputFile);
-		String outputFile = "output.one";
-		Path outputPath = Utils.getPath(SaveDocToOneNoteFormat.class, outputFile);
+		String dataDir = Utils.getSharedDataDir(SaveDocToOneNoteFormat.class) + "load/";
 
-		Document document = new Document(inputPath.toString());
+		Document document = new Document(dataDir + "Sample1.one");
 
-		document.save(outputPath.toString(), new OneSaveOptions());
+		document.save(dataDir + "SaveDocToOneNoteFormatUsingOnesaveoptions_out.one", new OneSaveOptions());
 	}
 }

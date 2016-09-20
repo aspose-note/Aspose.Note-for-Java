@@ -1,7 +1,6 @@
 package com.aspose.note.examples.Notebook;
 
 import java.io.IOException;
-import java.nio.file.Path;
 
 import com.aspose.note.KeepSolidObjectsAlgorithm;
 import com.aspose.note.Notebook;
@@ -12,12 +11,10 @@ import com.aspose.note.examples.Utils;
 public class ExportNotebooktoPDFwithOptions {
 	public static void main(String... args) throws IOException {
 		
-		Path dataDirPath = Utils.getPath(ExportNotebooktoPDFwithOptions.class,"");
-		
-		String dataDir = dataDirPath.toString() + '/';
+		String dataDir = Utils.getSharedDataDir(ExportNotebooktoPDFwithOptions.class) + "Notebook/";
 		
 		// Load a OneNote Notebook
-		Notebook notebook = new Notebook(dataDir + "Notizbuch oÌˆffnen.onetoc2");
+		Notebook notebook = new Notebook(dataDir + "Notizbuch öffnen.onetoc2");
 
 		NotebookPdfSaveOptions notebookSaveOptions = new NotebookPdfSaveOptions();
 
@@ -25,7 +22,7 @@ public class ExportNotebooktoPDFwithOptions {
 
 		documentSaveOptions.setPageSplittingAlgorithm (new KeepSolidObjectsAlgorithm());
 
-		dataDir = dataDir + "ConvertToPDF_out_.pdf";
+		dataDir = dataDir + "ExportNotebooktoPDFwithOptions_out.pdf";
 
 		// Save the Notebook
 		notebook.save(dataDir, notebookSaveOptions);

@@ -1,19 +1,25 @@
 package com.aspose.note.examples.dom;
 
-import com.aspose.note.*;
-import com.aspose.note.examples.Utils;
-
 import java.io.IOException;
-import java.nio.file.Path;
+
+import com.aspose.note.Document;
+import com.aspose.note.DocumentVisitor;
+import com.aspose.note.Image;
+import com.aspose.note.Outline;
+import com.aspose.note.OutlineElement;
+import com.aspose.note.OutlineGroup;
+import com.aspose.note.Page;
+import com.aspose.note.RichText;
+import com.aspose.note.Title;
+import com.aspose.note.examples.Utils;
 
 public class UsingDocumentVisitor {
 	public static void main(String... args) throws IOException {
 
-		String inputFile = "Sample1.one";
-		Path inputPath = Utils.getPath(UsingDocumentVisitor.class, inputFile);
+		String dataDir = Utils.getSharedDataDir(UsingDocumentVisitor.class) + "dom/";
 
 		// Load the document into Aspose.Note
-		Document doc = new Document(inputPath.toString());
+		Document doc = new Document(dataDir + "Sample1.one");
 
 		// Create an object that inherits from the DocumentVisitor class.
 		MyOneNoteToTxtWriter myConverter = new MyOneNoteToTxtWriter();

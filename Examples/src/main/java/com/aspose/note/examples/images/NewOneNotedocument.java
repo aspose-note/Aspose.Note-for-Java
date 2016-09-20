@@ -1,21 +1,20 @@
 package com.aspose.note.examples.images;
 
-import com.aspose.note.*;
-import com.aspose.note.Document;
 import java.io.IOException;
-import com.aspose.note.LoadOptions;
+
+import com.aspose.note.Document;
+import com.aspose.note.HorizontalAlignment;
+import com.aspose.note.Image;
+import com.aspose.note.Outline;
+import com.aspose.note.OutlineElement;
+import com.aspose.note.Page;
+import com.aspose.note.SaveFormat;
 import com.aspose.note.examples.Utils;
-import java.nio.file.Path;
 
 public class NewOneNotedocument {
 	public static void main(String... args) throws IOException {
-
-		String inputFile = "Input.jpg";
-		Path inputPath = Utils.getPath(NewOneNotedocument.class, inputFile);
-
-		String outputFile = "Output.pdf";
-		Path outputPath = Utils.getPath(NewOneNotedocument.class, outputFile);
-
+		
+		String dataDir = Utils.getSharedDataDir(NewOneNotedocument.class) + "images/";
 		// create an object of the Document class
 		Document doc = new Document();
 		// initialize Page class object
@@ -27,7 +26,7 @@ public class NewOneNotedocument {
 		// initialize OutlineElement class object
 		OutlineElement outlineElem = new OutlineElement(doc);
 		// load an image by the file path.
-		Image image = new Image(doc, inputPath.toString());
+		Image image = new Image(doc, dataDir + "Input.jpg");
 		// set image alignment
 		image.setAlignment(HorizontalAlignment.Right);
 		// add image
@@ -43,7 +42,7 @@ public class NewOneNotedocument {
 		try {
 			// oneFile.save("D://Aspose_JavaProjects//OneNote//out.one");//NOT
 			// working
-			doc.save(outputPath.toString(), SaveFormat.Pdf);// WORKING
+			doc.save(dataDir + "NewOneNotedocument_out", SaveFormat.Pdf);// WORKING
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

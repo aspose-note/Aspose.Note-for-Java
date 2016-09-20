@@ -5,15 +5,14 @@
  */
 package com.aspose.note.examples.tables;
 
-import com.aspose.note.*;
 import java.io.IOException;
-import com.aspose.note.Document;
-import com.aspose.note.Page;
-import com.aspose.note.LoadOptions;
-import com.aspose.note.examples.Utils;
-import java.nio.file.Path;
+import java.util.List;
 
-import java.util.*;
+import com.aspose.note.Document;
+import com.aspose.note.LoadOptions;
+import com.aspose.note.Table;
+import com.aspose.note.TableRow;
+import com.aspose.note.examples.Utils;
 
 /**
  *
@@ -22,11 +21,10 @@ import java.util.*;
 public class ExtractRowtextfromtableinOneNotedocument {
 	public static void main(String... args) throws IOException {
 
-		String inputFile = "Sample1.one";
-		Path inputPath = Utils.getPath(ExtractTextFromTable.class, inputFile);
+		String dataDir = Utils.getSharedDataDir(ExtractRowtextfromtableinOneNotedocument.class) + "tables/";
 
 		// Load the document into Aspose.Note.
-		Document document = new Document(inputPath.toString(), new LoadOptions());
+		Document document = new Document(dataDir + "Sample1.one", new LoadOptions());
 
 		// Get a list of table nodes
 		List<Table> nodes = (List<Table>) document.getChildNodes(Table.class);

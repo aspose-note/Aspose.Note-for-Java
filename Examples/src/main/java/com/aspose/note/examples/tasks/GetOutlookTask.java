@@ -1,23 +1,21 @@
 package com.aspose.note.examples.tasks;
 
+import java.io.IOException;
+import java.util.List;
+
 import com.aspose.note.Document;
 import com.aspose.note.NoteTagCore;
 import com.aspose.note.NoteTask;
 import com.aspose.note.RichText;
 import com.aspose.note.examples.Utils;
 
-import java.io.IOException;
-import java.nio.file.Path;
-import java.util.List;
-
 public class GetOutlookTask {
 	public static void main(String... args) throws IOException {
 
-		String inputFile = "Sample1.one";
-		Path inputPath = Utils.getPath(GetOutlookTask.class, inputFile);
+		String dataDir = Utils.getSharedDataDir(GetOutlookTask.class) + "tasks/";
 
 		// Load the document into Aspose.Note
-		Document doc = new Document(inputPath.toString());
+		Document doc = new Document(dataDir + "Sample1.one");
 
 		// Get all RichText nodes
 		List<RichText> nodes = (List<RichText>) doc.getChildNodes(RichText.class);
