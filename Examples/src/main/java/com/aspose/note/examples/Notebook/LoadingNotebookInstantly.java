@@ -10,7 +10,7 @@ import com.aspose.note.examples.Utils;
 
 public class LoadingNotebookInstantly {
 	public static void main(String... args) throws IOException {
-		// ExStart:LoadingNotebookInstantly
+
 		// By default children loading is "lazy".
 		// Therefore for instant loading has took place,
 		// it is necessary to set the NotebookLoadOptions.InstantLoading flag.
@@ -25,6 +25,6 @@ public class LoadingNotebookInstantly {
 				// Do something with child document
 			}
 		}
-		// ExEnd:LoadingNotebookInstantly
+
 	}
 }

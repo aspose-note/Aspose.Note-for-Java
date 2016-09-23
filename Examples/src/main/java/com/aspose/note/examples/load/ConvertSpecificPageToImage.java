@@ -25,6 +25,6 @@ public class ConvertSpecificPageToImage {
 		oneFile.save(dataDir + "ConvertSpecificPageToImage_out.jpg", options);
 
 		System.out.println("File saved: " + dataDir + "ConvertSpecificPageToImage_out.jpg");
-		// ExEnd:ConvertSpecificPageToImage
+
 	}
 }
