@@ -29,7 +29,7 @@ public class ExtractImages {
 			byte[] buffer = image.getBytes();
 			Files.write(dataDir + outputFile, buffer);
 
-			System.out.printf("File saved: %s\n", outputPath);
+			System.out.printf("File saved: %s\n", dataDir);
 		}
 
 	}
