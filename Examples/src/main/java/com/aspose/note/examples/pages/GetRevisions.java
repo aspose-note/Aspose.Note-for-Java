@@ -5,6 +5,7 @@ import java.util.List;
 
 import com.aspose.note.Document;
 import com.aspose.note.Page;
+import com.aspose.note.PageHistory;
 import com.aspose.note.examples.Utils;
 
 public class GetRevisions {
@@ -19,7 +20,7 @@ public class GetRevisions {
 		Page firstPage = doc.getFirstChild();
 
 		// Get page revisions
-		List<Page> revisions = doc.getPageHistory(firstPage);
+		PageHistory revisions = doc.getPageHistory(firstPage);
 
 		// Traverse list of page revisions
 		for (Page pageRevision : revisions) {
@@ -30,6 +31,5 @@ public class GetRevisions {
 			System.out.println("Author: " + pageRevision.getAuthor());
 			System.out.println();
 		}
-
 	}
 }
