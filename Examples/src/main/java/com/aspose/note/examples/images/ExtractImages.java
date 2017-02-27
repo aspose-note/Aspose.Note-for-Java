@@ -2,6 +2,7 @@ package com.aspose.note.examples.images;
 
 import java.io.IOException;
 import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.List;
 
 import com.aspose.note.Document;
@@ -9,7 +10,7 @@ import com.aspose.note.Image;
 import com.aspose.note.examples.Utils;
 
 public class ExtractImages {
-	public static void main(String... args) throws IOException {
+	public static void main(String[] args) throws IOException {
 
 		String dataDir = Utils.getSharedDataDir(ExtractImages.class) + "images/";
 
@@ -27,8 +28,7 @@ public class ExtractImages {
 			String outputFile = "ExtractImages_out" + i + "_" + image.getFileName();
 
 			byte[] buffer = image.getBytes();
-			Files.write(dataDir + outputFile, buffer);
-
+			Files.write(Paths.get(dataDir + outputFile), buffer);
 			System.out.printf("File saved: %s\n", dataDir);
 		}
 
