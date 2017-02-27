@@ -1,6 +1,7 @@
 package com.aspose.note.examples.Notebook;
 
 import java.io.IOException;
+import java.util.List;
 
 import com.aspose.note.Document;
 import com.aspose.note.Notebook;
@@ -13,7 +14,7 @@ public class RetrieveDocumentsfromOneNoteNotebook {
 		String dataDir = Utils.getSharedDataDir(RetrieveDocumentsfromOneNoteNotebook.class) + "Notebook/";
 		Notebook rootNotebook = new Notebook(dataDir + "test.onetoc2");
 
-		IGenericList<Document> allDocuments = rootNotebook.getChildNodes(Document.class);
+		List<Document> allDocuments = rootNotebook.getChildNodes(Document.class);
 		for (Document document : allDocuments) {
 			System.out.println(document.getDisplayName());
 		}

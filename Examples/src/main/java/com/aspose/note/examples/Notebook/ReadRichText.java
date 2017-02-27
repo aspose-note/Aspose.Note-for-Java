@@ -1,6 +1,7 @@
 package com.aspose.note.examples.Notebook;
 
 import java.io.IOException;
+import java.util.List;
 
 import com.aspose.note.Notebook;
 import com.aspose.note.RichText;
@@ -13,11 +14,10 @@ public class ReadRichText {
 		String dataDir = Utils.getSharedDataDir(LoadingNotebook.class) + "Notebook/";
 		Notebook rootNotebook = new Notebook(dataDir + "test.onetoc2");
 
-		IGenericList<RichText> allRichTextNodes = rootNotebook.getChildNodes(RichText.class);
+		List<RichText> allRichTextNodes = rootNotebook.getChildNodes(RichText.class);
 		for (RichText richTextNode : allRichTextNodes) {
 			System.out.println(richTextNode.getText());
 		}
-		
 	}
 
 }
