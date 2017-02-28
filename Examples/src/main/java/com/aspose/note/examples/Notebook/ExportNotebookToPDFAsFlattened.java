@@ -18,9 +18,7 @@ public class ExportNotebookToPDFAsFlattened {
 
         NotebookPdfSaveOptions notebookSaveOptions = new NotebookPdfSaveOptions();
 
-        PdfSaveOptions documentSaveOptions = notebookSaveOptions.getDocumentSaveOptions();
-
-        documentSaveOptions.setPageSplittingAlgorithm (new KeepSolidObjectsAlgorithm());
+        notebookSaveOptions.setFlatten(true);
 
         dataDir = dataDir + "ExportNotebookToPDFAsFlattened_out.pdf";
 
