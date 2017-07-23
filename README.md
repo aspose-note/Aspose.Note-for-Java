@@ -21,5 +21,5 @@ Directory  | Description
 + **Product Home:** [Aspose.Email for Java](https://www.aspose.com/products/note/java)
 + **Download:** [Download Aspose.Email for Java](https://downloads.aspose.com/note/java)
 + **Documentation:** [Aspose.Note for Java Documentation](https://docs.aspose.com/display/notejava/Home)
-+ **Forum:** [Aspose.Note for Java Forum](https://www.aspose.com/community/forums/aspose.note-product-family/522/showforum.aspx)
++ **Forum:** [Aspose.Note for Java Forum](https://forum.aspose.com/c/note)
 + **Blog:** [Aspose.Note for Java Blog](https://blog.aspose.com/category/aspose-products/aspose-note-product-family/)
