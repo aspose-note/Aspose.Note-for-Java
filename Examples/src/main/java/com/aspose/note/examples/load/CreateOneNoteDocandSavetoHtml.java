@@ -20,7 +20,7 @@ import com.aspose.note.ImageSavingArgs;
 import com.aspose.note.ResourceExportType;
 import com.aspose.note.examples.Utils;
 
-public class CreateOneNoteCocandSavetoHtml {
+public class CreateOneNoteDocandSavetoHtml {
 
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
