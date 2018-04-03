@@ -5,7 +5,7 @@ import com.aspose.note.examples.Utils;
 
 import java.awt.*;
 import java.io.IOException;
-import java.util.Date;
+import java.util.Calendar;
 
 public class CreateDocWithPageTitle {
     public  static void main(String[] args) throws IOException {
@@ -34,7 +34,9 @@ public class CreateDocWithPageTitle {
         title.setTitleText(titleText);
 
         RichText titleDate = new RichText(doc);
-        titleDate.setText(new Date(2011, 11, 11).toString());
+        Calendar cal = Calendar.getInstance();
+        cal.set(2018, 04, 03);
+        titleDate.setText(cal.getTime().toString());
         titleDate.setDefaultStyle(textStyle);
         title.setTitleDate(titleDate);
 
@@ -53,5 +55,7 @@ public class CreateDocWithPageTitle {
         // Save OneNote document
         doc.save(dataDir);
         // ExEnd:CreateDocWithPageTitle
+        
+        System.out.println("Done..");
     }
 }

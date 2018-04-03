@@ -16,5 +16,7 @@ public class LoadPasswordProtectedOneNoteDoc {
 		loadOptions.setDocumentPassword("password");
 
 		Document doc = new Document(dataDir + "Sample1.one", loadOptions);
+		
+		System.out.println(doc.getFileFormat());
 	}
 }

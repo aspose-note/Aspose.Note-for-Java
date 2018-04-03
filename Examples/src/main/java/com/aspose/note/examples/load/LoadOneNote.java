@@ -11,6 +11,8 @@ public class LoadOneNote {
         // ExStart:LoadOneNote
         // Load the document into Aspose.Note.
         Document oneFile = new Document(dataDir + "Aspose.one");
+        
+        System.out.println(oneFile.getFileFormat());
         // ExEnd:LoadOneNote
     }
 }

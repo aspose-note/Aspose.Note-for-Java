@@ -2,7 +2,6 @@ package com.aspose.note.examples.tables;
 
 import com.aspose.note.*;
 import com.aspose.note.examples.Utils;
-import sun.security.tools.keytool.Resources_it;
 
 import java.awt.*;
 import java.io.IOException;

@@ -1,6 +1,7 @@
 package com.aspose.note.examples.load;
 
 import com.aspose.note.Document;
+import com.aspose.note.PdfImageCompression;
 import com.aspose.note.PdfSaveOptions;
 import com.aspose.note.examples.Utils;
 
@@ -24,6 +25,10 @@ public class SpecifySaveOptions {
         // Set page count
         opts.setPageCount(3);
 
+        //Specify compression if required
+        opts.setImageCompression(PdfImageCompression.Jpeg);
+        opts.setJpegQuality(90);
+        
         dataDir = dataDir + "Document.SaveWithOptions_out.pdf";
         doc.save(dataDir, opts);
         // ExEnd:SpecifySaveOptions

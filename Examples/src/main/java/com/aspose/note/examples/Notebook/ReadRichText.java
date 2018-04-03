@@ -6,7 +6,6 @@ import java.util.List;
 import com.aspose.note.Notebook;
 import com.aspose.note.RichText;
 import com.aspose.note.examples.Utils;
-import com.aspose.note.system.collections.Generic.IGenericList;
 
 public class ReadRichText {
 	public static void main(String... args) throws IOException {

@@ -1,9 +1,7 @@
 package com.aspose.note.examples.Notebook;
 
-import com.aspose.note.KeepSolidObjectsAlgorithm;
 import com.aspose.note.Notebook;
 import com.aspose.note.NotebookPdfSaveOptions;
-import com.aspose.note.PdfSaveOptions;
 import com.aspose.note.examples.Utils;
 
 import java.io.IOException;

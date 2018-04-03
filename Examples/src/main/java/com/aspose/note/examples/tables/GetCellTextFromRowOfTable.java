@@ -20,8 +20,6 @@ public class GetCellTextFromRowOfTable {
 		// Get a list of table nodes
 		List<Table> nodes = (List<Table>) document.getChildNodes(Table.class);
 
-		// Set cell count
-		int cellCount = 0;
 
 		for (Table table : nodes) {
 			// Iterate through table rows

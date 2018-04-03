@@ -1,7 +1,6 @@
 package com.aspose.note.examples.pages;
 
 import java.io.IOException;
-import java.util.List;
 
 import com.aspose.note.Document;
 import com.aspose.note.Page;

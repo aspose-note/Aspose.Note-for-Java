@@ -30,6 +30,6 @@ public class SupportofPasswordProtectedDocuments {
 		Document childDocument2 = (Document) notebook.get_Item(2);
 		OneSaveOptions documentSaveOptions2 = new OneSaveOptions();
 		documentSaveOptions2.setDocumentPassword("pass2");
-		childDocument1.save(dataDir + "Locked Pass2.one", documentSaveOptions2);
+		childDocument2.save(dataDir + "Locked Pass2.one", documentSaveOptions2);
 	}
 }
