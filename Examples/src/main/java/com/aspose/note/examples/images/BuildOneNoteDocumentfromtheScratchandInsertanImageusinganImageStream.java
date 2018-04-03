@@ -34,8 +34,6 @@ public class BuildOneNoteDocumentfromtheScratchandInsertanImageusinganImageStrea
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}
-		// Load the second image using the image name, extension and stream.
-		Image image1 = new Image(doc, "Penguins", "jpg", fs);
 
 		// Load the second image using the image name, extension and stream.
 		Image image = new Image(doc, dataDir + "image1.jpg");

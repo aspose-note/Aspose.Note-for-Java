@@ -51,6 +51,6 @@ public class AddNewTableNodeWithTag {
 		page.appendChild(outline);
 		doc.appendChild(page);
 		// save OneNote document
-		doc.save("AddNewTableNodeWithTag_out.pdf", SaveFormat.Pdf);
+		doc.save(dataDir + "AddNewTableNodeWithTag_out.pdf", SaveFormat.Pdf);
 	}
 }

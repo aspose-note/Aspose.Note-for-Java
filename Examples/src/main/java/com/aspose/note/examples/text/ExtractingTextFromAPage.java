@@ -5,7 +5,6 @@ import com.aspose.note.Node;
 import com.aspose.note.NodeType;
 import com.aspose.note.Page;
 import com.aspose.note.examples.Utils;
-import com.aspose.note.system.collections.Generic.IGenericList;
 
 import java.util.List;
 

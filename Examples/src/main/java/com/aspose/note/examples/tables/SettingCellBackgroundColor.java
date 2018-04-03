@@ -9,17 +9,11 @@ import com.aspose.note.RichText;
 import com.aspose.note.TableCell;
 import com.aspose.note.TableRow;
 import com.aspose.note.TextStyle;
-import com.aspose.note.examples.Utils;
 
 public class SettingCellBackgroundColor {
 	public static void main(String... args) throws IOException {
 		// Load the document into Aspose.Note.
-		String dataDir = Utils.getSharedDataDir(SettingCellBackgroundColor.class) + "tables/";
-
 		Document doc = new Document();
-
-		// Initialize Page class object
-		com.aspose.note.Page page = new com.aspose.note.Page(doc);
 
 		// Initialize TableRow class object
 		TableRow row1 = new TableRow(doc);

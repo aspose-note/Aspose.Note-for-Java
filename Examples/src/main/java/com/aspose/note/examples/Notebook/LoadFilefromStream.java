@@ -11,10 +11,12 @@ public class LoadFilefromStream {
 	public static void main(String... args) throws IOException {
 		// Load the document into Aspose.Note.
 		String dataDir = Utils.getSharedDataDir(SupportofPasswordProtectedDocuments.class) + "Notebook/";
+		
 		InputStream inputStream = new FileInputStream(dataDir + "test.onetoc2");
 
 		Notebook notebook = new Notebook(inputStream);
 
 		InputStream childStream = new FileInputStream(dataDir + "Neuer Abschnitt 1.one");
+		
 	}
 }

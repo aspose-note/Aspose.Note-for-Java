@@ -18,9 +18,6 @@ public class ExtractTextFromTable {
 		// Get a list of table nodes
 		List<Table> nodes = document.getChildNodes(Table.class);
 
-		// Set table count
-		int tblCount = 0;
-
 		for (int i = 0; i < nodes.size(); i++) {
 			Table table = nodes.get(i);
 			System.out.println("Table # " + i);
