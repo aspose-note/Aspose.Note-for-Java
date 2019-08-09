@@ -1,5 +1,6 @@
 ## Aspose.Note for Java
 <a href="https://products.aspose.com/note/net">Aspose.Note for .NET</a> is a class library that enables applications to interact with Microsoft Office OneNote programmatically without its installation on the server. It is a pure alternate for MS OneNote Object Model provides much better performance and ease of use to manage OneNote documents. Aspose.Note for .NET API delivers the features to read, convert, create and edit/manipulate the content of the Microsoft OneNote file format.
+
 This repository contains [Examples](Examples), [Plugins](Plugins) and projects that will help you to write your own application using [Aspose.Note for Java](https://products.aspose.com/note/java).
 
 <p align="center">
