@@ -4,7 +4,7 @@
 This repository contains [Examples](Examples), [Plugins](Plugins) and projects that will help you to write your own application using [Aspose.Note for Java](https://products.aspose.com/note/java).
 
 <p align="center">
-  <a title="Download complete Aspose.Email for Java source code" href="https://github.com/asposenote/Aspose_Note_Java/archive/master.zip">
+  <a title="Download complete Aspose.Note for Java source code" href="https://github.com/asposenote/Aspose_Note_Java/archive/master.zip">
     <img src="http://i.imgur.com/hwNhrGZ.png" />
   </a>
 </p>
@@ -15,6 +15,20 @@ Directory  | Description
 ---------- | -----------
 [Examples](Examples)  | A collection of Java examples that help you learn how to use product features
 [Plugins](Plugins)  | Plugins that will demonstrate one or more features of Aspose.Note for Java
+
+## How to Run Examples
+<ul>
+	<li>You can either clone the repository using your favourite GitHub client or download the ZIP file from <a title="Download complete Aspose.Note for Java source code" href="https://github.com/asposenote/Aspose_Note_Java/archive/master.zip">here</a>.</li>
+	<li>Extract the contents of the ZIP file to any folder on your computer. All the examples are located in the Examples folder.</li>
+	<li>You can run/execute these examples with any IDE of your choice.</li>
+	<li>Open the project in your selected IDE.
+</li>
+	<li>Open the example file that you want to run.</li>
+	<li>Run the file in your IDE (method may vary depending on the IDE you use).
+</li>
+	<li>The resources folder in the Examples/src folder contains input files used in the examples. It is mandatory that you download this folder along with the examples project.</li>
+</ul>
+<p>Please find more details on how to run the examples <a title="How to Run the Examples" href="https://docs.aspose.com/display/notejava/How+to+Run+the+Examples">here</a>.</p>
 
 ## Resources
 
