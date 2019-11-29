@@ -44,13 +44,13 @@ public class AddTag {
 		text.getTags().addItem(noteTag);
 
 		// add text node
-		outlineElem.appendChild(text);
+		outlineElem.appendChildLast(text);
 		// add outline element node
-		outline.appendChild(outlineElem);
+		outline.appendChildLast(outlineElem);
 		// add outline node
-		page.appendChild(outline);
+		page.appendChildLast(outline);
 		// add page node
-		doc.appendChild(page);
+		doc.appendChildLast(page);
 
 		doc.save(dataDir + "AddTag_out.pdf", SaveFormat.Pdf);
 		System.out.printf("File Saved: %s\n", dataDir + "AddTag_out.pdf");

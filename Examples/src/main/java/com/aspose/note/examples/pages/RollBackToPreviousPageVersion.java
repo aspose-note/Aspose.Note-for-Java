@@ -21,7 +21,7 @@ public class RollBackToPreviousPageVersion {
 
 		document.removeChild(page);
 
-		document.appendChild(pageHistory.get_Item(pageHistory.size() - 1));
+		document.appendChildLast(pageHistory.get_Item(pageHistory.size() - 1));
 
 		document.save(dataDir + "RollBackToPreviousPageVersion_out.one");
 		// ExEnd:RollBackToPreviousPageVersion

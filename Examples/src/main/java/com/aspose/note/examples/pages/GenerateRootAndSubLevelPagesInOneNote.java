@@ -41,9 +41,9 @@ public class GenerateRootAndSubLevelPagesInOneNote {
 		text.setText("First page.");
 		text.setDefaultStyle(textStyle);
 
-		outlineElem.appendChild(text);
-		outline.appendChild(outlineElem);
-		page1.appendChild(outline);
+		outlineElem.appendChildLast(text);
+		outline.appendChildLast(outlineElem);
+		page1.appendChildLast(outline);
 
 		// ---------- Adding nodes to second Page ----------
 		Outline outline2 = new Outline(doc);
@@ -61,9 +61,9 @@ public class GenerateRootAndSubLevelPagesInOneNote {
 		text2.setText("Second page.");
 		text2.setDefaultStyle(textStyle2);
 
-		outlineElem2.appendChild(text2);
-		outline2.appendChild(outlineElem2);
-		page2.appendChild(outline2);
+		outlineElem2.appendChildLast(text2);
+		outline2.appendChildLast(outlineElem2);
+		page2.appendChildLast(outline2);
 
 		// ---------- Adding nodes to third Page ----------
 		Outline outline3 = new Outline(doc);
@@ -77,14 +77,14 @@ public class GenerateRootAndSubLevelPagesInOneNote {
 		text3.setText("Third page.");
 		text3.setDefaultStyle(textStyle3);
 
-		outlineElem3.appendChild(text3);
-		outline3.appendChild(outlineElem3);
-		page3.appendChild(outline3);
+		outlineElem3.appendChildLast(text3);
+		outline3.appendChildLast(outlineElem3);
+		page3.appendChildLast(outline3);
 
 		// ---------- Add pages to the OneNote Document ----------
-		doc.appendChild(page1);
-		doc.appendChild(page2);
-		doc.appendChild(page3);
+		doc.appendChildLast(page1);
+		doc.appendChildLast(page2);
+		doc.appendChildLast(page3);
 
 		try {
 			doc.save(dataDir + "GenerateRootAndSubLevelPagesInOneNote_out.bmp", SaveFormat.Bmp);

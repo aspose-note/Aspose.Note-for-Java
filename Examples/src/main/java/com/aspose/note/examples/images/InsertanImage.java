@@ -34,7 +34,7 @@ public class InsertanImage {
 		// set image alignment
 		image.setAlignment(HorizontalAlignment.Right);
 		// add the image to the page.
-		page.appendChild(image);
+		page.appendChildLast(image);
 
 		// save the document in the *.one format.
 		try {

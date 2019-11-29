@@ -22,16 +22,16 @@ public class CreateTableWithLockedColumns {
 
         // Initialize TableCell class object and set text content
         TableCell cell11 = new TableCell(doc);
-        cell11.appendChild(InsertTable.GetOutlineElementWithText(doc, "Small text"));
-        row1.appendChild(cell11);
+        cell11.appendChildLast(InsertTable.GetOutlineElementWithText(doc, "Small text"));
+        row1.appendChildLast(cell11);
 
         // Initialize TableRow class object
         TableRow row2 = new TableRow(doc);
 
         // Initialize TableCell class object and set text content
         TableCell cell21 = new TableCell(doc);
-        cell21.appendChild(InsertTable.GetOutlineElementWithText(doc, "Long   text    with    several   words and    spaces."));
-        row2.appendChild(cell21);
+        cell21.appendChildLast(InsertTable.GetOutlineElementWithText(doc, "Long   text    with    several   words and    spaces."));
+        row2.appendChildLast(cell21);
 
         // Initialize Table class object
         Table table = new Table(doc);
@@ -44,23 +44,23 @@ public class CreateTableWithLockedColumns {
         table.getColumns().addItem(col);
 
         // Add rows
-        table.appendChild(row1);
-        table.appendChild(row2);
+        table.appendChildLast(row1);
+        table.appendChildLast(row2);
 
         Outline outline = new Outline(doc);
         OutlineElement outlineElem = new OutlineElement(doc);
 
         // Add table node
-        outlineElem.appendChild(table);
+        outlineElem.appendChildLast(table);
 
         // Add outline element node
-        outline.appendChild(outlineElem);
+        outline.appendChildLast(outlineElem);
 
         // Add outline node
-        page.appendChild(outline);
+        page.appendChildLast(outline);
 
         // Add page node
-        doc.appendChild(page);
+        doc.appendChildLast(page);
         dataDir = dataDir + "CreateTableWithLockedColumns_out.one";
         doc.save(dataDir);
         // ExEnd:CreateTableWithLockedColumns

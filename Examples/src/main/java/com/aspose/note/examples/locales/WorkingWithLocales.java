@@ -13,6 +13,7 @@ import com.aspose.note.examples.load.SaveToStream;
 public class WorkingWithLocales {
 
 	public static void main(String[] args) throws IOException {
+		// ExStart: WorkingWithLocales
 		License license = new License();
 	    license.setLicense("licenseFile");
 		 
@@ -25,6 +26,7 @@ public class WorkingWithLocales {
         // Load the document into Aspose.Note
         Document oneFile = new Document(inputPath.toString());
         oneFile.save("sample.png");
+        // ExEnd: WorkingWithLocales
 	}
 
 }

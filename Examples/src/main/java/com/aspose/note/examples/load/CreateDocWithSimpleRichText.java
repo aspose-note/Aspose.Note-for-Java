@@ -37,13 +37,13 @@ public class CreateDocWithSimpleRichText {
 		text.setDefaultStyle(textStyle);
 
 		// add RichText node
-		outlineElem.appendChild(text);
+		outlineElem.appendChildLast(text);
 		// add OutlineElement node
-		outline.appendChild(outlineElem);
+		outline.appendChildLast(outlineElem);
 		// add Outline node
-		page.appendChild(outline);
+		page.appendChildLast(outline);
 		// add Page node
-		doc.appendChild(page);
+		doc.appendChildLast(page);
 		
 		String dataDir = Utils.getSharedDataDir(CreateDocWithSimpleRichText.class) + "load/";
 		

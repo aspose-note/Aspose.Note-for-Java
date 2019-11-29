@@ -40,11 +40,11 @@ public class BuildOneNoteDocumentfromtheScratchandInsertanImageusinganImageStrea
 		// set image alignment
 		image.setAlignment(HorizontalAlignment.Right);
 
-		outlineElem1.appendChild(image);
-		outline1.appendChild(outlineElem1);
-		page.appendChild(outline1);
+		outlineElem1.appendChildLast(image);
+		outline1.appendChildLast(outlineElem1);
+		page.appendChildLast(outline1);
 
-		doc.appendChild(page);
+		doc.appendChildLast(page);
 		// save OneNote document
 		try {
 			// doc.save("D://Aspose_JavaProjects//OneNote//out.one");//NOT

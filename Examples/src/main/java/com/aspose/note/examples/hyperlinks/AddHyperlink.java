@@ -62,16 +62,16 @@ public class AddHyperlink {
 
 		title.setTitleText(titleText);
 		page.setTitle(title);
-		outlineElem.appendChild(text);
+		outlineElem.appendChildLast(text);
 
 		// add outline elements
-		outline.appendChild(outlineElem);
+		outline.appendChildLast(outlineElem);
 
 		// add Outline node
-		page.appendChild(outline);
+		page.appendChildLast(outline);
 
 		// add Page node
-		doc.appendChild(page);
+		doc.appendChildLast(page);
 
 		doc.save(dataDir + "AddHyperlink_out.pdf");
 

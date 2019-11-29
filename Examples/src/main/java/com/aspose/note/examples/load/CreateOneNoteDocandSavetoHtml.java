@@ -58,9 +58,9 @@ public class CreateOneNoteDocandSavetoHtml {
 		Document document = new Document(dataDir + "Sample1.one");
 		
 		HtmlSaveOptions options = new HtmlSaveOptions();
-	    options.setExportCss(ResourceExportType.ExportAsFile);
-	    options.setExportFonts(ResourceExportType.ExportAsFile);
-	    options.setExportImages(ResourceExportType.ExportAsFile);
+	    options.setExportCss(ResourceExportType.ExportEmbedded);
+	    options.setExportFonts(ResourceExportType.ExportEmbedded);
+	    options.setExportImages(ResourceExportType.ExportEmbedded);
 	 
 	    document.save(dataDir + "document.html", options);
 		//ExEnd: SaveAsHtmlWithResourcesInSeparateFiles
@@ -85,9 +85,9 @@ public class CreateOneNoteDocandSavetoHtml {
 	    options.setCssSavingCallback(savingCallbacks);
 	    options.setImageSavingCallback(savingCallbacks);
 	    options.setFontSavingCallback(savingCallbacks);
-	    options.setExportCss(ResourceExportType.ExportAsFile);
-	    options.setExportImages(ResourceExportType.ExportAsFile);
-	    options.setExportFonts(ResourceExportType.ExportAsFile);
+	    options.setExportCss(ResourceExportType.ExportEmbedded);
+	    options.setExportImages(ResourceExportType.ExportEmbedded);
+	    options.setExportFonts(ResourceExportType.ExportEmbedded);
 	 
 	    File dir = new File(savingCallbacks.getRootFolder());
 	    if (!dir.exists())

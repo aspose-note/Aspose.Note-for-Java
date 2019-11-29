@@ -26,7 +26,6 @@ public class GetImageInfo {
 			System.out.println("OriginalWidth: " + image.getOriginalWidth());
 			System.out.println("OriginalHeight: " + image.getOriginalHeight());
 			System.out.println("FileName: " + image.getFileName());
-			System.out.println("Extension: " + image.getExtension());
 			System.out.println("LastModifiedTime: " + image.getLastModifiedTime());
 			System.out.println();
 		}

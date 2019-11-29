@@ -20,11 +20,13 @@ public class AlternativeText {
 
 		Image image = new Image(document, dataDir + "image.jpg");
 
-		image.setAlternativeText("ImageAlternativeText");
+		image.setAlternativeTextTitle("ImageAlternativeText Title");
+		
+		image.setAlternativeTextDescription("ImageAlternativeText Description");
 
-		page.appendChild(image);
+		page.appendChildLast(image);
 
-		document.appendChild(page);
+		document.appendChildLast(page);
 
 		document.save(dataDir + "AlternativeText_out.one");
 

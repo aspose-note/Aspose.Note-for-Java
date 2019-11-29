@@ -13,7 +13,7 @@
         <dependency>
             <groupId>com.aspose</groupId>
             <artifactId>aspose-note</artifactId>
-            <version>19.7</version>
+            <version>19.11</version>
             <classifier>jdk17</classifier>
         </dependency>
         <dependency>

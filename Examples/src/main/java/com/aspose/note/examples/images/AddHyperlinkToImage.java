@@ -18,8 +18,8 @@ public class AddHyperlinkToImage {
 		Page page = new Page(document);
 		Image image = new Image(document, dataDir + "image1.jpg");
 		image.setHyperlinkUrl( "http://www.aspose.com");
-		page.appendChild(image);
-		document.appendChild(page);
+		page.appendChildLast(image);
+		document.appendChildLast(page);
 		document.save(dataDir + "HyperlinkToImage_out.one");
 		//ExEnd: AddHyperlinkToImage
 	}

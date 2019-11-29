@@ -42,7 +42,7 @@ public class SettingPageTitleinMicrosoftOneNoteStyle {
 		page.setTitle(title);
 
 		// append page node
-		doc.appendChild(page);
+		doc.appendChildLast(page);
 
 	}
 

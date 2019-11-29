@@ -42,32 +42,32 @@ public class CreateNumberedList {
 		RichText text1 = new RichText(doc);
 		text1.setText("First");
 		text1.setDefaultStyle(defaultStyle);
-		outlineElem1.appendChild(text1);
+		outlineElem1.appendChildLast(text1);
 
 		OutlineElement outlineElem2 = new OutlineElement(doc);
 		outlineElem2.setNumberList(new NumberList("{0})", NumberFormat.DecimalNumbers, "Arial", 10));
 		RichText text2 = new RichText(doc);
 		text2.setText("Second");
 		text2.setDefaultStyle(defaultStyle);
-		outlineElem2.appendChild(text2);
+		outlineElem2.appendChildLast(text2);
 
 		OutlineElement outlineElem3 = new OutlineElement(doc);
 		outlineElem3.setNumberList(new NumberList("{0})", NumberFormat.DecimalNumbers, "Arial", 10));
 		RichText text3 = new RichText(doc);
 		text3.setText("Third");
 		text3.setDefaultStyle(defaultStyle);
-		outlineElem3.appendChild(text3);
+		outlineElem3.appendChildLast(text3);
 
 		// add outline elements
-		outline.appendChild(outlineElem1);
-		outline.appendChild(outlineElem2);
-		outline.appendChild(outlineElem3);
+		outline.appendChildLast(outlineElem1);
+		outline.appendChildLast(outlineElem2);
+		outline.appendChildLast(outlineElem3);
 
 		// add Outline node
-		page.appendChild(outline);
+		page.appendChildLast(outline);
 
 		// add Page node
-		doc.appendChild(page);
+		doc.appendChildLast(page);
 
 		// save the document
 		doc.save(dataDir + "CreateNumberedList_out.pdf");

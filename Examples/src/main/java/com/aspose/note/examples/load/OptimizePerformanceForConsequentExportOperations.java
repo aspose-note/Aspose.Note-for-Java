@@ -47,7 +47,7 @@ public class OptimizePerformanceForConsequentExportOperations {
 		page.setTitle(title);
 
 		// append page node
-		doc.appendChild(page);
+		doc.appendChildLast(page);
 		// save OneNote document in the HTML format
 		try {
 			doc.save(dataDir + "OptimizePerformanceForConsequentExportOperations_out.html");

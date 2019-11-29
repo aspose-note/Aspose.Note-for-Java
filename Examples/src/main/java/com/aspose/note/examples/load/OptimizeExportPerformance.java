@@ -53,7 +53,7 @@ public class OptimizeExportPerformance {
 		page.setTitle(title);
 
 		// Add page to document
-		doc.appendChild(page);
+		doc.appendChildLast(page);
 
 		// save OneNote document in the PDF format
 		doc.save(dataDir + "OptimizeExportPerformance_out.pdf");

@@ -28,17 +28,17 @@ public class AddNewImageNodeWithTag {
 		// load an image
 		Image image = new Image(doc, dataDir + "Input.jpg");
 		// insert image in the document node
-		outlineElem.appendChild(image);
+		outlineElem.appendChildLast(image);
 		NoteTag noteTag = new NoteTag();
 		noteTag.setIcon(TagIcon.YellowStar);
 		image.getTags().add(noteTag);
 
 		// add outline element node
-		outline.appendChild(outlineElem);
+		outline.appendChildLast(outlineElem);
 		// add outline node
-		page.appendChild(outline);
+		page.appendChildLast(outline);
 		// add page node
-		doc.appendChild(page);
+		doc.appendChildLast(page);
 		// save OneNote document
 		doc.save(dataDir + "AddNewImageNodeWithTag_out.pdf", SaveFormat.Pdf);
 

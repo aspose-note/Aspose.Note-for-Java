@@ -19,9 +19,9 @@ public class SettingCellBackgroundColor {
 		TableRow row1 = new TableRow(doc);
 		// Initialize TableCell class object and set text content
 		TableCell cell11 = new TableCell(doc);
-		cell11.appendChild(GetOutlineElementWithText(doc, "Small text"));
+		cell11.appendChildLast(GetOutlineElementWithText(doc, "Small text"));
 		cell11.setBackgroundColor(Color.BLACK);
-		row1.appendChild(cell11);
+		row1.appendChildLast(cell11);
 	}
 
 	private static OutlineElement GetOutlineElementWithText(Document doc, String string) {
@@ -34,7 +34,7 @@ public class SettingCellBackgroundColor {
 		RichText richText = new RichText(doc);
 		richText.setText(string);
 		richText.setDefaultStyle(textStyle);
-		outlineElem.appendChild(richText);
+		outlineElem.appendChildLast(richText);
 		return outlineElem;
 	}
 }

@@ -48,7 +48,7 @@ public class CreateDocWithPageTitle {
         page.setTitle(title);
 
         // Append Page node in the document
-        doc.appendChild(page);
+        doc.appendChildLast(page);
 
         dataDir = dataDir + "load//CreateDocWithPageTitle_out.one";
 

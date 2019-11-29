@@ -30,13 +30,13 @@ public class NewOneNotedocument {
 		// set image alignment
 		image.setAlignment(HorizontalAlignment.Right);
 		// add image
-		outlineElem.appendChild(image);
+		outlineElem.appendChildLast(image);
 		// add outline elements
-		outline.appendChild(outlineElem);
+		outline.appendChildLast(outlineElem);
 		// add Outline node
-		page.appendChild(outline);
+		page.appendChildLast(outline);
 		// add Page node
-		doc.appendChild(page);
+		doc.appendChildLast(page);
 		// save OneNote document
 		// save the document in the *.one format.
 		try {

@@ -26,14 +26,14 @@ public class InsertTable {
         TableCell cell13 = new TableCell(doc);
 
         // Append outline elements in the table cell
-        cell11.appendChild(GetOutlineElementWithText(doc, "cell_1.1"));
-        cell12.appendChild(GetOutlineElementWithText(doc, "cell_1.2"));
-        cell13.appendChild(GetOutlineElementWithText(doc, "cell_1.3"));
+        cell11.appendChildLast(GetOutlineElementWithText(doc, "cell_1.1"));
+        cell12.appendChildLast(GetOutlineElementWithText(doc, "cell_1.2"));
+        cell13.appendChildLast(GetOutlineElementWithText(doc, "cell_1.3"));
 
         // Table cells to rows
-        row1.appendChild(cell11);
-        row1.appendChild(cell12);
-        row1.appendChild(cell13);
+        row1.appendChildLast(cell11);
+        row1.appendChildLast(cell12);
+        row1.appendChildLast(cell13);
 
         // Initialize TableRow class object
         TableRow row2 = new TableRow(doc);
@@ -44,14 +44,14 @@ public class InsertTable {
         TableCell cell23 = new TableCell(doc);
 
         // Append outline elements in the table cell
-        cell21.appendChild(GetOutlineElementWithText(doc, "cell_2.1"));
-        cell22.appendChild(GetOutlineElementWithText(doc, "cell_2.2"));
-        cell23.appendChild(GetOutlineElementWithText(doc, "cell_2.3"));
+        cell21.appendChildLast(GetOutlineElementWithText(doc, "cell_2.1"));
+        cell22.appendChildLast(GetOutlineElementWithText(doc, "cell_2.2"));
+        cell23.appendChildLast(GetOutlineElementWithText(doc, "cell_2.3"));
 
         // Append table cells to rows
-        row2.appendChild(cell21);
-        row2.appendChild(cell22);
-        row2.appendChild(cell23);
+        row2.appendChildLast(cell21);
+        row2.appendChildLast(cell22);
+        row2.appendChildLast(cell23);
 
         // Initialize Table class object and set column widths
         Table table = new Table(doc);
@@ -64,8 +64,8 @@ public class InsertTable {
         table.getColumns().addItem(col);
 
         // Append table rows to table
-        table.appendChild(row1);
-        table.appendChild(row2);
+        table.appendChildLast(row1);
+        table.appendChildLast(row2);
 
         // Initialize Outline object
         Outline outline = new Outline(doc);
@@ -74,16 +74,16 @@ public class InsertTable {
         OutlineElement outlineElem = new OutlineElement(doc);
 
         // Add table to outline element node
-        outlineElem.appendChild(table);
+        outlineElem.appendChildLast(table);
 
         // Add outline element to outline
-        outline.appendChild(outlineElem);
+        outline.appendChildLast(outlineElem);
 
         // Add outline to page node
-        page.appendChild(outline);
+        page.appendChildLast(outline);
 
         // Add page to document node
-        doc.appendChild(page);
+        doc.appendChildLast(page);
         dataDir = dataDir + "InsertTable_out.one";
         doc.save(dataDir);
         // ExEnd:InsertTable
@@ -102,7 +102,7 @@ public class InsertTable {
         richText.setText(text);
         richText.setDefaultStyle(textStyle);
 
-        outlineElem.appendChild(richText);
+        outlineElem.appendChildLast(richText);
         return outlineElem;
     }
     // ExEnd:GetOutlineElementWithText

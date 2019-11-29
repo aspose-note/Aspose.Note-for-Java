@@ -35,16 +35,16 @@ public class AttachFileAndSetIcon {
         }
 
         // Add attached file
-        outlineElem.appendChild(attachedFile);
+        outlineElem.appendChildLast(attachedFile);
 
         // Add outline element node
-        outline.appendChild(outlineElem);
+        outline.appendChildLast(outlineElem);
 
         // Add outline node
-        page.appendChild(outline);
+        page.appendChildLast(outline);
 
         // Add page node
-        doc.appendChild(page);
+        doc.appendChildLast(page);
 
         dataDir = dataDir + "AttachFileAndSetIcon_out.one";
         doc.save(dataDir);

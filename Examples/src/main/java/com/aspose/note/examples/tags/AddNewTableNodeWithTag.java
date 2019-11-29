@@ -27,7 +27,7 @@ public class AddNewTableNodeWithTag {
 		// initialize TableCell class object
 		TableCell cell = new TableCell(doc);
 		// add cell to row node
-		row.appendChild(cell);
+		row.appendChildLast(cell);
 		// initialize table node
 		Table table = new Table(doc);
 		table.setBordersVisible(true);
@@ -36,7 +36,7 @@ public class AddNewTableNodeWithTag {
 		table.getColumns().addItem(column);
 
 		// insert row node in table
-		table.appendChild(row);
+		table.appendChildLast(row);
 		// add tag to this table node
 		NoteTag noteTag = new NoteTag();
 		noteTag.setIcon(TagIcon.QuestionMark);
@@ -45,11 +45,11 @@ public class AddNewTableNodeWithTag {
 		Outline outline = new Outline(doc);
 		OutlineElement outlineElem = new OutlineElement(doc);
 		// add table node
-		outlineElem.appendChild(table);
+		outlineElem.appendChildLast(table);
 		// add outline elements
-		outline.appendChild(outlineElem);
-		page.appendChild(outline);
-		doc.appendChild(page);
+		outline.appendChildLast(outlineElem);
+		page.appendChildLast(outline);
+		doc.appendChildLast(page);
 		// save OneNote document
 		doc.save(dataDir + "AddNewTableNodeWithTag_out.pdf", SaveFormat.Pdf);
 	}
