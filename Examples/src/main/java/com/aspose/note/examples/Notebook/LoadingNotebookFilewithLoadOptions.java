@@ -9,7 +9,7 @@ import com.aspose.note.examples.Utils;
 
 public class LoadingNotebookFilewithLoadOptions {
 	public static void main(String... args) throws IOException {
-
+		// ExStart:LoadingNotebookFilewithLoadOptions
 		String dataDir = Utils.getSharedDataDir(LoadingNotebookFilewithLoadOptions.class) + "Notebook/";
 
 		// By default children loading is "lazy".
@@ -21,6 +21,7 @@ public class LoadingNotebookFilewithLoadOptions {
 				// Do something with child document
 			}
 		}
+		// ExEnd:LoadingNotebookFilewithLoadOptions
 	}
 
 }

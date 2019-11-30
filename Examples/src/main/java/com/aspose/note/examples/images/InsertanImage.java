@@ -12,7 +12,7 @@ import com.aspose.note.examples.Utils;
 
 public class InsertanImage {
 	public static void main(String... args) throws IOException {
-
+		// ExStart:InsertImage
 		// load document from the stream.
 		LoadOptions options = new LoadOptions();
 
@@ -44,6 +44,6 @@ public class InsertanImage {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-
+		// ExEnd:InsertImage
 	}
 }

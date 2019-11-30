@@ -12,7 +12,7 @@ import com.aspose.note.examples.Utils;
 
 public class OptimizeExportPerformance {
 	public static void main(String... args) throws IOException {
-
+		// ExStart: OptimizeExportPerformance
 		String dataDir = Utils.getSharedDataDir(OptimizeExportPerformance.class) + "load/";
 
 		// initialize the new Document
@@ -72,5 +72,6 @@ public class OptimizeExportPerformance {
 
 		// save OneNote document in the BMP format
 		doc.save(dataDir + "OptimizeExportPerformance_out.bmp");
+		// ExEnd: OptimizeExportPerformance
 	}
 }

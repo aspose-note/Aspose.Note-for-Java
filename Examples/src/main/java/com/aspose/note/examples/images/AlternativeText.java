@@ -10,8 +10,9 @@ import com.aspose.note.examples.Utils;
 
 public class AlternativeText {
 
-	public static void main(String... args) throws IOException {
+	public static void main(String[] args) throws IOException {
 
+		// ExStart:ImageAlternativeText
 		String dataDir = Utils.getSharedDataDir(AlternativeText.class) + "images/";
 
 		Document document = new Document();
@@ -29,6 +30,6 @@ public class AlternativeText {
 		document.appendChildLast(page);
 
 		document.save(dataDir + "AlternativeText_out.one");
-
+		// ExEnd:ImageAlternativeText
 	}
 }

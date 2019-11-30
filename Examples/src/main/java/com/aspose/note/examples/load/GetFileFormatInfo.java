@@ -8,7 +8,7 @@ import com.aspose.note.examples.Utils;
 
 public class GetFileFormatInfo {
 	public static void main(String... args) throws IOException {
-		
+		// ExStart:RetreivingFileFormat
 		String dataDir = Utils.getSharedDataDir(GetFileFormatInfo.class) + "load/";
 	
 		Document document = new Document(dataDir + "Aspose.one");
@@ -21,6 +21,7 @@ public class GetFileFormatInfo {
 		        // Process OneNote Online
 		        break;
 		}
+		// ExEnd:RetreivingFileFormat
 	}
 
 }

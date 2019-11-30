@@ -9,6 +9,7 @@ import com.aspose.note.examples.Utils;
 
 public class LoadPasswordProtectedDocuments {
 	public static void main(String... args) throws IOException {
+		// ExStart:LoadingPasswordProtectedDoc
 		// Load the document into Aspose.Note.
 		String dataDir = Utils.getSharedDataDir(LoadPasswordProtectedDocuments.class) + "Notebook/";
 		
@@ -25,5 +26,6 @@ public class LoadPasswordProtectedDocuments {
 		LoadOptions documentLoadOptions2 = new LoadOptions();
 		documentLoadOptions2.setDocumentPassword("pass");
 		notebook.loadChildDocument(dataDir + "Locked Pass2.one", documentLoadOptions2);
+		// ExEnd:LoadingPasswordProtectedDoc
 	}
 }

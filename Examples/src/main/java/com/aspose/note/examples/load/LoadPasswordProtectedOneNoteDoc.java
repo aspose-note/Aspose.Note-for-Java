@@ -8,7 +8,7 @@ import com.aspose.note.examples.Utils;
 
 public class LoadPasswordProtectedOneNoteDoc {
 	public static void main(String... args) throws IOException {
-
+		// ExStart:PasswordProtectedDoc
 		String dataDir = Utils.getSharedDataDir(LoadPasswordProtectedOneNoteDoc.class) + "load/";
 
 		LoadOptions loadOptions = new LoadOptions();
@@ -18,5 +18,6 @@ public class LoadPasswordProtectedOneNoteDoc {
 		Document doc = new Document(dataDir + "Sample1.one", loadOptions);
 		
 		System.out.println(doc.getFileFormat());
+		// ExEnd:PasswordProtectedDoc
 	}
 }

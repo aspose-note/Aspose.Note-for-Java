@@ -11,7 +11,7 @@ import com.aspose.note.examples.Utils;
 
 public class ExtractImages {
 	public static void main(String[] args) throws IOException {
-
+		// ExStart:ExtractImages
 		String dataDir = Utils.getSharedDataDir(ExtractImages.class) + "images/";
 
 		// Load the document into Aspose.Note
@@ -31,6 +31,6 @@ public class ExtractImages {
 			Files.write(Paths.get(dataDir + outputFile), buffer);
 			System.out.printf("File saved: %s\n", dataDir);
 		}
-
+		// ExEnd:ExtractImages
 	}
 }

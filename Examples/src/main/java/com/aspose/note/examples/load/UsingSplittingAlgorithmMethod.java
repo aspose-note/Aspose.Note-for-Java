@@ -17,11 +17,15 @@ public class UsingSplittingAlgorithmMethod {
 		Document doc = new Document(dataDir + "Sample1.one");
 
 		PdfSaveOptions pdfSaveOptions = new PdfSaveOptions();
-		pdfSaveOptions.setPageSplittingAlgorithm(new AlwaysSplitObjectsAlgorithm());
-		// or
-		pdfSaveOptions.setPageSplittingAlgorithm(new KeepPartAndCloneSolidObjectToNextPageAlgorithm());
-		// or
-		pdfSaveOptions.setPageSplittingAlgorithm(new KeepSolidObjectsAlgorithm());
+		
+		// ExStart:PageSplittUsingKeepPartAndCloneSolidObjectToNextPageAlgorithm.-1
+        pdfSaveOptions.setPageSplittingAlgorithm(new KeepPartAndCloneSolidObjectToNextPageAlgorithm(100));
+        // ExEnd:PageSplittUsingKeepPartAndCloneSolidObjectToNextPageAlgorithm.-1
+        // Or
+        // ExStart:PageSplittUsingKeepPartAndCloneSolidObjectToNextPageAlgorithm.-2
+        pdfSaveOptions.setPageSplittingAlgorithm(new KeepPartAndCloneSolidObjectToNextPageAlgorithm(400));
+        // ExEnd:PageSplittUsingKeepPartAndCloneSolidObjectToNextPageAlgorithm.-2
+        
 		try {
 			doc.save(dataDir + "UsingSplittingAlgorithmMethod_out.Jpeg", pdfSaveOptions);
 		} catch (Exception ex) {

@@ -8,6 +8,7 @@ import com.aspose.note.examples.Utils;
 
 public class CreatePasswordProtectedOneNoteDocuments {
 	public static void main(String... args) throws IOException {
+		// ExStart:CreatePasswordProtectedOneNoteDocuments
 		// Load the document into Aspose.Note.
 		String dataDir = Utils.getSharedDataDir(CreatePasswordProtectedOneNoteDocuments.class) + "load/";
 
@@ -18,6 +19,7 @@ public class CreatePasswordProtectedOneNoteDocuments {
 		saveOptions.setDocumentPassword("pass");
 
 		document.save(dataDir + "CreatePasswordProtected_out.one", saveOptions);
+		// ExEnd:CreatePasswordProtectedOneNoteDocuments
 	}
 
 }

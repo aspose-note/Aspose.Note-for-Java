@@ -11,7 +11,7 @@ import com.aspose.note.examples.Utils;
 
 public class ChangeTextStyle {
 	public static void main(String... args) throws IOException {
-
+		// ExStart:ChangeTextStyle
 		String dataDir = Utils.getSharedDataDir(ChangeTextStyle.class) + "styles/";
 
 		// Load the document into Aspose.Note
@@ -32,6 +32,6 @@ public class ChangeTextStyle {
 
 		document.save(dataDir + "ChangeTextStyle_out.pdf");
 		System.out.printf("File saved: %s\n", dataDir + "ChangeTextStyle_out.pdf");
-
+		// ExEnd:ChangeTextStyle
 	}
 }

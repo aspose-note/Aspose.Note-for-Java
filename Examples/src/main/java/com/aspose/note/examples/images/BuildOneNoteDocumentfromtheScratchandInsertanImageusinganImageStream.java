@@ -17,6 +17,7 @@ import com.aspose.note.examples.Utils;
 public class BuildOneNoteDocumentfromtheScratchandInsertanImageusinganImageStream {
 	public static void main(String... args) throws IOException {
 
+		// ExStart:BuildDocAndInsertImageUsingImageStream
 		String dataDir = Utils.getSharedDataDir(BuildOneNoteDocumentfromtheScratchandInsertanImageusinganImageStream.class) + "images/";
 
 		// create an object of the Document class
@@ -47,19 +48,11 @@ public class BuildOneNoteDocumentfromtheScratchandInsertanImageusinganImageStrea
 		doc.appendChildLast(page);
 		// save OneNote document
 		try {
-			// doc.save("D://Aspose_JavaProjects//OneNote//out.one");//NOT
-			// working
-			// doc.save("D://Aspose_JavaProjects//OneNote//out3.pdf",SaveFormat.Pdf);//WORKING
-			doc.save(dataDir + "BuildOneNoteDocument_out.bmp", SaveFormat.Bmp);// NOT WORKING
-			// doc.save("D://Aspose_JavaProjects//OneNote//out3.png",SaveFormat.Png);//NOT
-			// WORKING
-			// doc.save("D://Aspose_JavaProjects//OneNote//out3.tif",SaveFormat.Tiff);//NOT
-			// WORKING
-
+			doc.save("D://Aspose_JavaProjects//OneNote//out3.pdf",SaveFormat.Pdf);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-
+		// ExEnd:BuildDocAndInsertImageUsingImageStream
 	}
 
 }

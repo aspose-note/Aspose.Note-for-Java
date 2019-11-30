@@ -16,7 +16,7 @@ import com.aspose.note.examples.Utils;
 public class CreateDocWithFormattedRichText {
 
 	public static void main(String... args) throws IOException {
-
+		// ExStart:CreateDocWithFormattedRichText
         // create an object of the Document class
 		Document doc = new Document();
 		// initialize Page class object
@@ -92,6 +92,6 @@ public class CreateDocWithFormattedRichText {
 		
 		// save OneNote document
 		doc.save(dataDir + "CreateDocWithFormattedRichText_out.pdf", SaveFormat.Pdf);
-
+		// ExEnd:CreateDocWithFormattedRichText
         }
 }

@@ -9,7 +9,7 @@ import com.aspose.note.examples.Utils;
 
 public class GetImageInfo {
 	public static void main(String... args) throws IOException {
-
+		// ExStart:GetInformationOfImages
 		String dataDir = Utils.getSharedDataDir(GetImageInfo.class) + "images/";
 
 		// Load the document into Aspose.Note
@@ -29,5 +29,6 @@ public class GetImageInfo {
 			System.out.println("LastModifiedTime: " + image.getLastModifiedTime());
 			System.out.println();
 		}
+		// ExEnd:GetInformationOfImages
 	}
 }

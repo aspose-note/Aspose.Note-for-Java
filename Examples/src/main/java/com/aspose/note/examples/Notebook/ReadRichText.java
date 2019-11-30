@@ -9,7 +9,7 @@ import com.aspose.note.examples.Utils;
 
 public class ReadRichText {
 	public static void main(String... args) throws IOException {
-
+		// ExStart:ReadRichText
 		String dataDir = Utils.getSharedDataDir(LoadingNotebook.class) + "Notebook/";
 		Notebook rootNotebook = new Notebook(dataDir + "test.onetoc2");
 
@@ -17,6 +17,7 @@ public class ReadRichText {
 		for (RichText richTextNode : allRichTextNodes) {
 			System.out.println(richTextNode.getText());
 		}
+		// ExEnd:ReadRichText
 	}
 
 }

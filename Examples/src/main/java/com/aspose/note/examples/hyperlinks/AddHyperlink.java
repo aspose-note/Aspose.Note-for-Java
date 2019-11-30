@@ -13,7 +13,7 @@ import com.aspose.note.examples.Utils;
 
 public class AddHyperlink {
 	public static void main(String... args) throws IOException {
-		
+		// ExStart:AddHyperlink
 		String dataDir = Utils.getSharedDataDir(AddHyperlink.class) + "hyperlinks/";
 		
 		// create an object of the Document class
@@ -74,8 +74,7 @@ public class AddHyperlink {
 		doc.appendChildLast(page);
 
 		doc.save(dataDir + "AddHyperlink_out.pdf");
-
+		// ExEnd:AddHyperlink
 		System.out.printf("File saved: %s\n", dataDir + "AddHyperlink_out.pdf");
-
 	}
 }

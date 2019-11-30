@@ -11,7 +11,7 @@ import com.aspose.note.examples.Utils;
 
 public class GetOutlookTask {
 	public static void main(String... args) throws IOException {
-
+		// ExStart:GetOutlookTask
 		String dataDir = Utils.getSharedDataDir(GetOutlookTask.class) + "tasks/";
 
 		// Load the document into Aspose.Note
@@ -35,7 +35,7 @@ public class GetOutlookTask {
 				}
 			}
 		}
-
+		// ExEnd:GetOutlookTask
 
 	}
 }

@@ -9,7 +9,7 @@ import com.aspose.note.examples.Utils;
 
 public class LoadingNotebook {
 	public static void main(String... args) throws IOException {
-
+		// ExStart:LoadingNotebook
 		String dataDir = Utils.getSharedDataDir(LoadingNotebook.class) + "Notebook/";
 		Notebook notebook = new Notebook(dataDir + "Notizbuch öffnen.onetoc2");
         
@@ -23,6 +23,7 @@ public class LoadingNotebook {
 				// Do something with child notebook
 			}
 		}
+		// ExEnd:LoadingNotebook
 	}
 
 }

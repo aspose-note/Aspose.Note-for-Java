@@ -9,7 +9,7 @@ import com.aspose.note.examples.Utils;
 
 public class SaveToStream {
 	public static void main(String... args) throws IOException {
-
+		// ExStart:SaveToStream
 		String dataDir = Utils.getSharedDataDir(SaveOneNoteDocToStream.class) + "load/";
 
 		// Load the document into Aspose.Note
@@ -22,5 +22,6 @@ public class SaveToStream {
 		doc.save(stream, SaveFormat.Pdf);
 
 		System.out.println("Stream Size: " + stream.size() + " bytes");
+		// ExEnd:SaveToStream
 	}
 }

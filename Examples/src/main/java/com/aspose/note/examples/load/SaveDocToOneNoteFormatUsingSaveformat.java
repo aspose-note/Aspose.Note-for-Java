@@ -9,11 +9,12 @@ import com.aspose.note.examples.Utils;
 public class SaveDocToOneNoteFormatUsingSaveformat {
 
 	public static void main(String... args) throws IOException {
-
+		// ExStart:SaveDocToOneNoteFormatUsingSaveFormat
 		String dataDir = Utils.getSharedDataDir(SaveDocToOneNoteFormatUsingSaveformat.class) + "load/";
 		
 		Document document = new Document(dataDir + "Sample1.one");
 
 		document.save(dataDir + "SaveDocToOneNoteFormatUsingSaveformat_out.one", SaveFormat.One);
+		// ExEnd:SaveDocToOneNoteFormatUsingSaveFormat
 	}
 }

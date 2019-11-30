@@ -9,7 +9,7 @@ import com.aspose.note.examples.Utils;
 
 public class GetRevisions {
 	public static void main(String... args) throws IOException {
-
+		// ExStart:GetRevisions
 		String dataDir = Utils.getSharedDataDir(GetRevisions.class) + "pages/";
 
 		// Load the document into Aspose.Note
@@ -30,5 +30,6 @@ public class GetRevisions {
 			System.out.println("Author: " + pageRevision.getAuthor());
 			System.out.println();
 		}
+		// ExEnd:GetRevisions
 	}
 }

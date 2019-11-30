@@ -13,7 +13,7 @@ import com.aspose.note.examples.Utils;
 
 public class NewOneNotedocument {
 	public static void main(String... args) throws IOException {
-		
+		// ExStart:BuildDocAndInsertImage
 		String dataDir = Utils.getSharedDataDir(NewOneNotedocument.class) + "images/";
 		// create an object of the Document class
 		Document doc = new Document();
@@ -46,6 +46,6 @@ public class NewOneNotedocument {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-
+		// ExEnd:BuildDocAndInsertImage
 	}
 }

@@ -9,7 +9,7 @@ import com.aspose.note.examples.Utils;
 
 public class RetrieveDocumentsfromOneNoteNotebook {
 	public static void main(String... args) throws IOException {
- 
+		// ExStart:RetrieveDocumentsfromOneNoteNotebook
 		String dataDir = Utils.getSharedDataDir(RetrieveDocumentsfromOneNoteNotebook.class) + "Notebook/";
 		Notebook rootNotebook = new Notebook(dataDir + "test.onetoc2");
 
@@ -17,6 +17,7 @@ public class RetrieveDocumentsfromOneNoteNotebook {
 		for (Document document : allDocuments) {
 			System.out.println(document.getDisplayName());
 		}
+		// ExEnd:RetrieveDocumentsfromOneNoteNotebook
 	}
 
 }

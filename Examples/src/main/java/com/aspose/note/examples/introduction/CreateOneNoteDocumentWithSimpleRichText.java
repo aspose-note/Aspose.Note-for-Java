@@ -15,7 +15,7 @@ import com.aspose.note.examples.Utils;
 public class CreateOneNoteDocumentWithSimpleRichText {
 
 	public static void main(String... args) throws IOException {
-
+		// ExStart:CreateDocWithSimpleRichText
 		String dataDir = Utils.getSharedDataDir(CreateOneNoteDocumentWithSimpleRichText.class) + "introduction/";
 
 		// For complete examples and data files, please go to
@@ -50,7 +50,7 @@ public class CreateOneNoteDocumentWithSimpleRichText {
 		doc.appendChildLast(page);
 		// save OneNote document
 		doc.save(dataDir + "CreateOneNoteDocumentWithSimpleRichText_out.pdf", SaveFormat.Pdf);
-
+		// ExEnd:CreateDocWithSimpleRichText
 	}
 
 }

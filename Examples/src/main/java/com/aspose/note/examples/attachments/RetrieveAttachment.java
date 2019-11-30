@@ -12,8 +12,8 @@ import com.aspose.note.Document;
 import com.aspose.note.examples.Utils;
 
 public class RetrieveAttachment {
-	public static void main(String... args) throws IOException {
-
+	public static void main(String[] args) throws IOException {
+		// ExStart:RetrieveAttachedFiles
 		String dataDir = Utils.getSharedDataDir(RetrieveAttachment.class) + "text/";
 
 		// Load the document into Aspose.Note
@@ -35,5 +35,6 @@ public class RetrieveAttachment {
 
 			System.out.println("File saved: " + outputPath);
 		}
+		// ExEnd:RetrieveAttachedFiles
 	}
 }

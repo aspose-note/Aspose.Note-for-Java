@@ -6,10 +6,10 @@ import com.aspose.note.examples.Utils;
 
 import java.io.IOException;
 
-public class ExportNotebookToPDFAsFlattened {
+public class ConvertToPDFAsFlattened {
     public static void main(String[] args) throws IOException {
-        // ExStart:ExportNotebookToPDFAsFlattened
-        String dataDir = Utils.getSharedDataDir(ExportNotebookToPDFAsFlattened.class) + "Notebook/";
+        // ExStart:ConvertToPDFAsFlattened
+        String dataDir = Utils.getSharedDataDir(ConvertToPDFAsFlattened.class) + "Notebook/";
 
         // Load a OneNote Notebook
         Notebook notebook = new Notebook(dataDir + "Notizbuch îffnen.onetoc2");
@@ -22,6 +22,6 @@ public class ExportNotebookToPDFAsFlattened {
 
         // Save the Notebook
         notebook.save(dataDir, notebookSaveOptions);
-        // ExEnd:ExportNotebookToPDFAsFlattened
+        // ExEnd:ConvertToPDFAsFlattened
     }
 }

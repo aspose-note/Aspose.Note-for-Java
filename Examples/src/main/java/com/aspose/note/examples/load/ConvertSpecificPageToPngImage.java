@@ -10,6 +10,7 @@ import com.aspose.note.examples.Utils;
 
 public class ConvertSpecificPageToPngImage {
 	public static void main(String... args) throws IOException {
+		// ExStart:ConvertSpecificPageToPng
 		// Load the document into Aspose.Note.
 		String dataDir = Utils.getSharedDataDir(ConvertSpecificPageToPngImage.class) + "load/";
 		Document oneFile = new Document(dataDir + "Sample1.one", new LoadOptions());
@@ -21,6 +22,6 @@ public class ConvertSpecificPageToPngImage {
 
 		// Save the document as PNG.
 		oneFile.save(dataDir + "ConvertSpecificPageToPngImage_out.png", opts);
-
-        }
+		// ExEnd:ConvertSpecificPageToPng
+		}
 }

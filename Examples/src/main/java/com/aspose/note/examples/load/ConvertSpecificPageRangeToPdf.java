@@ -8,6 +8,7 @@ import com.aspose.note.examples.Utils;
 
 public class ConvertSpecificPageRangeToPdf {
 	public static void main(String... args) throws IOException {
+		// ExStart:SaveRangeOfPagesAsPDF
 		// Load the document into Aspose.Note.
 		String dataDir = Utils.getSharedDataDir(ConvertSpecificPageRangeToPdf.class) + "load/";
 		
@@ -23,5 +24,6 @@ public class ConvertSpecificPageRangeToPdf {
 		// Save the document as PDF
 		oneFile.save(dataDir +"ConvertSpecificPageRangeToPdf_out.pdf", opts);
 		System.out.println("File saved: " + dataDir + "ConvertSpecificPageRangeToPdf_out.pdf");
+		// ExEnd:SaveRangeOfPagesAsPDF
 	}
 }

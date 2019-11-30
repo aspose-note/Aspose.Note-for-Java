@@ -11,7 +11,7 @@ import com.aspose.note.examples.Utils;
 
 public class OptimizePerformanceForConsequentExportOperations {
 	public static void main(String... args) {
-		
+		// ExStart:ConsequentExportOperations
 		String dataDir = Utils.getSharedDataDir(OptimizePerformanceForConsequentExportOperations.class) + "load/";
 		// initialize the new Document
 		Document doc = new Document();
@@ -84,5 +84,6 @@ public class OptimizePerformanceForConsequentExportOperations {
 			// e.printStackTrace();
 			System.out.println("Saving as bmp: " + e.getMessage());
 		}
+		// ExEnd:ConsequentExportOperations
 	}
 }

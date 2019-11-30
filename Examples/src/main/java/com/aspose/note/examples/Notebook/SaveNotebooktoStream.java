@@ -10,8 +10,9 @@ import com.aspose.note.examples.Utils;
 
 public class SaveNotebooktoStream {
 	public static void main(String... args) throws IOException {
+		// ExStart:SaveNotebookToStream
 		// Load the document into Aspose.Note.
-		String dataDir = Utils.getSharedDataDir(SupportofPasswordProtectedDocuments.class) + "Notebook/";
+		String dataDir = Utils.getSharedDataDir(SaveNotebooktoStream.class) + "Notebook/";
 
 		Notebook notebook = new Notebook();
 
@@ -29,5 +30,6 @@ public class SaveNotebooktoStream {
 
 			childDocument1.save(dataDir + "child.one");
 		}
+		// ExEnd:SaveNotebookToStream
 	}
 }
