@@ -17,6 +17,7 @@ import com.aspose.note.examples.Utils;
 
 public class AddNewTableNodeWithTag {
 	public static void main(String... args) throws IOException {
+		// ExStart:AddNewTableNodeWithTag
 		String dataDir = Utils.getSharedDataDir(AddNewTableNodeWithTag.class) + "tags/";
 		// create an object of the Document class
 		Document doc = new Document();
@@ -52,5 +53,6 @@ public class AddNewTableNodeWithTag {
 		doc.appendChildLast(page);
 		// save OneNote document
 		doc.save(dataDir + "AddNewTableNodeWithTag_out.pdf", SaveFormat.Pdf);
+		// ExEnd:AddNewTableNodeWithTag
 	}
 }

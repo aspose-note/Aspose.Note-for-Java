@@ -13,7 +13,7 @@ import com.aspose.note.examples.Utils;
 
 public class ReplaceTextonAllPages {
 	public static void main(String... args) throws IOException {
-
+		// ExStart:ReplaceTextOnAllPages
 		String dataDir = Utils.getSharedDataDir(ReplaceTextonAllPages.class) + "text/";
 
 		Map<String, String> replacements = new HashMap<String, String>();
@@ -26,7 +26,7 @@ public class ReplaceTextonAllPages {
 		// Get all RichText nodes
 		List<RichText> textNodes = (List<RichText>) oneFile.getChildNodes(RichText.class);// <RichText.class>();
 
-		// Traverse all nodes and compare text agains the key text
+		// Traverse all nodes and compare text against the key text
 		for (RichText richText : textNodes) {
 			for (String key : replacements.keySet()) {
 				if (richText != null && richText.getText().contains(key)) {
@@ -38,7 +38,6 @@ public class ReplaceTextonAllPages {
 
 		// Save to any supported file format
 		oneFile.save(dataDir + "ReplaceTextonAllPages_out.pdf", SaveFormat.Pdf);
-
-
+		// ExEnd:ReplaceTextOnAllPages
 	}
 }

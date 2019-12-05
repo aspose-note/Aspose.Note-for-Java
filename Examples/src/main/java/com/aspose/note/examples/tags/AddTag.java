@@ -16,7 +16,7 @@ import com.aspose.note.examples.Utils;
 
 public class AddTag {
 	public static void main(String... args) throws IOException {
-
+		// ExStart:AddTag
 		String dataDir = Utils.getSharedDataDir(AddTag.class) + "tags/";
 		
 		// create an object of the Document class
@@ -54,6 +54,6 @@ public class AddTag {
 
 		doc.save(dataDir + "AddTag_out.pdf", SaveFormat.Pdf);
 		System.out.printf("File Saved: %s\n", dataDir + "AddTag_out.pdf");
-
+		// ExEnd:AddTag
 	}
 }

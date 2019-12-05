@@ -15,7 +15,7 @@ import com.aspose.note.examples.Utils;
 
 public class CreateChineseNumberedList {
 	public static void main(String... args) throws IOException {
-
+		// ExStart:CreateChineseNumberedList
 		String dataDir = Utils.getSharedDataDir(CreateChineseNumberedList.class) + "text/";
 
 		// create an object of the Document class
@@ -71,7 +71,7 @@ public class CreateChineseNumberedList {
 
 		// save the document
 		doc.save(dataDir + "CreateChineseNumberedList_out.pdf");
-
+		// ExEnd:CreateChineseNumberedList
 		System.out.printf("File saved: %s\n", dataDir + "CreateChineseNumberedList_out.pdf");
 
 	}

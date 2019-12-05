@@ -14,7 +14,7 @@ import com.aspose.note.examples.Utils;
 
 public class CreateBulletedList {
 	public static void main(String... args) throws IOException {
-
+		// ExStart:CreateBulletedList
 		String dataDir = Utils.getSharedDataDir(CreateBulletedList.class) + "text/";
 
 		// create an object of the Document class
@@ -70,7 +70,7 @@ public class CreateBulletedList {
 
 		// save the document
 		doc.save(dataDir + "CreateBulletedList_out.pdf");
-
+		// ExEnd:CreateBulletedList
 		System.out.printf("File saved: %s\n", dataDir + "CreateBulletedList_out.pdf");
 
 	}

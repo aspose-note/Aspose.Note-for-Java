@@ -12,7 +12,7 @@ import com.aspose.note.examples.Utils;
 public class SettingPageTitleinMicrosoftOneNoteStyle {
 
 	public static void main(String... args) throws IOException {
-
+		// ExStart: SettingPageTitleinMicrosoftOneNoteStyle
 		String dataDir = Utils.getSharedDataDir(SettingPageTitleinMicrosoftOneNoteStyle.class) + "text/";
 
 		// initialize new Document
@@ -43,7 +43,7 @@ public class SettingPageTitleinMicrosoftOneNoteStyle {
 
 		// append page node
 		doc.appendChildLast(page);
-
+		// ExEnd: SettingPageTitleinMicrosoftOneNoteStyle
 	}
 
 }

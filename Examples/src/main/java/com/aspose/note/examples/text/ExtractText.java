@@ -9,7 +9,7 @@ import com.aspose.note.examples.Utils;
 
 public class ExtractText {
 	public static void main(String... args) throws IOException {
-
+		// ExStart:ExtractText
 		String dataDir = Utils.getSharedDataDir(ExtractText.class) + "text/";
 
 		// Load the document into Aspose.Note
@@ -21,5 +21,6 @@ public class ExtractText {
 		for (Page p : pages) {
 			System.out.println(p.getText());
 		}
+		// ExStart:ExtractText
 	}
 }

@@ -14,7 +14,7 @@ import com.aspose.note.examples.Utils;
 
 public class AddNewImageNodeWithTag {
 	public static void main(String... args) throws IOException {
-
+		// ExStart:AddNewImageNodeWithTag
 		String dataDir = Utils.getSharedDataDir(AddNewImageNodeWithTag.class) + "tags/";
 
 		// create an object of the Document class
@@ -41,7 +41,7 @@ public class AddNewImageNodeWithTag {
 		doc.appendChildLast(page);
 		// save OneNote document
 		doc.save(dataDir + "AddNewImageNodeWithTag_out.pdf", SaveFormat.Pdf);
-
+		// ExEnd:AddNewImageNodeWithTag
 	}
 
 }

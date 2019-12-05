@@ -20,7 +20,7 @@ import com.aspose.note.examples.Utils;
  */
 public class ExtractRowtextfromtableinOneNotedocument {
 	public static void main(String... args) throws IOException {
-
+		// ExStart:ExtractRowtextfromtableinOneNotedocument
 		String dataDir = Utils.getSharedDataDir(ExtractRowtextfromtableinOneNotedocument.class) + "tables/";
 
 		// Load the document into Aspose.Note.
@@ -42,7 +42,7 @@ public class ExtractRowtextfromtableinOneNotedocument {
 				System.out.println(text);
 			}
 		}
-
+		// ExEnd:ExtractRowtextfromtableinOneNotedocument
 	}
 
 }

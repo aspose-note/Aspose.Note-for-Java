@@ -11,7 +11,7 @@ import com.aspose.note.examples.Utils;
 
 public class GetNodeTags {
 	public static void main(String... args) throws IOException {
-
+		// ExStart:GetNodeTags
 		String dataDir = Utils.getSharedDataDir(GetNodeTags.class) + "tags/";
 
 		// Load the document into Aspose.Note
@@ -36,6 +36,6 @@ public class GetNodeTags {
 				}
 			}
 		}
-
+		// ExEnd:GetNodeTags
 	}
 }

@@ -10,7 +10,7 @@ import com.aspose.note.examples.Utils;
 
 public class GetListProperties {
 	public static void main(String... args) throws IOException {
-
+		// ExStart:GetListProperties
 		String dataDir = Utils.getSharedDataDir(GetListProperties.class) + "text/";
 
 		// Load the document into Aspose.Note
@@ -41,5 +41,6 @@ public class GetListProperties {
 				System.out.println();
 			}
 		}
+		// ExEnd:GetListProperties
 	}
 }

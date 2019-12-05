@@ -15,7 +15,7 @@ import com.aspose.note.examples.Utils;
 public class ReplaceTextonParticularPage {
 
 	public static void main(String... args) throws IOException {
-
+		// ExStart:ReplaceTextOnParticularPage
 		String dataDir = Utils.getSharedDataDir(ReplaceTextonParticularPage.class) + "text/";
 
 		Map<String, String> replacements = new HashMap<String, String>();
@@ -40,7 +40,7 @@ public class ReplaceTextonParticularPage {
 
 		// Save to any supported file format
 		oneFile.save(dataDir + "ReplaceTextonParticularPage_out.pdf", SaveFormat.Pdf);
-
+		// ExEnd:ReplaceTextOnParticularPage
 	}
 
 }

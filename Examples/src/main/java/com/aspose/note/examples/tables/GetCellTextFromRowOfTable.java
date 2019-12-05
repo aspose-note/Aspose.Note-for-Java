@@ -11,7 +11,7 @@ import com.aspose.note.examples.Utils;
 
 public class GetCellTextFromRowOfTable {
 	public static void main(String... args) throws IOException {
-
+		// ExStart:GetCellTextFromRowOfTable
 		String dataDir = Utils.getSharedDataDir(GetCellTextFromRowOfTable.class) + "tables/";
 
 		// Load the document into Aspose.Note.
@@ -35,8 +35,7 @@ public class GetCellTextFromRowOfTable {
 				}
 			}
 		}
-
-
+		// ExEnd:GetCellTextFromRowOfTable
 	}
 
 }

@@ -12,6 +12,7 @@ import com.aspose.note.TextStyle;
 
 public class SettingCellBackgroundColor {
 	public static void main(String... args) throws IOException {
+		// ExStart:SettingCellBackGroundColor
 		// Load the document into Aspose.Note.
 		Document doc = new Document();
 
@@ -22,8 +23,10 @@ public class SettingCellBackgroundColor {
 		cell11.appendChildLast(GetOutlineElementWithText(doc, "Small text"));
 		cell11.setBackgroundColor(Color.BLACK);
 		row1.appendChildLast(cell11);
+		// ExEnd:SettingCellBackGroundColor
 	}
 
+	// ExStart:GetOutlineElementWithText
 	private static OutlineElement GetOutlineElementWithText(Document doc, String string) {
 		// TODO Auto-generated method stub
 		OutlineElement outlineElem = new OutlineElement(doc);
@@ -37,4 +40,5 @@ public class SettingCellBackgroundColor {
 		outlineElem.appendChildLast(richText);
 		return outlineElem;
 	}
+	// ExEnd:GetOutlineElementWithText
 }
