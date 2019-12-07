@@ -14,6 +14,7 @@ import com.aspose.note.RichText;
 import com.aspose.note.Title;
 import com.aspose.note.examples.Utils;
 
+//ExStart: ExtractOneNoteContentUsingDocumentvisitor
 public class ExtractOneNoteContentUsingDocumentvisitor extends DocumentVisitor {
 
 	final private StringBuilder mBuilder;
@@ -83,7 +84,7 @@ public class ExtractOneNoteContentUsingDocumentvisitor extends DocumentVisitor {
 		return this.nodecount;
 	}
 
-	public static void main(String... args) throws IOException {
+	public static void main(String[] args) throws IOException {
 		// Open the document we want to convert.
 
 		String dataDir = Utils.getSharedDataDir(ExtractOneNoteContentUsingDocumentvisitor.class) + "load/";
@@ -111,5 +112,5 @@ public class ExtractOneNoteContentUsingDocumentvisitor extends DocumentVisitor {
 		System.out.println(myConverter.GetText());
 		System.out.println(myConverter.NodeCount());
 	}
-
 }
+//ExEnd: ExtractOneNoteContentUsingDocumentvisitor

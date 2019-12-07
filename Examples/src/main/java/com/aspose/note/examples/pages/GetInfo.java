@@ -10,7 +10,7 @@ import com.aspose.note.examples.Utils;
 
 public class GetInfo {
 	public static void main(String... args) throws IOException {
-
+		// ExStart: GetInfo
 		String dataDir = Utils.getSharedDataDir(GetInfo.class) + "pages/";
 		// Load the document into Aspose.Note
 		LoadOptions options = new LoadOptions();
@@ -27,5 +27,6 @@ public class GetInfo {
 			System.out.println("Level: " + pageRevision.getLevel());
 			System.out.println("Author: " + pageRevision.getAuthor());
 		}
+		// ExEnd: GetInfo
 	}
 }

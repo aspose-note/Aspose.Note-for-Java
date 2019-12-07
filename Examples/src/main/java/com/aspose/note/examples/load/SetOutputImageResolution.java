@@ -9,7 +9,7 @@ import com.aspose.note.examples.Utils;
 
 public class SetOutputImageResolution {
 	public static void main(String... args) throws IOException {
-		
+		//ExStart: SetOutputImageResolution
 		String dataDir = Utils.getSharedDataDir(SetOutputImageResolution.class) + "load/";
 
 		Document doc = new Document(dataDir + "Sample1.one");
@@ -19,5 +19,6 @@ public class SetOutputImageResolution {
 		imageSaveOptions.setResolution(120);
 
 		doc.save(dataDir + "SetOutputImageResolution_out.jpeg", imageSaveOptions);
+		//ExEnd: SetOutputImageResolution
 	}
 }
