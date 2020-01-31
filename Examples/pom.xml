@@ -11,11 +11,11 @@
     </properties>
     <dependencies>
         <dependency>
-            <groupId>com.aspose</groupId>
-            <artifactId>aspose-note</artifactId>
-            <version>19.11</version>
-            <classifier>jdk17</classifier>
-        </dependency>
+    		<groupId>com.aspose</groupId>
+    		<artifactId>aspose-note</artifactId>
+    		<version>20.1</version>
+    		<classifier>jdk17</classifier>
+		</dependency>
         <dependency>
             <groupId>javax.media.jai</groupId>
             <artifactId>com.springsource.javax.media.jai.core</artifactId>
@@ -23,10 +23,11 @@
         </dependency>
     </dependencies>
     <repositories>
-        <repository>
-            <id>aspose-maven-repository</id>
-            <url>http://repository.aspose.com/repo/</url>
-        </repository>
+    	<repository>
+    		<id>AsposeJavaAPI</id>
+    		<name>Aspose Java API</name>
+    		<url>https://repository.aspose.com/repo/</url>
+		</repository>
         <repository>
             <id>com.springsource.repository.bundles.external</id>
             <name>SpringSource Enterprise Bundle Repository - External Bundle Releases</name>

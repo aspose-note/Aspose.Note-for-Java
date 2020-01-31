@@ -7,9 +7,11 @@ package com.aspose.note.examples.tables;
 
 import java.io.IOException;
 import java.util.List;
+import java.util.stream.Collectors;
 
 import com.aspose.note.Document;
 import com.aspose.note.LoadOptions;
+import com.aspose.note.RichText;
 import com.aspose.note.Table;
 import com.aspose.note.TableRow;
 import com.aspose.note.examples.Utils;
@@ -37,7 +39,9 @@ public class ExtractRowtextfromtableinOneNotedocument {
 			for (TableRow row : table) {
 				rowCount++;
 				// Retrieve text
-				String text = row.getText();
+				String text = row.getChildNodes(RichText.class).stream()
+								.map(RichText::getText)
+								.collect(Collectors.joining(System.lineSeparator()));
 				// Print text on the output screen
 				System.out.println(text);
 			}

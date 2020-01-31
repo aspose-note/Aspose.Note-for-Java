@@ -1,6 +1,9 @@
 package com.aspose.note.examples.text;
 
+import java.util.stream.Collectors;
+
 import com.aspose.note.Document;
+import com.aspose.note.RichText;
 import com.aspose.note.examples.Utils;
 
 public class ExtractingAllText {
@@ -14,7 +17,9 @@ public class ExtractingAllText {
         Document oneFile = new Document(dataDir + "Sample1.one");
 
         // Retrieve text
-        String text = oneFile.getText();
+        String text = oneFile.getChildNodes(RichText.class).stream()
+				.map(RichText::getText)
+				.collect(Collectors.joining(System.lineSeparator()));
 
         // Print text on the output screen
         System.out.println(text);

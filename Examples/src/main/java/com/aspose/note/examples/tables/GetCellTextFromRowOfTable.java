@@ -2,8 +2,10 @@ package com.aspose.note.examples.tables;
 
 import java.io.IOException;
 import java.util.List;
+import java.util.stream.Collectors;
 
 import com.aspose.note.Document;
+import com.aspose.note.RichText;
 import com.aspose.note.Table;
 import com.aspose.note.TableCell;
 import com.aspose.note.TableRow;
@@ -29,7 +31,9 @@ public class GetCellTextFromRowOfTable {
 				// iterate through table cells
 				for (TableCell cell : cellNodes) {
 					// Retrieve text
-					String text = cell.getText();
+					String text = cell.getChildNodes(RichText.class).stream()
+							.map(RichText::getText)
+							.collect(Collectors.joining(System.lineSeparator()));
 					// Print text on the output screen
 					System.out.println(text);
 				}
