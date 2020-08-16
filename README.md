@@ -5,7 +5,7 @@
 Directory | Description
 --------- | -----------
 [Examples](https://github.com/aspose-note/Aspose.Note-for-Java/tree/master/Examples) | A collection of Java examples that help you learn the product features.
-[Plugins](https://github.com/aspose-note/Aspose.Note-for-Java/tree/master/Plugins) | Plugins that will demonstrate one or more features of Aspose.Note for Java.
+[Plugins](https://github.com/aspose-note/Aspose.Note-for-Java/tree/master/Plugins) | Plugins demonstrating more features of Aspose.Note for Java.
 
 <p align="center">
   <a title="Download complete Aspose.Note for Java source code" href="https://github.com/asposenote/Aspose_Note_Java/archive/master.zip">
@@ -13,7 +13,7 @@ Directory | Description
   </a>
 </p>
 
-## Microsoft OneNote File Processing Features
+## Microsoft OneNote File Processing
 
 - Load, Save and Convert ONeNote documents.
 - [Generate Root and Sub Level Pages in OneNote](https://docs.aspose.com/note/java/working-with-pages/).
@@ -49,18 +49,10 @@ Aspose hosts all Java APIs at the [Aspose Repository](https://repository.aspose.
 ## Convert OneNote document to PDF with the Default Options using Java
 
 ```java
-// For complete examples and data files, please go to https://github.com/aspose-note/Aspose.Note-for-Java
-// Load the document into Aspose.Note.
+Document oneFile = new Document("template.one");
 
-String inputFile = "Sample1.one";
-Path inputPath = Utils.getPath(LoadDocIntoAsposeNoteUsingPdfsaveoptions.class, inputFile);
-String outputFile = "LoadDocIntoAsposeNoteUsingPdfsaveoptions.pdf";
-Path outputPath = Utils.getPath(LoadDocIntoAsposeNoteUsingPdfsaveoptions.class, outputFile);
-
-Document oneFile = new Document(inputPath.toString());
-
-// Save the document as PDF
-oneFile.save(outputPath.toString(), new PdfSaveOptions());
+// save the document as PDF
+oneFile.save("output.pdf", new PdfSaveOptions());
 ```
 
 [Home](https://www.aspose.com/) | [Product Page](https://products.aspose.com/note/java) | [Docs](https://docs.aspose.com/note/java/) | [Demos](https://products.aspose.app/note/family) | [API Reference](https://apireference.aspose.com/java/note) | [Examples](https://github.com/aspose-note/Aspose.Note-for-Java) | [Blog](https://blog.aspose.com/category/note/) | [Free Support](https://forum.aspose.com/c/note) | [Temporary License](https://purchase.aspose.com/temporary-license)
