@@ -10,6 +10,7 @@ import com.aspose.note.Page;
 import com.aspose.note.RichText;
 import com.aspose.note.SaveFormat;
 import com.aspose.note.TextStyle;
+import com.aspose.note.ParagraphStyle;
 import com.aspose.note.Title;
 import com.aspose.note.examples.Utils;
 
@@ -27,14 +28,14 @@ public class CreateOneNoteDocumentWithFormattedRichText {
 		// initialize Title class object
 		Title title = new Title(doc);
 		// initialize TextStyle class object and set formatting properties
-		TextStyle defaultTextStyle = new TextStyle();
+		ParagraphStyle defaultTextStyle = new ParagraphStyle();
 		defaultTextStyle.setFontColor(Color.black);
 		defaultTextStyle.setFontName("Arial");
 		defaultTextStyle.setFontSize(10);
 
 		RichText titleText = new RichText(doc);
 		titleText.setText("Title!");
-		titleText.setDefaultStyle(defaultTextStyle);
+		titleText.setParagraphStyle(defaultTextStyle);
 
 		// titleText.setTitleText(true);
 		// IsTitleText = true
@@ -74,7 +75,7 @@ public class CreateOneNoteDocumentWithFormattedRichText {
 
 		RichText text = new RichText(doc);
 		text.setText("Hello OneNote text!");
-		text.setDefaultStyle(defaultTextStyle);
+		text.setParagraphStyle(defaultTextStyle);
 		text.getStyles().addItem(textStyleForHelloWord);
 		text.getStyles().addItem(textStyleForOneNoteWord);
 		text.getStyles().addItem(textStyleForTextWord);

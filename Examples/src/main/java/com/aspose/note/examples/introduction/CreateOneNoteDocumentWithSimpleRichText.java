@@ -9,7 +9,7 @@ import com.aspose.note.OutlineElement;
 import com.aspose.note.Page;
 import com.aspose.note.RichText;
 import com.aspose.note.SaveFormat;
-import com.aspose.note.TextStyle;
+import com.aspose.note.ParagraphStyle;
 import com.aspose.note.examples.Utils;
 
 public class CreateOneNoteDocumentWithSimpleRichText {
@@ -29,8 +29,8 @@ public class CreateOneNoteDocumentWithSimpleRichText {
 		// initialize OutlineElement class object
 		OutlineElement outlineElem = new OutlineElement(doc);
 
-		// initialize TextStyle class object and set formatting properties
-		TextStyle textStyle = new TextStyle();
+		// initialize ParagraphStyle class object and set formatting properties
+		ParagraphStyle textStyle = new ParagraphStyle();
 		textStyle.setFontColor(Color.black);
 		textStyle.setFontName("Arial");
 		textStyle.setFontSize(10);
@@ -38,7 +38,7 @@ public class CreateOneNoteDocumentWithSimpleRichText {
 		// initialize RichText class object and apply text style
 		RichText text = new RichText(doc);
 		text.setText("Hello OneNote text!");
-		text.setDefaultStyle(textStyle);
+		text.setParagraphStyle(textStyle);
 
 		// add RichText node
 		outlineElem.appendChildLast(text);

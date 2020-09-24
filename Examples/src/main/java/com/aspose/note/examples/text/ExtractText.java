@@ -10,7 +10,7 @@ import com.aspose.note.RichText;
 import com.aspose.note.examples.Utils;
 
 public class ExtractText {
-	public static void main(String... args) throws IOException {
+	public static void main(String[] args) throws IOException {
 		// ExStart:ExtractText
 		String dataDir = Utils.getSharedDataDir(ExtractText.class) + "text/";
 
@@ -21,11 +21,13 @@ public class ExtractText {
 		List<Page> pages = doc.getChildNodes(Page.class);
 
 		for (Page p : pages) {
-			String text = p.getChildNodes(RichText.class).stream()
-					.map(RichText::getText)
-					.collect(Collectors.joining(System.lineSeparator()));
+			List<RichText> textNodes = (List<RichText>) p.getChildNodes(RichText.class);
+			StringBuilder text = new StringBuilder();
+			for (RichText richText : textNodes) {
+				text = text.append(richText.getText().toString());
+			}
 			
-			System.out.println(text);
+			System.out.println(text.toString());
 		}
 		// ExEnd:ExtractText
 	}

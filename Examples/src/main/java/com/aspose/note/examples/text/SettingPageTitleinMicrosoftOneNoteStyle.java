@@ -5,7 +5,7 @@ import java.io.IOException;
 import com.aspose.note.Document;
 import com.aspose.note.Page;
 import com.aspose.note.RichText;
-import com.aspose.note.TextStyle;
+import com.aspose.note.ParagraphStyle;
 import com.aspose.note.Title;
 import com.aspose.note.examples.Utils;
 
@@ -23,17 +23,17 @@ public class SettingPageTitleinMicrosoftOneNoteStyle {
 		// title text
 		RichText titleText = new RichText(doc);
 		titleText.setText("Title text.");
-		titleText.setDefaultStyle(TextStyle.getDefaultMsOneNoteTitleTextStyle());
+		titleText.setParagraphStyle(ParagraphStyle.getDefault());
 
 		// title date
 		RichText titleDate = new RichText(doc);
 		titleDate.setText("2011,11,11");
-		titleDate.setDefaultStyle(TextStyle.getDefaultMsOneNoteTitleDateStyle());
+		titleDate.setParagraphStyle(ParagraphStyle.getDefault());
 
 		// title time
 		RichText titleTime = new RichText(doc);
 		titleTime.setText("12:34");
-		titleTime.setDefaultStyle(TextStyle.getDefaultMsOneNoteTitleTimeStyle());
+		titleTime.setParagraphStyle(ParagraphStyle.getDefault());
 
 		Title title = new Title(doc);
 		title.setTitleText(titleText);

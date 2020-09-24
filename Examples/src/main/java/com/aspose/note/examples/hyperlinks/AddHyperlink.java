@@ -8,6 +8,7 @@ import com.aspose.note.OutlineElement;
 import com.aspose.note.Page;
 import com.aspose.note.RichText;
 import com.aspose.note.TextStyle;
+import com.aspose.note.ParagraphStyle;
 import com.aspose.note.Title;
 import com.aspose.note.examples.Utils;
 
@@ -26,14 +27,14 @@ public class AddHyperlink {
 		Title title = new Title(doc);
 
 		// initialize default text style
-		TextStyle defaultTextStyle = new TextStyle();
+		ParagraphStyle defaultTextStyle = new ParagraphStyle();
 		defaultTextStyle.setFontName("Arial");
 		defaultTextStyle.setFontSize(10);
 		defaultTextStyle.setFontColor(java.awt.Color.GRAY);
 
 		RichText titleText = new RichText(doc);
 		titleText.setText("Title");
-		titleText.setDefaultStyle(defaultTextStyle);
+		titleText.setParagraphStyle(defaultTextStyle);
 
 		Outline outline = new Outline(doc);
 		outline.setMaxWidth(200);
@@ -56,7 +57,7 @@ public class AddHyperlink {
 
 		RichText text = new RichText(doc);
 		text.setText("This is hyperlink. This text is not a hyperlink.");
-		text.setDefaultStyle(defaultTextStyle);
+		text.setParagraphStyle(defaultTextStyle);
 		text.getStyles().addItem(textStyleRed);
 		text.getStyles().addItem(textStyleHyperlink);
 

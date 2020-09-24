@@ -5,7 +5,7 @@ import java.awt.Color;
 import com.aspose.note.Document;
 import com.aspose.note.Page;
 import com.aspose.note.RichText;
-import com.aspose.note.TextStyle;
+import com.aspose.note.ParagraphStyle;
 import com.aspose.note.Title;
 import com.aspose.note.examples.Utils;
 
@@ -19,7 +19,7 @@ public class OptimizePerformanceForConsequentExportOperations {
 		// initialize the new Page
 		Page page = new Page(doc);
 		// default style for all text in the document.
-		TextStyle textStyle = new TextStyle();
+		ParagraphStyle textStyle = new ParagraphStyle();
 
 		textStyle.setFontColor(Color.BLACK);
 		textStyle.setFontName("Arial");
@@ -28,17 +28,17 @@ public class OptimizePerformanceForConsequentExportOperations {
 		// title text
 		RichText titleText = new RichText(doc);
 		titleText.setText("Title text.");
-		titleText.setDefaultStyle(textStyle);
+		titleText.setParagraphStyle(textStyle);
 
 		// title date
 		RichText titleDate = new RichText(doc);
 		titleDate.setText("2011,11,11");
-		titleDate.setDefaultStyle(textStyle);
+		titleDate.setParagraphStyle(textStyle);
 
 		// title time
 		RichText titleTime = new RichText(doc);
 		titleTime.setText("12:34");
-		titleTime.setDefaultStyle(textStyle);
+		titleTime.setParagraphStyle(textStyle);
 
 		Title title = new Title(doc);
 		title.setTitleText(titleText);

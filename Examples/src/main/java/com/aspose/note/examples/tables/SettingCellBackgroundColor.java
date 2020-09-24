@@ -8,7 +8,7 @@ import com.aspose.note.OutlineElement;
 import com.aspose.note.RichText;
 import com.aspose.note.TableCell;
 import com.aspose.note.TableRow;
-import com.aspose.note.TextStyle;
+import com.aspose.note.ParagraphStyle;
 
 public class SettingCellBackgroundColor {
 	public static void main(String... args) throws IOException {
@@ -30,13 +30,13 @@ public class SettingCellBackgroundColor {
 	private static OutlineElement GetOutlineElementWithText(Document doc, String string) {
 		// TODO Auto-generated method stub
 		OutlineElement outlineElem = new OutlineElement(doc);
-		TextStyle textStyle = new TextStyle();
+		ParagraphStyle textStyle = new ParagraphStyle();
 		textStyle.setFontColor(Color.BLACK);
 		textStyle.setFontName("Arial");
 		textStyle.setFontSize(10);
 		RichText richText = new RichText(doc);
 		richText.setText(string);
-		richText.setDefaultStyle(textStyle);
+		richText.setParagraphStyle(textStyle);
 		outlineElem.appendChildLast(richText);
 		return outlineElem;
 	}

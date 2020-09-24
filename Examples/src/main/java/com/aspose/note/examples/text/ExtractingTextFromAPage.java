@@ -27,10 +27,13 @@ public class ExtractingTextFromAPage {
         {
             Page page = (Page)nodes.get(0);
             // Retrieve text
-            String text = page.getChildNodes(RichText.class).stream()
-					.map(RichText::getText)
-					.collect(Collectors.joining(System.lineSeparator()));
-            // Print text on the output screen
+            List<RichText> textNodes = (List<RichText>) page.getChildNodes(RichText.class);
+			StringBuilder text = new StringBuilder();
+			for (RichText richText : textNodes) {
+				text = text.append(richText.getText().toString());
+			}
+			
+			// Print text on the output screen
             System.out.println(text);
         }
         // ExEnd:ExtractingTextFromAPage

@@ -8,7 +8,7 @@ import com.aspose.note.OutlineElement;
 import com.aspose.note.Page;
 import com.aspose.note.RichText;
 import com.aspose.note.SaveFormat;
-import com.aspose.note.TextStyle;
+import com.aspose.note.ParagraphStyle;
 import com.aspose.note.examples.Utils;
 
 public class CreateDocWithRootAndSubPages {
@@ -32,14 +32,14 @@ public class CreateDocWithRootAndSubPages {
 		// ---------- Adding nodes to first Page ----------
 		Outline outline = new Outline(doc);
 		OutlineElement outlineElem = new OutlineElement(doc);
-		TextStyle textStyle = new TextStyle();
+		ParagraphStyle textStyle = new ParagraphStyle();
 		textStyle.setFontColor(java.awt.Color.black);
 		textStyle.setFontName("David Transparent");
 		textStyle.setFontSize(10);
 
 		RichText text = new RichText(doc);
 		text.setText("First page.");
-		text.setDefaultStyle(textStyle);
+		text.setParagraphStyle(textStyle);
 
 		outlineElem.appendChildLast(text);
 		outline.appendChildLast(outlineElem);
@@ -50,7 +50,7 @@ public class CreateDocWithRootAndSubPages {
 		OutlineElement outlineElem2 = new OutlineElement(doc);
 		// var textStyle2 = new TextStyle { FontColor = Color.Black, FontName =
 		// "Arial", FontSize = 10 };
-		TextStyle textStyle2 = new TextStyle();
+		ParagraphStyle textStyle2 = new ParagraphStyle();
 		textStyle2.setFontColor(java.awt.Color.black);
 		textStyle2.setFontName("David Transparent");
 		textStyle2.setFontSize(10);
@@ -59,7 +59,7 @@ public class CreateDocWithRootAndSubPages {
 		// textStyle2 };
 		RichText text2 = new RichText(doc);
 		text2.setText("Second page.");
-		text2.setDefaultStyle(textStyle2);
+		text2.setParagraphStyle(textStyle2);
 
 		outlineElem2.appendChildLast(text2);
 		outline2.appendChildLast(outlineElem2);
@@ -68,14 +68,14 @@ public class CreateDocWithRootAndSubPages {
 		// ---------- Adding nodes to third Page ----------
 		Outline outline3 = new Outline(doc);
 		OutlineElement outlineElem3 = new OutlineElement(doc);
-		TextStyle textStyle3 = new TextStyle();
+		ParagraphStyle textStyle3 = new ParagraphStyle();
 		textStyle3.setFontColor(java.awt.Color.black);
 		textStyle3.setFontName("Broadway");
 		textStyle3.setFontSize(10);
 
 		RichText text3 = new RichText(doc);
 		text3.setText("Third page.");
-		text3.setDefaultStyle(textStyle3);
+		text3.setParagraphStyle(textStyle3);
 
 		outlineElem3.appendChildLast(text3);
 		outline3.appendChildLast(outlineElem3);

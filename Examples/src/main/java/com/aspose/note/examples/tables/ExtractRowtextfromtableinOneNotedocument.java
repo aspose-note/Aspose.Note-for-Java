@@ -39,9 +39,12 @@ public class ExtractRowtextfromtableinOneNotedocument {
 			for (TableRow row : table) {
 				rowCount++;
 				// Retrieve text
-				String text = row.getChildNodes(RichText.class).stream()
-								.map(RichText::getText)
-								.collect(Collectors.joining(System.lineSeparator()));
+				List<RichText> textNodes = (List<RichText>) row.getChildNodes(RichText.class);
+				StringBuilder text = new StringBuilder();
+				for (RichText richText : textNodes) {
+					text = text.append(richText.getText().toString());
+				}
+				
 				// Print text on the output screen
 				System.out.println(text);
 			}

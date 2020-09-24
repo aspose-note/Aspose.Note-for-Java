@@ -25,10 +25,12 @@ public class ExtractTextFromTable {
 			System.out.println("Table # " + i);
 
 			// Retrieve text
-			String text = table.getChildNodes(RichText.class).stream()
-					.map(RichText::getText)
-					.collect(Collectors.joining(System.lineSeparator()));
-
+			List<RichText> textNodes = (List<RichText>) table.getChildNodes(RichText.class);
+			StringBuilder text = new StringBuilder();
+			for (RichText richText : textNodes) {
+				text = text.append(richText.getText().toString());
+			}
+			
 			// Print text on the output screen
 			System.out.println(text);
 		}

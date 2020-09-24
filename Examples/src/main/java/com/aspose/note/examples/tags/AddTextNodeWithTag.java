@@ -10,7 +10,7 @@ import com.aspose.note.OutlineElement;
 import com.aspose.note.Page;
 import com.aspose.note.RichText;
 import com.aspose.note.TagIcon;
-import com.aspose.note.TextStyle;
+import com.aspose.note.ParagraphStyle;
 import com.aspose.note.examples.Utils;
 
 public class AddTextNodeWithTag {
@@ -30,14 +30,14 @@ public class AddTextNodeWithTag {
 		// Initialize OutlineElement class object
 		OutlineElement outlineElem = new OutlineElement(doc);
 
-		TextStyle textStyle = new TextStyle();
+		ParagraphStyle textStyle = new ParagraphStyle();
 		textStyle.setFontColor(Color.BLACK);
 		textStyle.setFontName("Arial");
 		textStyle.setFontSize(10);
 
 		RichText text = new RichText(doc);
 		text.setText("OneNote text.");
-		text.setDefaultStyle(textStyle);
+		text.setParagraphStyle(textStyle);
 
 		NoteTag noteTag = new NoteTag();
 		noteTag.setIcon(TagIcon.YellowStar);

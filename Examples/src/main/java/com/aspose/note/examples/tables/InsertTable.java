@@ -93,14 +93,14 @@ public class InsertTable {
     public static OutlineElement GetOutlineElementWithText(Document doc, String text)
     {
         OutlineElement outlineElem = new OutlineElement(doc);
-        TextStyle textStyle = new TextStyle();
+        ParagraphStyle textStyle = new ParagraphStyle();
         textStyle.setFontColor(Color.BLACK);
         textStyle.setFontName("Arial");
         textStyle.setFontSize(10);;
 
         RichText richText = new RichText(doc);
         richText.setText(text);
-        richText.setDefaultStyle(textStyle);
+        richText.setParagraphStyle(textStyle);
 
         outlineElem.appendChildLast(richText);
         return outlineElem;
