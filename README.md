@@ -1,3 +1,4 @@
+ ![GitHub](https://img.shields.io/github/license/aspose-note/Aspose.note-for-java)
 # Java API for OneNote Document Processing
 
 [Aspose.Note for Java](https://products.aspose.com/note/java) is a class library that enables applications to interact with Microsoft Office OneNote programmatically without its installation on the server. It is a pure alternate for MS OneNote Object Model provides much better performance and ease of use to manage OneNote documents. Aspose.Note for Java API delivers the features to read, convert, create and edit/manipulate the content of the Microsoft OneNote file format.
