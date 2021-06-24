@@ -56,4 +56,4 @@ Document oneFile = new Document("template.one");
 oneFile.save("output.pdf", new PdfSaveOptions());
 ```
 
-[Home](https://www.aspose.com/) | [Product Page](https://products.aspose.com/note/java) | [Docs](https://docs.aspose.com/note/java/) | [Demos](https://products.aspose.app/note/family) | [API Reference](https://apireference.aspose.com/note/java) | [Examples](https://github.com/aspose-note/Aspose.Note-for-Java) | [Blog](https://blog.aspose.com/category/note/) | [Free Support](https://forum.aspose.com/c/note) | [Temporary License](https://purchase.aspose.com/temporary-license)
+[Home](https://www.aspose.com/) | [Product Page](https://products.aspose.com/note/java) | [Docs](https://docs.aspose.com/note/java/) | [Demos](https://products.aspose.app/note/family) | [API Reference](https://apireference.aspose.com/note/java) | [Examples](https://github.com/aspose-note/Aspose.Note-for-Java) | [Blog](https://blog.aspose.com/category/note/) | [Search](https://search.aspose.com/) | [Free Support](https://forum.aspose.com/c/note) | [Temporary License](https://purchase.aspose.com/temporary-license)
