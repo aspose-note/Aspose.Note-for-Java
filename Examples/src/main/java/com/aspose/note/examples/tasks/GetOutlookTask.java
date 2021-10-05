@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.util.List;
 
 import com.aspose.note.Document;
-import com.aspose.note.NoteTagCore;
+import com.aspose.note.ITag;
 import com.aspose.note.NoteTask;
 import com.aspose.note.RichText;
 import com.aspose.note.examples.Utils;
@@ -22,7 +22,7 @@ public class GetOutlookTask {
 
 		// Iterate through each node
 		for (RichText richText : nodes) {
-			for (NoteTagCore tag : richText.getTags()) {
+			for (ITag tag : richText.getTags()) {
 				if (tag.getClass() == NoteTask.class) {
 					NoteTask noteTask = (NoteTask) tag;
 					// Retrieve properties
