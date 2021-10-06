@@ -41,7 +41,7 @@ public class AddTextNodeWithTag {
 
 		NoteTag noteTag = new NoteTag();
 		noteTag.setIcon(TagIcon.YellowStar);
-		text.getTags().addItem(noteTag);
+		text.getTags().add(noteTag);
 
 		// Add text node
 		outlineElem.appendChildLast(text);

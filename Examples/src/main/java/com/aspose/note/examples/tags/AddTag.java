@@ -41,7 +41,7 @@ public class AddTag {
 
 		NoteTag noteTag = new NoteTag();
 		noteTag.setIcon(TagIcon.YellowStar);
-		text.getTags().addItem(noteTag);
+		text.getTags().add(noteTag);
 
 		// add text node
 		outlineElem.appendChildLast(text);
