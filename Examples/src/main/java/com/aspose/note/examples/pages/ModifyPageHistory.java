@@ -20,13 +20,13 @@ public class ModifyPageHistory {
 
 		pageHistory.removeRange(0, 1);
 
-		pageHistory.set_Item(0, new Page(document));
+		pageHistory.set_Item(0, new Page());
 
 		pageHistory.get_Item(1).getTitle().getTitleText().setText("New Title");
 
-		pageHistory.addItem(new Page(document));
+		pageHistory.addItem(new Page());
 
-		pageHistory.insertItem(1, new Page(document));
+		pageHistory.insertItem(1, new Page());
 
 		document.save(dataDir + "ModifyPageHistory_out.one");
 		// ExEnd:ModifyPageHistory

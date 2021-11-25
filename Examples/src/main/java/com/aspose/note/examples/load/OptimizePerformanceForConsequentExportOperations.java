@@ -17,7 +17,7 @@ public class OptimizePerformanceForConsequentExportOperations {
 		Document doc = new Document();
 		doc.setAutomaticLayoutChangesDetectionEnabled(false);
 		// initialize the new Page
-		Page page = new Page(doc);
+		Page page = new Page();
 		// default style for all text in the document.
 		ParagraphStyle textStyle = new ParagraphStyle();
 
@@ -26,21 +26,21 @@ public class OptimizePerformanceForConsequentExportOperations {
 		textStyle.setFontSize(10);
 
 		// title text
-		RichText titleText = new RichText(doc);
+		RichText titleText = new RichText();
 		titleText.setText("Title text.");
 		titleText.setParagraphStyle(textStyle);
 
 		// title date
-		RichText titleDate = new RichText(doc);
+		RichText titleDate = new RichText();
 		titleDate.setText("2011,11,11");
 		titleDate.setParagraphStyle(textStyle);
 
 		// title time
-		RichText titleTime = new RichText(doc);
+		RichText titleTime = new RichText();
 		titleTime.setText("12:34");
 		titleTime.setParagraphStyle(textStyle);
 
-		Title title = new Title(doc);
+		Title title = new Title();
 		title.setTitleText(titleText);
 		title.setTitleDate(titleDate);
 		title.setTitleTime(titleTime);

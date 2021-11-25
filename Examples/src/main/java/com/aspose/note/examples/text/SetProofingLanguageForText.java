@@ -15,11 +15,11 @@ public class SetProofingLanguageForText {
         String dataDir = Paths.get(Utils.getSharedDataDir(LoadPasswordProtectedOneNoteDoc.class), "text").toString();
 
         Document document = new Document();
-        Page page = new Page(document);
-        Outline outline = new Outline(document);
-        OutlineElement outlineElem = new OutlineElement(document);
+        Page page = new Page();
+        Outline outline = new Outline();
+        OutlineElement outlineElem = new OutlineElement();
 
-        RichText text = new RichText(document);
+        RichText text = new RichText();
         text.setText("United States Germany China");
         text.setParagraphStyle(ParagraphStyle.getDefault());
 

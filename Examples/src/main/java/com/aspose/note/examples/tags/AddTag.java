@@ -23,24 +23,23 @@ public class AddTag {
 		Document doc = new Document();
 
 		// initialize Page class object
-		Page page = new Page(doc);
+		Page page = new Page();
 
 		// initialize Outline class object
-		Outline outline = new Outline(doc);
+		Outline outline = new Outline();
 
 		// initialize OutlineElement class object
-		OutlineElement outlineElem = new OutlineElement(doc);
+		OutlineElement outlineElem = new OutlineElement();
 		ParagraphStyle textStyle = new ParagraphStyle();
 		textStyle.setFontColor(Color.black);
 		textStyle.setFontName("Arial");
 		textStyle.setFontSize(10);
 
-		RichText text = new RichText(doc);
+		RichText text = new RichText();
 		text.setText("OneNote text.");
 		text.setParagraphStyle(textStyle);
 
-		NoteTag noteTag = new NoteTag();
-		noteTag.setIcon(TagIcon.YellowStar);
+		NoteTag noteTag = NoteTag.createYellowStar();
 		text.getTags().add(noteTag);
 
 		// add text node

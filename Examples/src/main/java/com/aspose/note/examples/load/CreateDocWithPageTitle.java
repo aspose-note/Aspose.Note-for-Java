@@ -17,7 +17,7 @@ public class CreateDocWithPageTitle {
         Document doc = new Document();
 
         // Initialize Page class object
-        Page page = new Page(doc);
+        Page page = new Page();
 
         // Default style for all text in the document.
         ParagraphStyle textStyle = new ParagraphStyle();
@@ -26,21 +26,21 @@ public class CreateDocWithPageTitle {
         textStyle.setFontSize(10);
 
         // Set page title properties
-        Title title = new Title(doc);
+        Title title = new Title();
 
-        RichText titleText = new RichText(doc);
+        RichText titleText = new RichText();
         titleText.setText("Title text.");
         titleText.setParagraphStyle(textStyle);
         title.setTitleText(titleText);
 
-        RichText titleDate = new RichText(doc);
+        RichText titleDate = new RichText();
         Calendar cal = Calendar.getInstance();
         cal.set(2018, 04, 03);
         titleDate.setText(cal.getTime().toString());
         titleDate.setParagraphStyle(textStyle);
         title.setTitleDate(titleDate);
 
-        RichText titleTime = new RichText(doc);
+        RichText titleTime = new RichText();
         titleTime.setText("12:34");
         titleTime.setParagraphStyle(textStyle);
         title.setTitleText(titleTime);

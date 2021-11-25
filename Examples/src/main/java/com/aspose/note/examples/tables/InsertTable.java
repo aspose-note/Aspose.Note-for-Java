@@ -15,20 +15,20 @@ public class InsertTable {
         Document doc = new Document();
 
         // Initialize Page class object
-        Page page = new Page(doc);
+        Page page = new Page();
 
         // Initialize TableRow class object
-        TableRow row1 = new TableRow(doc);
+        TableRow row1 = new TableRow();
 
         // Initialize TableCell class objects
-        TableCell cell11 = new TableCell(doc);
-        TableCell cell12 = new TableCell(doc);
-        TableCell cell13 = new TableCell(doc);
+        TableCell cell11 = new TableCell();
+        TableCell cell12 = new TableCell();
+        TableCell cell13 = new TableCell();
 
         // Append outline elements in the table cell
-        cell11.appendChildLast(GetOutlineElementWithText(doc, "cell_1.1"));
-        cell12.appendChildLast(GetOutlineElementWithText(doc, "cell_1.2"));
-        cell13.appendChildLast(GetOutlineElementWithText(doc, "cell_1.3"));
+        cell11.appendChildLast(GetOutlineElementWithText("cell_1.1"));
+        cell12.appendChildLast(GetOutlineElementWithText("cell_1.2"));
+        cell13.appendChildLast(GetOutlineElementWithText("cell_1.3"));
 
         // Table cells to rows
         row1.appendChildLast(cell11);
@@ -36,17 +36,17 @@ public class InsertTable {
         row1.appendChildLast(cell13);
 
         // Initialize TableRow class object
-        TableRow row2 = new TableRow(doc);
+        TableRow row2 = new TableRow();
 
         // initialize TableCell class objects
-        TableCell cell21 = new TableCell(doc);
-        TableCell cell22 = new TableCell(doc);
-        TableCell cell23 = new TableCell(doc);
+        TableCell cell21 = new TableCell();
+        TableCell cell22 = new TableCell();
+        TableCell cell23 = new TableCell();
 
         // Append outline elements in the table cell
-        cell21.appendChildLast(GetOutlineElementWithText(doc, "cell_2.1"));
-        cell22.appendChildLast(GetOutlineElementWithText(doc, "cell_2.2"));
-        cell23.appendChildLast(GetOutlineElementWithText(doc, "cell_2.3"));
+        cell21.appendChildLast(GetOutlineElementWithText("cell_2.1"));
+        cell22.appendChildLast(GetOutlineElementWithText("cell_2.2"));
+        cell23.appendChildLast(GetOutlineElementWithText("cell_2.3"));
 
         // Append table cells to rows
         row2.appendChildLast(cell21);
@@ -54,7 +54,7 @@ public class InsertTable {
         row2.appendChildLast(cell23);
 
         // Initialize Table class object and set column widths
-        Table table = new Table(doc);
+        Table table = new Table();
         table.setBordersVisible(true);
         TableColumn col = new TableColumn();
         col.setWidth(200);
@@ -68,10 +68,10 @@ public class InsertTable {
         table.appendChildLast(row2);
 
         // Initialize Outline object
-        Outline outline = new Outline(doc);
+        Outline outline = new Outline();
 
         // Initialize OutlineElement object
-        OutlineElement outlineElem = new OutlineElement(doc);
+        OutlineElement outlineElem = new OutlineElement();
 
         // Add table to outline element node
         outlineElem.appendChildLast(table);
@@ -90,15 +90,15 @@ public class InsertTable {
     }
 
     // ExStart:GetOutlineElementWithText
-    public static OutlineElement GetOutlineElementWithText(Document doc, String text)
+    public static OutlineElement GetOutlineElementWithText(String text)
     {
-        OutlineElement outlineElem = new OutlineElement(doc);
+        OutlineElement outlineElem = new OutlineElement();
         ParagraphStyle textStyle = new ParagraphStyle();
         textStyle.setFontColor(Color.BLACK);
         textStyle.setFontName("Arial");
         textStyle.setFontSize(10);;
 
-        RichText richText = new RichText(doc);
+        RichText richText = new RichText();
         richText.setText(text);
         richText.setParagraphStyle(textStyle);
 

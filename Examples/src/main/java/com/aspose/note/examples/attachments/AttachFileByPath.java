@@ -15,16 +15,16 @@ public class AttachFileByPath {
         Document doc = new Document();
 
         // Initialize Page class object
-        Page page = new Page(doc);
+        Page page = new Page();
 
         // Initialize Outline class object
-        Outline outline = new Outline(doc);
+        Outline outline = new Outline();
 
         // Initialize OutlineElement class object
-        OutlineElement outlineElem = new OutlineElement(doc);
+        OutlineElement outlineElem = new OutlineElement();
 
         // Initialize AttachedFile class object
-        AttachedFile attachedFile = new AttachedFile(doc,  dataDir + "attachment.txt");
+        AttachedFile attachedFile = new AttachedFile(null,  dataDir + "attachment.txt");
 
         // Add attached file
         outlineElem.appendChildLast(attachedFile);

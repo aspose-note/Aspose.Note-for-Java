@@ -15,8 +15,8 @@ public class AddHyperlinkToImage {
 		String dataDir = Utils.getSharedDataDir(AlternativeText.class) + "images/";
 		//ExStart: AddHyperlinkToImage
 		Document document = new Document();
-		Page page = new Page(document);
-		Image image = new Image(document, dataDir + "image1.jpg");
+		Page page = new Page();
+		Image image = new Image(null, dataDir + "image1.jpg");
 		image.setHyperlinkUrl( "http://www.aspose.com");
 		page.appendChildLast(image);
 		document.appendChildLast(page);

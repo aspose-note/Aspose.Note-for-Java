@@ -24,27 +24,27 @@ public class CreateOneNoteDocumentWithFormattedRichText {
 		// create an object of the Document class
 		Document doc = new Document();
 		// initialize Page class object
-		Page page = new Page(doc);
+		Page page = new Page();
 		// initialize Title class object
-		Title title = new Title(doc);
+		Title title = new Title();
 		// initialize TextStyle class object and set formatting properties
 		ParagraphStyle defaultTextStyle = new ParagraphStyle();
 		defaultTextStyle.setFontColor(Color.black);
 		defaultTextStyle.setFontName("Arial");
 		defaultTextStyle.setFontSize(10);
 
-		RichText titleText = new RichText(doc);
+		RichText titleText = new RichText();
 		titleText.setText("Title!");
 		titleText.setParagraphStyle(defaultTextStyle);
 
 		// titleText.setTitleText(true);
 		// IsTitleText = true
 
-		Outline outline = new Outline(doc);
+		Outline outline = new Outline();
 		outline.setVerticalOffset(100);
 		outline.setHorizontalOffset(100);
 
-		OutlineElement outlineElem = new OutlineElement(doc);
+		OutlineElement outlineElem = new OutlineElement();
 		// RunIndex = 5 means the style will be applied only to 0-4 characters.
 		// ("Hello")
 		TextStyle textStyleForHelloWord = new TextStyle();
@@ -73,7 +73,7 @@ public class CreateOneNoteDocumentWithFormattedRichText {
 		textStyleForTextWord.setItalic(true);
 		textStyleForTextWord.setRunIndex(18);
 
-		RichText text = new RichText(doc);
+		RichText text = new RichText();
 		text.setText("Hello OneNote text!");
 		text.setParagraphStyle(defaultTextStyle);
 		text.getStyles().addItem(textStyleForHelloWord);

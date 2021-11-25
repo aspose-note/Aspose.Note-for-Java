@@ -18,15 +18,15 @@ public class BuildDocAndInsertImage {
 		// create an object of the Document class
 		Document doc = new Document();
 		// initialize Page class object
-		Page page = new Page(doc);
+		Page page = new Page();
 		// initialize Outline class object and set offset properties
-		Outline outline = new Outline(doc);
+		Outline outline = new Outline();
 		outline.setVerticalOffset(0);
 		outline.setHorizontalOffset(0);
 		// initialize OutlineElement class object
-		OutlineElement outlineElem = new OutlineElement(doc);
+		OutlineElement outlineElem = new OutlineElement();
 		// load an image by the file path.
-		Image image = new Image(doc, dataDir + "Input.jpg");
+		Image image = new Image(null, dataDir + "Input.jpg");
 		// set image alignment
 		image.setAlignment(HorizontalAlignment.Right);
 		// add image

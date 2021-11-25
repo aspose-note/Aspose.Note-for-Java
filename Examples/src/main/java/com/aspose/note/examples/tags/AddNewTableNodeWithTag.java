@@ -22,15 +22,15 @@ public class AddNewTableNodeWithTag {
 		// create an object of the Document class
 		Document doc = new Document();
 		// initialize Page class object
-		Page page = new Page(doc);
+		Page page = new Page();
 		// initialize TableRow class object
-		TableRow row = new TableRow(doc);
+		TableRow row = new TableRow();
 		// initialize TableCell class object
-		TableCell cell = new TableCell(doc);
+		TableCell cell = new TableCell();
 		// add cell to row node
 		row.appendChildLast(cell);
 		// initialize table node
-		Table table = new Table(doc);
+		Table table = new Table();
 		table.setBordersVisible(true);
 		TableColumn column = new TableColumn();
 		column.setWidth(70);
@@ -39,12 +39,11 @@ public class AddNewTableNodeWithTag {
 		// insert row node in table
 		table.appendChildLast(row);
 		// add tag to this table node
-		NoteTag noteTag = new NoteTag();
-		noteTag.setIcon(TagIcon.QuestionMark);
+		NoteTag noteTag = NoteTag.createQuestionMark();
 		table.getTags().add(noteTag);
 
-		Outline outline = new Outline(doc);
-		OutlineElement outlineElem = new OutlineElement(doc);
+		Outline outline = new Outline();
+		OutlineElement outlineElem = new OutlineElement();
 		// add table node
 		outlineElem.appendChildLast(table);
 		// add outline elements

@@ -17,24 +17,24 @@ public class SettingCellBackgroundColor {
 		Document doc = new Document();
 
 		// Initialize TableRow class object
-		TableRow row1 = new TableRow(doc);
+		TableRow row1 = new TableRow();
 		// Initialize TableCell class object and set text content
-		TableCell cell11 = new TableCell(doc);
-		cell11.appendChildLast(GetOutlineElementWithText(doc, "Small text"));
+		TableCell cell11 = new TableCell();
+		cell11.appendChildLast(GetOutlineElementWithText("Small text"));
 		cell11.setBackgroundColor(Color.BLACK);
 		row1.appendChildLast(cell11);
 		// ExEnd:SettingCellBackGroundColor
 	}
 
 	// ExStart:GetOutlineElementWithText
-	private static OutlineElement GetOutlineElementWithText(Document doc, String string) {
+	private static OutlineElement GetOutlineElementWithText(String string) {
 		// TODO Auto-generated method stub
-		OutlineElement outlineElem = new OutlineElement(doc);
+		OutlineElement outlineElem = new OutlineElement();
 		ParagraphStyle textStyle = new ParagraphStyle();
 		textStyle.setFontColor(Color.BLACK);
 		textStyle.setFontName("Arial");
 		textStyle.setFontSize(10);
-		RichText richText = new RichText(doc);
+		RichText richText = new RichText();
 		richText.setText(string);
 		richText.setParagraphStyle(textStyle);
 		outlineElem.appendChildLast(richText);

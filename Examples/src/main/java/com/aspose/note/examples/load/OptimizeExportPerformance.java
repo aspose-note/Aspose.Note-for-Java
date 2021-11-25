@@ -22,7 +22,7 @@ public class OptimizeExportPerformance {
 		doc.setAutomaticLayoutChangesDetectionEnabled(false);
 
 		// Create a new Page
-		Page page = new Page(doc);
+		Page page = new Page();
 
 		// Style for all text in the document.
 		ParagraphStyle textStyle = new ParagraphStyle();
@@ -31,22 +31,22 @@ public class OptimizeExportPerformance {
 		textStyle.setFontSize(10);
 
 		// Create title text
-		RichText titleText = new RichText(doc);
+		RichText titleText = new RichText();
 		titleText.setText("Title text.");
 		titleText.setParagraphStyle(textStyle);
 
 		// Create title date
-		RichText titleDate = new RichText(doc);
+		RichText titleDate = new RichText();
 		titleDate.setText("2011,11,11");
 		titleDate.setParagraphStyle(textStyle);
 
 		// Create title time
-		RichText titleTime = new RichText(doc);
+		RichText titleTime = new RichText();
 		titleTime.setText("12:34");
 		titleTime.setParagraphStyle(textStyle);
 
 		// Add title to page
-		Title title = new Title(doc);
+		Title title = new Title();
 		title.setTitleText(titleText);
 		title.setTitleDate(titleDate);
 		title.setTitleTime(titleTime);

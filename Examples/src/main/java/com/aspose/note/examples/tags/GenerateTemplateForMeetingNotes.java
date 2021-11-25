@@ -30,30 +30,30 @@ public class GenerateTemplateForMeetingNotes {
         Document d = new Document();
         boolean restartFlag = true;
 
-        RichText titleText = new RichText(null);
+        RichText titleText = new RichText();
         titleText.setText(String.format("Weekly meeting %s", dateFormat.format(Date.from(Instant.now()))));
         titleText.setParagraphStyle(ParagraphStyle.getDefault());
 
-        Title title = new Title(null);
+        Title title = new Title();
         title.setTitleText(titleText);
 
-        Page page = new Page(null);
+        Page page = new Page();
         page.setTitle(title);
         d.appendChildLast(page);
 
-        Outline outline = page.appendChildLast(new Outline(null));
+        Outline outline = page.appendChildLast(new Outline());
         outline.setVerticalOffset(30);
         outline.setHorizontalOffset(30);
 
-        RichText richText = outline.appendChildLast(new OutlineElement(null)).appendChildLast(new RichText(null));
+        RichText richText = outline.appendChildLast(new OutlineElement()).appendChildLast(new RichText());
         richText.setText("Important");
         richText.setParagraphStyle(headerStyle);
         for (String e: new String[] { "First", "Second", "Third" })
         {
-            OutlineElement outlineElement = outline.appendChildLast(new OutlineElement(null));
+            OutlineElement outlineElement = outline.appendChildLast(new OutlineElement());
             outlineElement.setNumberList(createListNumberingStyle(bodyStyle, restartFlag));
 
-            richText = outlineElement.appendChildLast(new RichText(null));
+            richText = outlineElement.appendChildLast(new RichText());
             richText.setText(e);
             richText.setParagraphStyle(bodyStyle);
 
@@ -61,17 +61,17 @@ public class GenerateTemplateForMeetingNotes {
         }
 
 
-        richText = outline.appendChildLast(new OutlineElement(null)).appendChildLast(new RichText(null));
+        richText = outline.appendChildLast(new OutlineElement()).appendChildLast(new RichText());
         richText.setText("TO DO");
         richText.setParagraphStyle(headerStyle);
         richText.setSpaceBefore(15);
         restartFlag = true;
         for (String e: new String[] { "First", "Second", "Third" })
         {
-            OutlineElement outlineElement = outline.appendChildLast(new OutlineElement(null));
+            OutlineElement outlineElement = outline.appendChildLast(new OutlineElement());
             outlineElement.setNumberList(createListNumberingStyle(bodyStyle, restartFlag));
 
-            richText = outlineElement.appendChildLast(new RichText(null));
+            richText = outlineElement.appendChildLast(new RichText());
             richText.setText(e);
             richText.setParagraphStyle(bodyStyle);
             richText.getTags().add(NoteCheckBox.createBlueCheckBox());
