@@ -21,10 +21,10 @@ public class AddHyperlink {
 		Document doc = new Document();
 
 		// initialize Page class object
-		Page page = new Page(doc);
+		Page page = new Page();
 
 		// initialize Title class object
-		Title title = new Title(doc);
+		Title title = new Title();
 
 		// initialize default text style
 		ParagraphStyle defaultTextStyle = new ParagraphStyle();
@@ -32,17 +32,17 @@ public class AddHyperlink {
 		defaultTextStyle.setFontSize(10);
 		defaultTextStyle.setFontColor(java.awt.Color.GRAY);
 
-		RichText titleText = new RichText(doc);
+		RichText titleText = new RichText();
 		titleText.setText("Title");
 		titleText.setParagraphStyle(defaultTextStyle);
 
-		Outline outline = new Outline(doc);
+		Outline outline = new Outline();
 		outline.setMaxWidth(200);
 		outline.setMaxHeight(200);
 		outline.setVerticalOffset(100);
 		outline.setHorizontalOffset(100);
 
-		OutlineElement outlineElem = new OutlineElement(doc);
+		OutlineElement outlineElem = new OutlineElement();
 
 		TextStyle textStyleRed = new TextStyle();
 		textStyleRed.setFontName("Arial");
@@ -55,7 +55,7 @@ public class AddHyperlink {
 		textStyleHyperlink.setHyperlink(true);
 		textStyleHyperlink.setHyperlinkAddress("www.google.com");
 
-		RichText text = new RichText(doc);
+		RichText text = new RichText();
 		text.setText("This is hyperlink. This text is not a hyperlink.");
 		text.setParagraphStyle(defaultTextStyle);
 		text.getStyles().addItem(textStyleRed);

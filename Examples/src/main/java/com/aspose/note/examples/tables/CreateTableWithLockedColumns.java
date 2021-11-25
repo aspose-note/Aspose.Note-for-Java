@@ -15,26 +15,26 @@ public class CreateTableWithLockedColumns {
         Document doc = new Document();
 
         // Initialize Page class object
-        Page page = new Page(doc);
+        Page page = new Page();
 
         // Initialize TableRow class object
-        TableRow row1 = new TableRow(doc);
+        TableRow row1 = new TableRow();
 
         // Initialize TableCell class object and set text content
-        TableCell cell11 = new TableCell(doc);
-        cell11.appendChildLast(InsertTable.GetOutlineElementWithText(doc, "Small text"));
+        TableCell cell11 = new TableCell();
+        cell11.appendChildLast(InsertTable.GetOutlineElementWithText("Small text"));
         row1.appendChildLast(cell11);
 
         // Initialize TableRow class object
-        TableRow row2 = new TableRow(doc);
+        TableRow row2 = new TableRow();
 
         // Initialize TableCell class object and set text content
-        TableCell cell21 = new TableCell(doc);
-        cell21.appendChildLast(InsertTable.GetOutlineElementWithText(doc, "Long   text    with    several   words and    spaces."));
+        TableCell cell21 = new TableCell();
+        cell21.appendChildLast(InsertTable.GetOutlineElementWithText("Long   text    with    several   words and    spaces."));
         row2.appendChildLast(cell21);
 
         // Initialize Table class object
-        Table table = new Table(doc);
+        Table table = new Table();
         table.setBordersVisible(true);
 
         TableColumn col = new TableColumn();
@@ -47,8 +47,8 @@ public class CreateTableWithLockedColumns {
         table.appendChildLast(row1);
         table.appendChildLast(row2);
 
-        Outline outline = new Outline(doc);
-        OutlineElement outlineElem = new OutlineElement(doc);
+        Outline outline = new Outline();
+        OutlineElement outlineElem = new OutlineElement();
 
         // Add table node
         outlineElem.appendChildLast(table);

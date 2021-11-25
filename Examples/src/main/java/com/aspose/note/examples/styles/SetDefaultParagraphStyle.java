@@ -17,9 +17,9 @@ public class SetDefaultParagraphStyle {
         String dataDir = Paths.get(Utils.getSharedDataDir(LoadPasswordProtectedOneNoteDoc.class), "styles").toString();
 
         Document document = new Document();
-        Page page = new Page(document);
-        Outline outline = new Outline(document);
-        OutlineElement outlineElem = new OutlineElement(document);
+        Page page = new Page();
+        Outline outline = new Outline();
+        OutlineElement outlineElem = new OutlineElement();
 
         StringBuilder builder = new StringBuilder();
         builder.append("DefaultParagraphFontAndSize");
@@ -32,7 +32,7 @@ public class SetDefaultParagraphStyle {
         defaultStyle.setFontName("Courier New");
         defaultStyle.setFontSize(20);
 
-        RichText text = new RichText(document);
+        RichText text = new RichText();
         text.setText(builder.toString());
         text.setParagraphStyle(defaultStyle);
 

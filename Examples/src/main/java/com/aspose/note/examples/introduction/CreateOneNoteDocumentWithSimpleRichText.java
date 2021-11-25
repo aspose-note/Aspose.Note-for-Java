@@ -23,11 +23,11 @@ public class CreateOneNoteDocumentWithSimpleRichText {
 		// create an object of the Document class
 		Document doc = new Document();
 		// initialize Page class object
-		Page page = new Page(doc);
+		Page page = new Page();
 		// initialize Outline class object
-		Outline outline = new Outline(doc);
+		Outline outline = new Outline();
 		// initialize OutlineElement class object
-		OutlineElement outlineElem = new OutlineElement(doc);
+		OutlineElement outlineElem = new OutlineElement();
 
 		// initialize ParagraphStyle class object and set formatting properties
 		ParagraphStyle textStyle = new ParagraphStyle();
@@ -36,7 +36,7 @@ public class CreateOneNoteDocumentWithSimpleRichText {
 		textStyle.setFontSize(10);
 
 		// initialize RichText class object and apply text style
-		RichText text = new RichText(doc);
+		RichText text = new RichText();
 		text.setText("Hello OneNote text!");
 		text.setParagraphStyle(textStyle);
 

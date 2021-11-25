@@ -23,12 +23,12 @@ public class BuildDocAndInsertImageUsingImageStream {
 		// create an object of the Document class
 		Document doc = new Document();
 		// initialize Page class object
-		Page page = new Page(doc);
+		Page page = new Page();
 
-		Outline outline1 = new Outline(doc);
+		Outline outline1 = new Outline();
 		outline1.setVerticalOffset(600);
 		outline1.setHorizontalOffset(0);
-		OutlineElement outlineElem1 = new OutlineElement(doc);
+		OutlineElement outlineElem1 = new OutlineElement();
 		InputStream fs = null;
 		try {
 			fs = new FileInputStream(dataDir + "image.jpg");
@@ -37,7 +37,7 @@ public class BuildDocAndInsertImageUsingImageStream {
 		}
 
 		// Load the second image using the image name, extension and stream.
-		Image image = new Image(doc, dataDir + "image1.jpg");
+		Image image = new Image(null, dataDir + "image1.jpg");
 		// set image alignment
 		image.setAlignment(HorizontalAlignment.Right);
 

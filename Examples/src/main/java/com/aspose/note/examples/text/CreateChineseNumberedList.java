@@ -22,10 +22,10 @@ public class CreateChineseNumberedList {
 		Document doc = new Document();
 
 		// initialize Page class object
-		Page page = new Page(doc);
+		Page page = new Page();
 
 		// initialize Outline class object
-		Outline outline = new Outline(doc);
+		Outline outline = new Outline();
 
 		// initialize TextStyle class object and set formatting properties
 		ParagraphStyle defaultStyle = new ParagraphStyle();
@@ -35,25 +35,25 @@ public class CreateChineseNumberedList {
 
 		// initialize OutlineElement class objects and apply numbering
 		// numbers in the same outline are automatically incremented.
-		OutlineElement outlineElem1 = new OutlineElement(doc);
+		OutlineElement outlineElem1 = new OutlineElement();
 
 		outlineElem1.setNumberList(new NumberList("{0})", NumberFormat.ChineseCounting, "Arial", 10));
 
-		RichText text1 = new RichText(doc);
+		RichText text1 = new RichText();
 		text1.setText("First");
 		text1.setParagraphStyle(defaultStyle);
 		outlineElem1.appendChildLast(text1);
 
-		OutlineElement outlineElem2 = new OutlineElement(doc);
+		OutlineElement outlineElem2 = new OutlineElement();
 		outlineElem2.setNumberList(new NumberList("{0})", NumberFormat.ChineseCounting, "Arial", 10));
-		RichText text2 = new RichText(doc);
+		RichText text2 = new RichText();
 		text2.setText("Second");
 		text2.setParagraphStyle(defaultStyle);
 		outlineElem2.appendChildLast(text2);
 
-		OutlineElement outlineElem3 = new OutlineElement(doc);
+		OutlineElement outlineElem3 = new OutlineElement();
 		outlineElem3.setNumberList(new NumberList("{0})", NumberFormat.ChineseCounting, "Arial", 10));
-		RichText text3 = new RichText(doc);
+		RichText text3 = new RichText();
 		text3.setText("Third");
 		text3.setParagraphStyle(defaultStyle);
 		outlineElem3.appendChildLast(text3);

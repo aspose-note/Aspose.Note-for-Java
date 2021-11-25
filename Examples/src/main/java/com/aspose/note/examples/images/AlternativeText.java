@@ -17,9 +17,9 @@ public class AlternativeText {
 
 		Document document = new Document();
 
-		Page page = new Page(document);
+		Page page = new Page();
 
-		Image image = new Image(document, dataDir + "image.jpg");
+		Image image = new Image(null, dataDir + "image.jpg");
 
 		image.setAlternativeTextTitle("ImageAlternativeText Title");
 		

@@ -20,17 +20,16 @@ public class AddNewImageNodeWithTag {
 		// create an object of the Document class
 		Document doc = new Document();
 		// initialize Page class object
-		Page page = new Page(doc);
+		Page page = new Page();
 		// initialize Outline class object
-		Outline outline = new Outline(doc);
+		Outline outline = new Outline();
 		// initialize OutlineElement class object
-		OutlineElement outlineElem = new OutlineElement(doc);
+		OutlineElement outlineElem = new OutlineElement();
 		// load an image
-		Image image = new Image(doc, dataDir + "Input.jpg");
+		Image image = new Image(null, dataDir + "Input.jpg");
 		// insert image in the document node
 		outlineElem.appendChildLast(image);
-		NoteTag noteTag = new NoteTag();
-		noteTag.setIcon(TagIcon.YellowStar);
+		NoteTag noteTag = NoteTag.createYellowStar();
 		image.getTags().add(noteTag);
 
 		// add outline element node

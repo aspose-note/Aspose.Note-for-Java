@@ -18,24 +18,24 @@ public class SettingPageTitleinMicrosoftOneNoteStyle {
 		// initialize new Document
 		Document doc = new Document(dataDir + "Sample1.one");
 		// initialize new Page
-		Page page = new Page(doc);
+		Page page = new Page();
 
 		// title text
-		RichText titleText = new RichText(doc);
+		RichText titleText = new RichText();
 		titleText.setText("Title text.");
 		titleText.setParagraphStyle(ParagraphStyle.getDefault());
 
 		// title date
-		RichText titleDate = new RichText(doc);
+		RichText titleDate = new RichText();
 		titleDate.setText("2011,11,11");
 		titleDate.setParagraphStyle(ParagraphStyle.getDefault());
 
 		// title time
-		RichText titleTime = new RichText(doc);
+		RichText titleTime = new RichText();
 		titleTime.setText("12:34");
 		titleTime.setParagraphStyle(ParagraphStyle.getDefault());
 
-		Title title = new Title(doc);
+		Title title = new Title();
 		title.setTitleText(titleText);
 		title.setTitleDate(titleDate);
 		title.setTitleTime(titleTime);
