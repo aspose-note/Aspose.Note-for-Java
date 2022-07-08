@@ -28,9 +28,9 @@ public class SetDefaultParagraphStyle {
         builder.append(System.lineSeparator());
         builder.append("OnlyDefaultParagraphFontSize");
 
-        ParagraphStyle defaultStyle = new ParagraphStyle();
-        defaultStyle.setFontName("Courier New");
-        defaultStyle.setFontSize(20);
+        ParagraphStyle defaultStyle = new ParagraphStyle()
+                                                .setFontName("Courier New")
+                                                .setFontSize(20);
 
         RichText text = new RichText();
         text.setText(builder.toString());
@@ -42,14 +42,12 @@ public class SetDefaultParagraphStyle {
         text.getStyles().addItem(style);
 
         // Only font is from text.ParagraphStyle
-        style = new TextStyle();
-        style.setFontSize(14);
+        style = new TextStyle().setFontSize(14);
         style.setRunIndex(53);
         text.getStyles().addItem(style);
 
         // Only font size is from text.ParagraphStyle
-        style = new TextStyle();
-        style.setFontName("Verdana");
+        style = new TextStyle().setFontName("Verdana");
         style.setRunIndex(text.getText().length());
         text.getStyles().addItem(style);
 

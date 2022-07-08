@@ -20,10 +20,10 @@ public class CreateDocWithPageTitle {
         Page page = new Page();
 
         // Default style for all text in the document.
-        ParagraphStyle textStyle = new ParagraphStyle();
-        textStyle.setFontColor(Color.BLACK);
-        textStyle.setFontName("Arial");
-        textStyle.setFontSize(10);
+        ParagraphStyle textStyle = new ParagraphStyle()
+                                        .setFontColor(Color.BLACK)
+                                        .setFontName("Arial")
+                                        .setFontSize(10);
 
         // Set page title properties
         Title title = new Title();
@@ -56,6 +56,6 @@ public class CreateDocWithPageTitle {
         doc.save(dataDir);
         // ExEnd:CreateDocWithPageTitle
         
-        System.out.println("Done..");
+        System.out.println("Done.");
     }
 }

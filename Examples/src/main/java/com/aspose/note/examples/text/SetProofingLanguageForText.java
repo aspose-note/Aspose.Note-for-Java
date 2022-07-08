@@ -24,20 +24,20 @@ public class SetProofingLanguageForText {
         text.setParagraphStyle(ParagraphStyle.getDefault());
 
         // Font and font size are from text.ParagraphStyle
-        TextStyle style = new TextStyle();
-        style.setLanguage(Locale.forLanguageTag("en-US"));
+        TextStyle style = new TextStyle()
+                                .setLanguage(Locale.forLanguageTag("en-US"));
         style.setRunIndex(13);
         text.getStyles().addItem(style);
 
         // Only font is from text.ParagraphStyle
-        style = new TextStyle();
-        style.setLanguage(Locale.forLanguageTag("de-DE"));
+        style = new TextStyle()
+                        .setLanguage(Locale.forLanguageTag("de-DE"));
         style.setRunIndex(21);
         text.getStyles().addItem(style);
 
         // Only font size is from text.ParagraphStyle
-        style = new TextStyle();
-        style.setLanguage(Locale.forLanguageTag("zh-CN"));
+        style = new TextStyle()
+                        .setLanguage(Locale.forLanguageTag("zh-CN"));
         style.setRunIndex(text.getText().length());
         text.getStyles().addItem(style);
 

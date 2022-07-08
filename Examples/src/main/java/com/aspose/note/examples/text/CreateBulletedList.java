@@ -27,10 +27,10 @@ public class CreateBulletedList {
 		Outline outline = new Outline();
 
 		// initialize TextStyle class object and set formatting properties
-		ParagraphStyle defaultStyle = new ParagraphStyle();
-		defaultStyle.setFontColor(Color.black);
-		defaultStyle.setFontName("Arial");
-		defaultStyle.setFontSize(10);
+		ParagraphStyle defaultStyle = new ParagraphStyle()
+											.setFontColor(Color.black)
+											.setFontName("Arial")
+											.setFontSize(10);
 
 		// initialize OutlineElement class objects and apply bullets
 		OutlineElement outlineElem1 = new OutlineElement();
@@ -72,6 +72,5 @@ public class CreateBulletedList {
 		doc.save(dataDir + "CreateBulletedList_out.pdf");
 		// ExEnd:CreateBulletedList
 		System.out.printf("File saved: %s\n", dataDir + "CreateBulletedList_out.pdf");
-
 	}
 }

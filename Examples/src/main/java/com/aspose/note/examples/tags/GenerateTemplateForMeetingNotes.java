@@ -18,12 +18,12 @@ public class GenerateTemplateForMeetingNotes {
         String dataDir = Utils.getSharedDataDir(GenerateTemplateForMeetingNotes.class) + "tags/";
 
         // Create an object of the Document class
-        ParagraphStyle headerStyle = new ParagraphStyle();
-        headerStyle.setFontName("Calibri");
-        headerStyle.setFontSize(16);
-        ParagraphStyle bodyStyle = new ParagraphStyle();
-        bodyStyle.setFontName("Calibri");
-        bodyStyle.setFontSize(12);
+        ParagraphStyle headerStyle = new ParagraphStyle()
+                                            .setFontName("Calibri")
+                                            .setFontSize(16);
+        ParagraphStyle bodyStyle = new ParagraphStyle()
+                                            .setFontName("Calibri")
+                                            .setFontSize(12);
 
         DateFormat dateFormat = DateFormat.getDateInstance(DateFormat.SHORT, Locale.US);
 

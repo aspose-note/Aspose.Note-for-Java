@@ -32,10 +32,10 @@ public class CreateDocWithRootAndSubPages {
 		// ---------- Adding nodes to first Page ----------
 		Outline outline = new Outline();
 		OutlineElement outlineElem = new OutlineElement();
-		ParagraphStyle textStyle = new ParagraphStyle();
-		textStyle.setFontColor(java.awt.Color.black);
-		textStyle.setFontName("David Transparent");
-		textStyle.setFontSize(10);
+		ParagraphStyle textStyle = new ParagraphStyle()
+											.setFontColor(java.awt.Color.black)
+											.setFontName("David Transparent")
+											.setFontSize(10);
 
 		RichText text = new RichText();
 		text.setText("First page.");
@@ -48,15 +48,11 @@ public class CreateDocWithRootAndSubPages {
 		// ---------- Adding nodes to second Page ----------
 		Outline outline2 = new Outline();
 		OutlineElement outlineElem2 = new OutlineElement();
-		// var textStyle2 = new TextStyle { FontColor = Color.Black, FontName =
-		// "Arial", FontSize = 10 };
-		ParagraphStyle textStyle2 = new ParagraphStyle();
-		textStyle2.setFontColor(java.awt.Color.black);
-		textStyle2.setFontName("David Transparent");
-		textStyle2.setFontSize(10);
+		ParagraphStyle textStyle2 = new ParagraphStyle()
+											.setFontColor(java.awt.Color.black)
+											.setFontName("David Transparent")
+											.setFontSize(10);
 
-		// var text2 = new RichText() { Text = "Second page.", DefaultStyle =
-		// textStyle2 };
 		RichText text2 = new RichText();
 		text2.setText("Second page.");
 		text2.setParagraphStyle(textStyle2);
@@ -68,10 +64,10 @@ public class CreateDocWithRootAndSubPages {
 		// ---------- Adding nodes to third Page ----------
 		Outline outline3 = new Outline();
 		OutlineElement outlineElem3 = new OutlineElement();
-		ParagraphStyle textStyle3 = new ParagraphStyle();
-		textStyle3.setFontColor(java.awt.Color.black);
-		textStyle3.setFontName("Broadway");
-		textStyle3.setFontSize(10);
+		ParagraphStyle textStyle3 = new ParagraphStyle()
+											.setFontColor(java.awt.Color.black)
+											.setFontName("Broadway")
+											.setFontSize(10);
 
 		RichText text3 = new RichText();
 		text3.setText("Third page.");
@@ -93,6 +89,5 @@ public class CreateDocWithRootAndSubPages {
 
 		}
 		// ExEnd:CreateDocWithRootAndSubPages
-        }
-
+    }
 }

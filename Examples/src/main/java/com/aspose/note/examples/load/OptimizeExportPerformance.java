@@ -25,10 +25,10 @@ public class OptimizeExportPerformance {
 		Page page = new Page();
 
 		// Style for all text in the document.
-		ParagraphStyle textStyle = new ParagraphStyle();
-		textStyle.setFontColor(Color.BLACK);
-		textStyle.setFontName("Arial");
-		textStyle.setFontSize(10);
+		ParagraphStyle textStyle = new ParagraphStyle()
+											.setFontColor(Color.BLACK)
+											.setFontName("Arial")
+											.setFontSize(10);
 
 		// Create title text
 		RichText titleText = new RichText();

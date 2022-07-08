@@ -19,11 +19,10 @@ public class OptimizePerformanceForConsequentExportOperations {
 		// initialize the new Page
 		Page page = new Page();
 		// default style for all text in the document.
-		ParagraphStyle textStyle = new ParagraphStyle();
-
-		textStyle.setFontColor(Color.BLACK);
-		textStyle.setFontName("Arial");
-		textStyle.setFontSize(10);
+		ParagraphStyle textStyle = new ParagraphStyle()
+											.setFontColor(Color.BLACK)
+											.setFontName("Arial")
+											.setFontSize(10);
 
 		// title text
 		RichText titleText = new RichText();

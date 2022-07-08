@@ -28,10 +28,10 @@ public class CreateNumberedList {
 		Outline outline = new Outline();
 
 		// initialize TextStyle class object and set formatting properties
-		ParagraphStyle defaultStyle = new ParagraphStyle();
-		defaultStyle.setFontColor(Color.black);
-		defaultStyle.setFontName("Arial");
-		defaultStyle.setFontSize(10);
+		ParagraphStyle defaultStyle = new ParagraphStyle()
+												.setFontColor(Color.black)
+												.setFontName("Arial")
+												.setFontSize(10);
 
 		// initialize OutlineElement class objects and apply numbering
 		// numbers in the same outline are automatically incremented.
@@ -73,6 +73,5 @@ public class CreateNumberedList {
 		doc.save(dataDir + "CreateNumberedList_out.pdf");
 		// ExEnd:CreateNumberedList
 		System.out.printf("File saved: %s\n", dataDir + "CreateNumberedList_out.pdf");
-
 	}
 }
