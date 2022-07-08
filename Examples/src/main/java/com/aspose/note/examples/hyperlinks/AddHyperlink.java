@@ -32,8 +32,7 @@ public class AddHyperlink {
 												.setFontSize(10)
 												.setFontColor(java.awt.Color.GRAY);
 
-		RichText titleText = new RichText();
-		titleText.setText("Title");
+		RichText titleText = new RichText().append("Title");
 		titleText.setParagraphStyle(defaultTextStyle);
 
 		Outline outline = new Outline();
@@ -49,15 +48,11 @@ public class AddHyperlink {
 										.setFontSize(10)
 										.setFontColor(java.awt.Color.red);
 
-		TextStyle textStyleHyperlink = new TextStyle()
-											.setHyperlink(true)
-											.setHyperlinkAddress("www.google.com");
-
-		RichText text = new RichText();
-		text.setText("This is hyperlink. This text is not a hyperlink.");
+		RichText text = new RichText()
+								.append("This is ", textStyleRed)
+								.append("hyperlink", new TextStyle().setHyperlinkAddress("www.google.com"))
+								.append(". This text is not a hyperlink.", TextStyle.getDefault());
 		text.setParagraphStyle(defaultTextStyle);
-		text.getStyles().addItem(textStyleRed);
-		text.getStyles().addItem(textStyleHyperlink);
 
 		title.setTitleText(titleText);
 		page.setTitle(title);

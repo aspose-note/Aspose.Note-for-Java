@@ -39,8 +39,7 @@ public class InsertPages {
 											.setFontName("David Transparent")
 											.setFontSize(10);
 
-		RichText text = new RichText();
-		text.setText("First page.");
+		RichText text = new RichText().append("First page.");
 		text.setParagraphStyle(textStyle);
 
 		outlineElem.appendChildLast(text);
@@ -56,8 +55,7 @@ public class InsertPages {
 											.setFontName("David Transparent")
 											.setFontSize(10);
 
-		RichText text2 = new RichText();
-		text2.setText("Second page.");
+		RichText text2 = new RichText().append("Second page.");
 		text2.setParagraphStyle(textStyle2);
 
 		outlineElem2.appendChildLast(text2);
@@ -72,8 +70,7 @@ public class InsertPages {
 											.setFontName("Broadway")
 											.setFontSize(10);
 
-		RichText text3 = new RichText();
-		text3.setText("Third page.");
+		RichText text3 = new RichText().append("Third page.");
 		text3.setParagraphStyle(textStyle3);
 
 		outlineElem3.appendChildLast(text3);

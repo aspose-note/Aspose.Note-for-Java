@@ -36,8 +36,7 @@ public class CreateOneNoteDocumentWithSimpleRichText {
 											.setFontSize(10);
 
 		// initialize RichText class object and apply text style
-		RichText text = new RichText();
-		text.setText("Hello OneNote text!");
+		RichText text = new RichText().append("Hello OneNote text!");
 		text.setParagraphStyle(textStyle);
 
 		// add RichText node

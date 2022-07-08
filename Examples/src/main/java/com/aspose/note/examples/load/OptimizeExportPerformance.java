@@ -31,18 +31,15 @@ public class OptimizeExportPerformance {
 											.setFontSize(10);
 
 		// Create title text
-		RichText titleText = new RichText();
-		titleText.setText("Title text.");
+		RichText titleText = new RichText().append("Title text.");
 		titleText.setParagraphStyle(textStyle);
 
 		// Create title date
-		RichText titleDate = new RichText();
-		titleDate.setText("2011,11,11");
+		RichText titleDate = new RichText().append("2011,11,11");
 		titleDate.setParagraphStyle(textStyle);
 
 		// Create title time
-		RichText titleTime = new RichText();
-		titleTime.setText("12:34");
+		RichText titleTime = new RichText().append("12:34");
 		titleTime.setParagraphStyle(textStyle);
 
 		// Add title to page

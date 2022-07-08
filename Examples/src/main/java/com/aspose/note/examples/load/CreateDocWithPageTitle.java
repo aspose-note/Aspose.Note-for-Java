@@ -28,20 +28,17 @@ public class CreateDocWithPageTitle {
         // Set page title properties
         Title title = new Title();
 
-        RichText titleText = new RichText();
-        titleText.setText("Title text.");
+        RichText titleText = new RichText().append("Title text.");
         titleText.setParagraphStyle(textStyle);
         title.setTitleText(titleText);
 
-        RichText titleDate = new RichText();
         Calendar cal = Calendar.getInstance();
         cal.set(2018, 04, 03);
-        titleDate.setText(cal.getTime().toString());
+        RichText titleDate = new RichText().append(cal.getTime().toString());
         titleDate.setParagraphStyle(textStyle);
         title.setTitleDate(titleDate);
 
-        RichText titleTime = new RichText();
-        titleTime.setText("12:34");
+        RichText titleTime = new RichText().append("12:34");
         titleTime.setParagraphStyle(textStyle);
         title.setTitleText(titleTime);
 

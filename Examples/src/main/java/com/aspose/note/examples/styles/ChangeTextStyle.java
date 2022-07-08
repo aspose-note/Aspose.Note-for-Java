@@ -6,6 +6,7 @@ import java.util.List;
 
 import com.aspose.note.Document;
 import com.aspose.note.RichText;
+import com.aspose.note.TextRun;
 import com.aspose.note.TextStyle;
 import com.aspose.note.examples.Utils;
 
@@ -21,13 +22,13 @@ public class ChangeTextStyle {
 		List<RichText> richTextNodes = document.getChildNodes(RichText.class);
 		RichText richText = richTextNodes.get(0);
 
-		for (TextStyle style : richText.getStyles()) {
+		for (TextRun run : richText.getTextRuns()) {
 			// Set font color
-			style.setFontColor(Color.yellow);
+			run.getStyle().setFontColor(Color.yellow);
 			// Set highlight color
-			style.setHighlight(Color.blue);
+			run.getStyle().setHighlight(Color.blue);
 			// Set font size
-			style.setFontSize(20);
+			run.getStyle().setFontSize(20);
 		}
 
 		document.save(dataDir + "ChangeTextStyle_out.pdf");

@@ -98,8 +98,7 @@ public class InsertTable {
                                             .setFontName("Arial")
                                             .setFontSize(10);;
 
-        RichText richText = new RichText();
-        richText.setText(text);
+        RichText richText = new RichText().append(text);
         richText.setParagraphStyle(textStyle);
 
         outlineElem.appendChildLast(richText);

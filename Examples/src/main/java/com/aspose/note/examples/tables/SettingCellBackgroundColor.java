@@ -34,8 +34,7 @@ public class SettingCellBackgroundColor {
 										.setFontColor(Color.BLACK)
 										.setFontName("Arial")
 										.setFontSize(10);
-		RichText richText = new RichText();
-		richText.setText(string);
+		RichText richText = new RichText().append(string);
 		richText.setParagraphStyle(textStyle);
 		outlineElem.appendChildLast(richText);
 		return outlineElem;

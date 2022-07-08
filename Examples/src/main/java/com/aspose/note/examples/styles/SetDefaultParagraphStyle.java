@@ -21,36 +21,17 @@ public class SetDefaultParagraphStyle {
         Outline outline = new Outline();
         OutlineElement outlineElem = new OutlineElement();
 
-        StringBuilder builder = new StringBuilder();
-        builder.append("DefaultParagraphFontAndSize");
-        builder.append(System.lineSeparator());
-        builder.append("OnlyDefaultParagraphFont");
-        builder.append(System.lineSeparator());
-        builder.append("OnlyDefaultParagraphFontSize");
-
         ParagraphStyle defaultStyle = new ParagraphStyle()
                                                 .setFontName("Courier New")
                                                 .setFontSize(20);
 
-        RichText text = new RichText();
-        text.setText(builder.toString());
+        RichText text = new RichText()
+                            .append("DefaultParagraphFontAndSize")
+                            .append(System.lineSeparator())
+                            .append("OnlyDefaultParagraphFont", new TextStyle().setFontSize(14))
+                            .append(System.lineSeparator())
+                            .append("OnlyDefaultParagraphFontSize", new TextStyle().setFontName("Verdana"));
         text.setParagraphStyle(defaultStyle);
-
-        // Font and font size are from text.ParagraphStyle
-        TextStyle style = new TextStyle();
-        style.setRunIndex(27);
-        text.getStyles().addItem(style);
-
-        // Only font is from text.ParagraphStyle
-        style = new TextStyle().setFontSize(14);
-        style.setRunIndex(53);
-        text.getStyles().addItem(style);
-
-        // Only font size is from text.ParagraphStyle
-        style = new TextStyle().setFontName("Verdana");
-        style.setRunIndex(text.getText().length());
-        text.getStyles().addItem(style);
-
 
         outlineElem.appendChildLast(text);
         outline.appendChildLast(outlineElem);

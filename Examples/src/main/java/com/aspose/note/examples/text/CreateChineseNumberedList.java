@@ -39,22 +39,19 @@ public class CreateChineseNumberedList {
 
 		outlineElem1.setNumberList(new NumberList("{0})", NumberFormat.ChineseCounting, "Arial", 10));
 
-		RichText text1 = new RichText();
-		text1.setText("First");
+		RichText text1 = new RichText().append("First");
 		text1.setParagraphStyle(defaultStyle);
 		outlineElem1.appendChildLast(text1);
 
 		OutlineElement outlineElem2 = new OutlineElement();
 		outlineElem2.setNumberList(new NumberList("{0})", NumberFormat.ChineseCounting, "Arial", 10));
-		RichText text2 = new RichText();
-		text2.setText("Second");
+		RichText text2 = new RichText().append("Second");
 		text2.setParagraphStyle(defaultStyle);
 		outlineElem2.appendChildLast(text2);
 
 		OutlineElement outlineElem3 = new OutlineElement();
 		outlineElem3.setNumberList(new NumberList("{0})", NumberFormat.ChineseCounting, "Arial", 10));
-		RichText text3 = new RichText();
-		text3.setText("Third");
+		RichText text3 = new RichText().append("Third");
 		text3.setParagraphStyle(defaultStyle);
 		outlineElem3.appendChildLast(text3);
 
@@ -73,6 +70,5 @@ public class CreateChineseNumberedList {
 		doc.save(dataDir + "CreateChineseNumberedList_out.pdf");
 		// ExEnd:CreateChineseNumberedList
 		System.out.printf("File saved: %s\n", dataDir + "CreateChineseNumberedList_out.pdf");
-
 	}
 }

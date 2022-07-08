@@ -35,8 +35,7 @@ public class AddTag {
 											.setFontName("Arial")
 											.setFontSize(10);
 
-		RichText text = new RichText();
-		text.setText("OneNote text.");
+		RichText text = new RichText().append("OneNote text.");
 		text.setParagraphStyle(textStyle);
 
 		NoteTag noteTag = NoteTag.createYellowStar();

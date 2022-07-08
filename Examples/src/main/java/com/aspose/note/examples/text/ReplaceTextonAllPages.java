@@ -29,10 +29,7 @@ public class ReplaceTextonAllPages {
 		// Traverse all nodes and compare text against the key text
 		for (RichText richText : textNodes) {
 			for (String key : replacements.keySet()) {
-				if (richText != null && richText.getText().contains(key)) {
-					// Replace text of a shape
-					richText.setText(richText.getText().replace(key, replacements.get(key)));
-				}
+				richText.replace(key, replacements.get(key));
 			}
 		}
 
