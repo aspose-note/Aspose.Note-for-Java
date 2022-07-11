@@ -19,28 +19,11 @@ public class SetProofingLanguageForText {
         Outline outline = new Outline();
         OutlineElement outlineElem = new OutlineElement();
 
-        RichText text = new RichText();
-        text.setText("United States Germany China");
+        RichText text = new RichText()
+                                .append("United States", new TextStyle().setLanguage(Locale.forLanguageTag("en-US")))
+                                .append(" Germany", new TextStyle().setLanguage(Locale.forLanguageTag("de-DE")))
+                                .append(" China", new TextStyle().setLanguage(Locale.forLanguageTag("zh-CN")));
         text.setParagraphStyle(ParagraphStyle.getDefault());
-
-        // Font and font size are from text.ParagraphStyle
-        TextStyle style = new TextStyle();
-        style.setLanguage(Locale.forLanguageTag("en-US"));
-        style.setRunIndex(13);
-        text.getStyles().addItem(style);
-
-        // Only font is from text.ParagraphStyle
-        style = new TextStyle();
-        style.setLanguage(Locale.forLanguageTag("de-DE"));
-        style.setRunIndex(21);
-        text.getStyles().addItem(style);
-
-        // Only font size is from text.ParagraphStyle
-        style = new TextStyle();
-        style.setLanguage(Locale.forLanguageTag("zh-CN"));
-        style.setRunIndex(text.getText().length());
-        text.getStyles().addItem(style);
-
 
         outlineElem.appendChildLast(text);
         outline.appendChildLast(outlineElem);

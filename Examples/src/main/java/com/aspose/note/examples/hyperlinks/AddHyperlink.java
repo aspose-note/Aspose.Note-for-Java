@@ -27,13 +27,12 @@ public class AddHyperlink {
 		Title title = new Title();
 
 		// initialize default text style
-		ParagraphStyle defaultTextStyle = new ParagraphStyle();
-		defaultTextStyle.setFontName("Arial");
-		defaultTextStyle.setFontSize(10);
-		defaultTextStyle.setFontColor(java.awt.Color.GRAY);
+		ParagraphStyle defaultTextStyle = new ParagraphStyle()
+												.setFontName("Arial")
+												.setFontSize(10)
+												.setFontColor(java.awt.Color.GRAY);
 
-		RichText titleText = new RichText();
-		titleText.setText("Title");
+		RichText titleText = new RichText().append("Title");
 		titleText.setParagraphStyle(defaultTextStyle);
 
 		Outline outline = new Outline();
@@ -44,22 +43,16 @@ public class AddHyperlink {
 
 		OutlineElement outlineElem = new OutlineElement();
 
-		TextStyle textStyleRed = new TextStyle();
-		textStyleRed.setFontName("Arial");
-		textStyleRed.setFontSize(10);
-		textStyleRed.setFontColor(java.awt.Color.red);
-		textStyleRed.setRunIndex(8);
+		TextStyle textStyleRed = new TextStyle()
+										.setFontName("Arial")
+										.setFontSize(10)
+										.setFontColor(java.awt.Color.red);
 
-		TextStyle textStyleHyperlink = new TextStyle();
-		textStyleHyperlink.setRunIndex(17);
-		textStyleHyperlink.setHyperlink(true);
-		textStyleHyperlink.setHyperlinkAddress("www.google.com");
-
-		RichText text = new RichText();
-		text.setText("This is hyperlink. This text is not a hyperlink.");
+		RichText text = new RichText()
+								.append("This is ", textStyleRed)
+								.append("hyperlink", new TextStyle().setHyperlinkAddress("www.google.com"))
+								.append(". This text is not a hyperlink.", TextStyle.getDefault());
 		text.setParagraphStyle(defaultTextStyle);
-		text.getStyles().addItem(textStyleRed);
-		text.getStyles().addItem(textStyleHyperlink);
 
 		title.setTitleText(titleText);
 		page.setTitle(title);

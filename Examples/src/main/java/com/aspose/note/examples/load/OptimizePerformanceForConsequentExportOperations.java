@@ -19,25 +19,21 @@ public class OptimizePerformanceForConsequentExportOperations {
 		// initialize the new Page
 		Page page = new Page();
 		// default style for all text in the document.
-		ParagraphStyle textStyle = new ParagraphStyle();
-
-		textStyle.setFontColor(Color.BLACK);
-		textStyle.setFontName("Arial");
-		textStyle.setFontSize(10);
+		ParagraphStyle textStyle = new ParagraphStyle()
+											.setFontColor(Color.BLACK)
+											.setFontName("Arial")
+											.setFontSize(10);
 
 		// title text
-		RichText titleText = new RichText();
-		titleText.setText("Title text.");
+		RichText titleText = new RichText().append("Title text.");
 		titleText.setParagraphStyle(textStyle);
 
 		// title date
-		RichText titleDate = new RichText();
-		titleDate.setText("2011,11,11");
+		RichText titleDate = new RichText().append("2011,11,11");
 		titleDate.setParagraphStyle(textStyle);
 
 		// title time
-		RichText titleTime = new RichText();
-		titleTime.setText("12:34");
+		RichText titleTime = new RichText().append("12:34");
 		titleTime.setParagraphStyle(textStyle);
 
 		Title title = new Title();

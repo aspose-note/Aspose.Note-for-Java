@@ -22,7 +22,7 @@ public class ModifyPageHistory {
 
 		pageHistory.set_Item(0, new Page());
 
-		pageHistory.get_Item(1).getTitle().getTitleText().setText("New Title");
+		pageHistory.get_Item(1).getTitle().getTitleText().clear().append("New Title");
 
 		pageHistory.addItem(new Page());
 

@@ -30,13 +30,12 @@ public class AddTag {
 
 		// initialize OutlineElement class object
 		OutlineElement outlineElem = new OutlineElement();
-		ParagraphStyle textStyle = new ParagraphStyle();
-		textStyle.setFontColor(Color.black);
-		textStyle.setFontName("Arial");
-		textStyle.setFontSize(10);
+		ParagraphStyle textStyle = new ParagraphStyle()
+											.setFontColor(Color.black)
+											.setFontName("Arial")
+											.setFontSize(10);
 
-		RichText text = new RichText();
-		text.setText("OneNote text.");
+		RichText text = new RichText().append("OneNote text.");
 		text.setParagraphStyle(textStyle);
 
 		NoteTag noteTag = NoteTag.createYellowStar();

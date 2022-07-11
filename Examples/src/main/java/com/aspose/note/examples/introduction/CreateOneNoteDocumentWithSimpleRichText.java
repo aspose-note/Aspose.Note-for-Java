@@ -30,14 +30,13 @@ public class CreateOneNoteDocumentWithSimpleRichText {
 		OutlineElement outlineElem = new OutlineElement();
 
 		// initialize ParagraphStyle class object and set formatting properties
-		ParagraphStyle textStyle = new ParagraphStyle();
-		textStyle.setFontColor(Color.black);
-		textStyle.setFontName("Arial");
-		textStyle.setFontSize(10);
+		ParagraphStyle textStyle = new ParagraphStyle()
+											.setFontColor(Color.black)
+											.setFontName("Arial")
+											.setFontSize(10);
 
 		// initialize RichText class object and apply text style
-		RichText text = new RichText();
-		text.setText("Hello OneNote text!");
+		RichText text = new RichText().append("Hello OneNote text!");
 		text.setParagraphStyle(textStyle);
 
 		// add RichText node
@@ -52,5 +51,4 @@ public class CreateOneNoteDocumentWithSimpleRichText {
 		doc.save(dataDir + "CreateOneNoteDocumentWithSimpleRichText_out.pdf", SaveFormat.Pdf);
 		// ExEnd:CreateDocWithSimpleRichText
 	}
-
 }

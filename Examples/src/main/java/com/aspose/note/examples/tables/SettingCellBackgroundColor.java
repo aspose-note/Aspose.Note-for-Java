@@ -30,12 +30,11 @@ public class SettingCellBackgroundColor {
 	private static OutlineElement GetOutlineElementWithText(String string) {
 		// TODO Auto-generated method stub
 		OutlineElement outlineElem = new OutlineElement();
-		ParagraphStyle textStyle = new ParagraphStyle();
-		textStyle.setFontColor(Color.BLACK);
-		textStyle.setFontName("Arial");
-		textStyle.setFontSize(10);
-		RichText richText = new RichText();
-		richText.setText(string);
+		ParagraphStyle textStyle = new ParagraphStyle()
+										.setFontColor(Color.BLACK)
+										.setFontName("Arial")
+										.setFontSize(10);
+		RichText richText = new RichText().append(string);
 		richText.setParagraphStyle(textStyle);
 		outlineElem.appendChildLast(richText);
 		return outlineElem;

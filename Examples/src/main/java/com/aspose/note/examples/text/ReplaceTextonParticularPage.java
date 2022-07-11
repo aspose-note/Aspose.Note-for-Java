@@ -31,10 +31,8 @@ public class ReplaceTextonParticularPage {
 
 		for (RichText richText : textNodes) {
 			for (String key : replacements.keySet()) {
-				if (richText != null && richText.getText().contains(key)) {
-					// Replace text of a shape
-					richText.setText(richText.getText().replace(key, replacements.get(key)));
-				}
+				// Replace text of a shape
+				richText.replace(key, replacements.get(key));
 			}
 		}
 

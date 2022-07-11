@@ -21,18 +21,15 @@ public class SettingPageTitleinMicrosoftOneNoteStyle {
 		Page page = new Page();
 
 		// title text
-		RichText titleText = new RichText();
-		titleText.setText("Title text.");
+		RichText titleText = new RichText().append("Title text.");
 		titleText.setParagraphStyle(ParagraphStyle.getDefault());
 
 		// title date
-		RichText titleDate = new RichText();
-		titleDate.setText("2011,11,11");
+		RichText titleDate = new RichText().append("2011,11,11");
 		titleDate.setParagraphStyle(ParagraphStyle.getDefault());
 
 		// title time
-		RichText titleTime = new RichText();
-		titleTime.setText("12:34");
+		RichText titleTime = new RichText().append("12:34");
 		titleTime.setParagraphStyle(ParagraphStyle.getDefault());
 
 		Title title = new Title();
@@ -45,5 +42,4 @@ public class SettingPageTitleinMicrosoftOneNoteStyle {
 		doc.appendChildLast(page);
 		// ExEnd: SettingPageTitleinMicrosoftOneNoteStyle
 	}
-
 }

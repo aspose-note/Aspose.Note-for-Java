@@ -20,28 +20,25 @@ public class CreateDocWithPageTitle {
         Page page = new Page();
 
         // Default style for all text in the document.
-        ParagraphStyle textStyle = new ParagraphStyle();
-        textStyle.setFontColor(Color.BLACK);
-        textStyle.setFontName("Arial");
-        textStyle.setFontSize(10);
+        ParagraphStyle textStyle = new ParagraphStyle()
+                                        .setFontColor(Color.BLACK)
+                                        .setFontName("Arial")
+                                        .setFontSize(10);
 
         // Set page title properties
         Title title = new Title();
 
-        RichText titleText = new RichText();
-        titleText.setText("Title text.");
+        RichText titleText = new RichText().append("Title text.");
         titleText.setParagraphStyle(textStyle);
         title.setTitleText(titleText);
 
-        RichText titleDate = new RichText();
         Calendar cal = Calendar.getInstance();
         cal.set(2018, 04, 03);
-        titleDate.setText(cal.getTime().toString());
+        RichText titleDate = new RichText().append(cal.getTime().toString());
         titleDate.setParagraphStyle(textStyle);
         title.setTitleDate(titleDate);
 
-        RichText titleTime = new RichText();
-        titleTime.setText("12:34");
+        RichText titleTime = new RichText().append("12:34");
         titleTime.setParagraphStyle(textStyle);
         title.setTitleText(titleTime);
 
@@ -56,6 +53,6 @@ public class CreateDocWithPageTitle {
         doc.save(dataDir);
         // ExEnd:CreateDocWithPageTitle
         
-        System.out.println("Done..");
+        System.out.println("Done.");
     }
 }

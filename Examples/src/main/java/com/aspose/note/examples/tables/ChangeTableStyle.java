@@ -20,10 +20,10 @@ public class ChangeTableStyle {
                 node.getParagraphStyle().setBold(bold);
                 node.getParagraphStyle().setItalic(italic);
 
-                for (TextStyle style: node.getStyles())
+                for (TextRun run: node.getTextRuns())
                 {
-                    style.setBold(bold);
-                    style.setItalic(italic);
+                    run.getStyle().setBold(bold);
+                    run.getStyle().setItalic(italic);
                 }
             }
         }
