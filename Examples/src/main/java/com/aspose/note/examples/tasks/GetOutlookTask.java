@@ -30,7 +30,6 @@ public class GetOutlookTask {
 					System.out.println("Create Time: " + noteTask.getCreationTime());
 					System.out.println("Due Date: " + noteTask.getDueDate());
 					System.out.println("Status: " + noteTask.getStatus());
-					System.out.println("Task Type: " + noteTask.getTaskType());
 					System.out.println("Icon: " + noteTask.getIcon());
 				}
 			}
