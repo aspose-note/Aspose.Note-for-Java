@@ -11,7 +11,7 @@ public class ConvertToPDF {
 		String dataDir = Utils.getSharedDataDir(ConvertToPDF.class) + "Notebook/";
 				
 		// Load a OneNote Notebook
-		Notebook notebook = new Notebook(dataDir + "Notizbuch öffnen.onetoc2");
+		Notebook notebook = new Notebook(dataDir + "Notebook.onetoc2");
 
 		dataDir = dataDir + "ExportNotebooktoPDF_out.pdf";
 

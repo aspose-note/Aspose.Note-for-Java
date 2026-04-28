@@ -24,7 +24,7 @@ public class AttachFileByPath {
         OutlineElement outlineElem = new OutlineElement();
 
         // Initialize AttachedFile class object
-        AttachedFile attachedFile = new AttachedFile(null,  dataDir + "attachment.txt");
+        AttachedFile attachedFile = new AttachedFile(dataDir + "attachment.txt");
 
         // Add attached file
         outlineElem.appendChildLast(attachedFile);

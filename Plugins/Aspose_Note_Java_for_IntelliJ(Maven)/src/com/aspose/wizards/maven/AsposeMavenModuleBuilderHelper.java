@@ -128,7 +128,7 @@ public class AsposeMavenModuleBuilderHelper {
     }
 
     private void addAsposeMavenRepositoryConfiguration(Document pomDocument, Node projectNode) {
-// Adding Aspose Cloud Maven Repository configuration
+// Adding Aspose Maven Repository configuration
         Element repositories = pomDocument.createElement("repositories");
         projectNode.appendChild(repositories);
         Element repository = pomDocument.createElement("repository");
@@ -138,7 +138,7 @@ public class AsposeMavenModuleBuilderHelper {
         Element name = pomDocument.createElement("name");
         name.appendChild(pomDocument.createTextNode("Aspose Java API"));
         Element url = pomDocument.createElement("url");
-        url.appendChild(pomDocument.createTextNode("http://maven.aspose.com/artifactory/simple/ext-release-local/"));
+        url.appendChild(pomDocument.createTextNode("https://releases.aspose.com/java/repo/"));
         repository.appendChild(id);
         repository.appendChild(name);
         repository.appendChild(url);
@@ -206,7 +206,7 @@ public class AsposeMavenModuleBuilderHelper {
             // Get the root element
             Node projectNode = pomDocument.getFirstChild();
 
-            //Adding Aspose Cloud Maven Repository configuration setting here
+            //Adding Aspose Maven Repository configuration setting here
             addAsposeMavenRepositoryConfiguration(pomDocument, projectNode);
 
             // Adding Dependencies here

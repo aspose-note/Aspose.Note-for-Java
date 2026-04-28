@@ -20,8 +20,8 @@ package com.aspose.utils;
 
 public class AsposeNoteJavaAPI extends AsposeJavaAPI {
     private String _name = AsposeConstants.API_NAME;
-    private String _mavenRepositoryURL = "http://maven.aspose.com/repository/ext-release-local/com/aspose/aspose-note/";
-    private String _remoteExamplesRepository = "https://github.com/asposenote/Aspose_Note_Java";
+    private String _mavenRepositoryURL = "https://releases.aspose.com/java/repo/com/aspose/aspose-note/";
+    private String _remoteExamplesRepository = "https://github.com/aspose-note/Aspose.Note-for-Java";
 
     /**
      * @return the _name

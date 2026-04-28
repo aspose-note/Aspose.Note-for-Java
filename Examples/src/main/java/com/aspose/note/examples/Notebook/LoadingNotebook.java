@@ -11,9 +11,9 @@ public class LoadingNotebook {
 	public static void main(String... args) throws IOException {
 		// ExStart:LoadingNotebook
 		String dataDir = Utils.getSharedDataDir(LoadingNotebook.class) + "Notebook/";
-		Notebook notebook = new Notebook(dataDir + "Notizbuch öffnen.onetoc2");
-        
-        
+		Notebook notebook = new Notebook(dataDir + "Notebook.onetoc2");
+
+
 		for (INotebookChildNode notebookChildNode : notebook) {
 			System.out.println(notebookChildNode.getDisplayName());
 

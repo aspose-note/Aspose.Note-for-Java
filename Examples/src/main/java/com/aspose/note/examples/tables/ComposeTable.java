@@ -79,7 +79,7 @@ public class ComposeTable {
 
                     contactsCell.appendChildLast(new OutlineElement())
                             .appendChildLast(new RichText())
-                            .append("Web: ").append("link", new TextStyle().setHyperlinkAddress("www.link.com")).setParagraphStyle(ParagraphStyle.getDefault());
+                            .append("Web: ").append("link", new TextStyle().setHyperlinkAddress("https://www.link.com")).setParagraphStyle(ParagraphStyle.getDefault());
                     contactsCell.appendChildLast(new OutlineElement())
                             .appendChildLast(new RichText())
                             .append("E-mail: ").append("mail", new TextStyle().setHyperlinkAddress("mailto:hi@link.com")).setParagraphStyle(ParagraphStyle.getDefault());

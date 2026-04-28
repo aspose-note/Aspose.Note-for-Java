@@ -45,7 +45,7 @@ public class ChangeTableStyle {
 
             // Highlight first row after head.
             boolean flag = false;
-            List<TableRow> rows = table.getChildren();
+            List<TableRow> rows = table.getChildNodes(TableRow.class);
             for (int i = 1; i < rows.size(); ++i)
             {
                 setRowStyle(rows.get(i), flag ? Color.lightGray : new java.awt.Color(-1, true), false, false);

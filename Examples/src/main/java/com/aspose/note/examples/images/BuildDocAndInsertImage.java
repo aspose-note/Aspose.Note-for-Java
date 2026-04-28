@@ -26,7 +26,7 @@ public class BuildDocAndInsertImage {
 		// initialize OutlineElement class object
 		OutlineElement outlineElem = new OutlineElement();
 		// load an image by the file path.
-		Image image = new Image(null, dataDir + "Input.jpg");
+		Image image = new Image(dataDir + "Input.jpg");
 		// set image alignment
 		image.setAlignment(HorizontalAlignment.Right);
 		// add image

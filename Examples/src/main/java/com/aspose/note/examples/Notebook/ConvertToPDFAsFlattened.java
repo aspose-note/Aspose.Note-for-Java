@@ -12,7 +12,7 @@ public class ConvertToPDFAsFlattened {
         String dataDir = Utils.getSharedDataDir(ConvertToPDFAsFlattened.class) + "Notebook/";
 
         // Load a OneNote Notebook
-        Notebook notebook = new Notebook(dataDir + "Notizbuch îffnen.onetoc2");
+        Notebook notebook = new Notebook(dataDir + "Notebook.onetoc2");
 
         NotebookPdfSaveOptions notebookSaveOptions = new NotebookPdfSaveOptions();
 

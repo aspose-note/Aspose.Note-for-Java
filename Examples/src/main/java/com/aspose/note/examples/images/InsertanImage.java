@@ -24,7 +24,7 @@ public class InsertanImage {
 		Page page = oneFile.getFirstChild();
 
 		// load an image from the file.
-		Image image = new Image(oneFile, dataDir + "Input.jpg");
+		Image image = new Image(dataDir + "Input.jpg");
 		// change the image's size according to your needs (optional).
 		image.setWidth(100);
 		image.setHeight(100);

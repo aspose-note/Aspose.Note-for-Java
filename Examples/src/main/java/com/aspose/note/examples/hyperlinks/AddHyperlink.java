@@ -50,7 +50,7 @@ public class AddHyperlink {
 
 		RichText text = new RichText()
 								.append("This is ", textStyleRed)
-								.append("hyperlink", new TextStyle().setHyperlinkAddress("www.google.com"))
+								.append("hyperlink", new TextStyle().setHyperlinkAddress("https://www.google.com"))
 								.append(". This text is not a hyperlink.", TextStyle.getDefault());
 		text.setParagraphStyle(defaultTextStyle);
 

@@ -14,7 +14,7 @@ public class ConvertToPDFWithOptions {
 		String dataDir = Utils.getSharedDataDir(ConvertToPDFWithOptions.class) + "Notebook/";
 		
 		// Load a OneNote Notebook
-		Notebook notebook = new Notebook(dataDir + "Notizbuch öffnen.onetoc2");
+		Notebook notebook = new Notebook(dataDir + "Notebook.onetoc2");
 
 		NotebookPdfSaveOptions notebookSaveOptions = new NotebookPdfSaveOptions();
 
