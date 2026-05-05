@@ -1,9 +1,9 @@
 # Aspose.Note for Java Examples
 
-This package contains Java examples for [Aspose.Note for Java](https://www.aspose.com/products/note/java).
+This package contains Java examples for [Aspose.Note for Java](https://products.aspose.com/note/java/).
 
 <p align="center">
-  <a title="Download complete Aspose.Note for Java source code" href="https://github.com/asposenote/Aspose_Note_Java/archive/master.zip">
+  <a title="Download complete Aspose.Note for Java examples" href="https://github.com/aspose-note/Aspose.Note-for-Java/archive/master.zip">
 	<img src="https://raw.github.com/AsposeExamples/java-examples-dashboard/master/images/downloadZip-Button-Large.png" />
   </a>
 </p>

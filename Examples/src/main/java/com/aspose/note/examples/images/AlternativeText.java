@@ -19,7 +19,7 @@ public class AlternativeText {
 
 		Page page = new Page();
 
-		Image image = new Image(null, dataDir + "image.jpg");
+		Image image = new Image(dataDir + "image.jpg");
 
 		image.setAlternativeTextTitle("ImageAlternativeText Title");
 		

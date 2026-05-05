@@ -20,7 +20,7 @@ The plugin contains two wizards:
 
 **Aspose.Note** is a feature-rich Java class library that enables java applications to programmatically interact with OneNote documents without requiring Microsoft Office OneNote having installed on the server. The Java API of **Aspose.Note** empowers developers to Create, Read, Export and Manipulate the contents of the Microsoft OneNote file format by working with attachments, text, hyperlinks, tables, tags and text styles. Easily extract images from OneNote documents and convert them to PDF, BMP, JPG, GIF and TIFF image file formats with high fidelity.
 
-For more info about the **Aspose.Note for Java API**, [please check the api documentation - click here](http://www.aspose.com/java/onenote-component.aspx)
+For more info about the **Aspose.Note for Java API**, see the [API Reference](https://reference.aspose.com/note/java/).
 
 ## Plugin Documentation
 

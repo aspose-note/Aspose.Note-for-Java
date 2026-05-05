@@ -1,7 +1,6 @@
 package com.aspose.note.examples.images;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 
@@ -29,15 +28,10 @@ public class BuildDocAndInsertImageUsingImageStream {
 		outline1.setVerticalOffset(600);
 		outline1.setHorizontalOffset(0);
 		OutlineElement outlineElem1 = new OutlineElement();
-		InputStream fs = null;
-		try {
-			fs = new FileInputStream(dataDir + "image.jpg");
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		}
+		InputStream fs = new FileInputStream(dataDir + "image.jpg");
 
 		// Load the second image using the image name, extension and stream.
-		Image image = new Image(null, dataDir + "image1.jpg");
+		Image image = new Image("image.jpg", fs);
 		// set image alignment
 		image.setAlignment(HorizontalAlignment.Right);
 

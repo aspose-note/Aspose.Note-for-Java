@@ -12,10 +12,10 @@ public class LoadPasswordProtectedDocuments {
 		// ExStart:LoadingPasswordProtectedDoc
 		// Load the document into Aspose.Note.
 		String dataDir = Utils.getSharedDataDir(LoadPasswordProtectedDocuments.class) + "Notebook/";
-		
+
 		NotebookLoadOptions loadOptions = new NotebookLoadOptions();
 		loadOptions.setDeferredLoading(true);
-		Notebook notebook = new Notebook(dataDir + "Notizbuch öffnen.onetoc2", loadOptions);
+		Notebook notebook = new Notebook(dataDir + "Notebook.onetoc2", loadOptions);
 
 		notebook.loadChildDocument(dataDir + "Neuer Abschnitt 1.one");
 

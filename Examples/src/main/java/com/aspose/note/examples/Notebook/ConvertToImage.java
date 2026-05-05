@@ -11,7 +11,7 @@ public class ConvertToImage {
 		String dataDir = Utils.getSharedDataDir(ConvertToImage.class) + "Notebook/";
 		
 		// Load a OneNote Notebook
-		Notebook notebook = new Notebook(dataDir + "Notizbuch öffnen.onetoc2");
+		Notebook notebook = new Notebook(dataDir + "Notebook.onetoc2");
 
 		dataDir = dataDir + "ExportNotebooktoImage_out.png";
 		

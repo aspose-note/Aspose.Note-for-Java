@@ -9,21 +9,21 @@ Directory | Description
 [Plugins](https://github.com/aspose-note/Aspose.Note-for-Java/tree/master/Plugins) | Plugins demonstrating more features of Aspose.Note for Java.
 
 <p align="center">
-  <a title="Download complete Aspose.Note for Java source code" href="https://github.com/asposenote/Aspose_Note_Java/archive/master.zip">
+  <a title="Download complete Aspose.Note for Java examples" href="https://github.com/aspose-note/Aspose.Note-for-Java/archive/master.zip">
     <img src="https://raw.githubusercontent.com/AsposeExamples/java-examples-dashboard/master/images/downloadZip-Button-Large.png" />
   </a>
 </p>
 
 ## Microsoft OneNote File Processing
 
-- Load, Save and Convert ONeNote documents.
+- Load, save and convert OneNote documents.
 - [Generate Root and Sub Level Pages in OneNote](https://docs.aspose.com/note/java/working-with-pages/).
 - Get page revisions and roll back to previous version.
 - Extract images from a OneNote document.
 - [Extract or replace text from a Specified Page](https://docs.aspose.com/note/java/working-with-text/) of a OneNote Document.
 - Create a Table with Locked Columns in the OneNote Document.
 - [Attach a File to the OneNote Document](https://docs.aspose.com/note/java/working-with-attachments/).
-- Ceate,save, read, convert [OneNote Notebook](https://docs.aspose.com/note/java/working-with-onenote-notebook/).
+- Create, save, read and convert [OneNote Notebook](https://docs.aspose.com/note/java/working-with-onenote-notebook/).
 
 ## Read & Write OneNote Format
 
@@ -41,11 +41,11 @@ ONETOC2
 ## Supported Environments
 
 - **Microsoft Windows:** Windows Desktop & Server (x86, x64)
-- **Java Versions:** `J2SE 7.0 (1.7)`, `J2SE 8.0 (1.8)` or above
+- **Java Versions:** Java SE 7 or later.
 
 ## Get Started with Aspose.Note for Java
 
-Aspose hosts all Java APIs at the [Aspose Repository](https://repository.aspose.com/webapp/#/artifacts/browse/tree/General/repo/com/aspose/aspose-note). You can easily use Aspose.BarCode for Java API directly in your Maven projects with simple configurations. For the detailed instructions please visit [Installing Aspose.Note for Java from Maven Repository](https://docs.aspose.com/note/java/installation/) documentation page.
+Aspose hosts all Java APIs at the [Aspose Repository](https://releases.aspose.com/java/repo/com/aspose/aspose-note/). You can use Aspose.Note for Java directly in Maven projects with simple configuration. For detailed instructions please visit the [Installing Aspose.Note for Java from Maven Repository](https://docs.aspose.com/note/java/installation/) documentation page.
 
 ## Convert OneNote document to PDF with the Default Options using Java
 
@@ -56,4 +56,4 @@ Document oneFile = new Document("template.one");
 oneFile.save("output.pdf", new PdfSaveOptions());
 ```
 
-[Home](https://www.aspose.com/) | [Product Page](https://products.aspose.com/note/java) | [Docs](https://docs.aspose.com/note/java/) | [Demos](https://products.aspose.app/note/family) | [API Reference](https://apireference.aspose.com/note/java) | [Examples](https://github.com/aspose-note/Aspose.Note-for-Java) | [Blog](https://blog.aspose.com/category/note/) | [Search](https://search.aspose.com/) | [Free Support](https://forum.aspose.com/c/note) | [Temporary License](https://purchase.aspose.com/temporary-license)
+[Home](https://www.aspose.com/) | [Product Page](https://products.aspose.com/note/java) | [Docs](https://docs.aspose.com/note/java/) | [Demos](https://products.aspose.app/note/family) | [API Reference](https://reference.aspose.com/note/java) | [Examples](https://github.com/aspose-note/Aspose.Note-for-Java) | [Blog](https://blog.aspose.com/category/note/) | [Search](https://search.aspose.com/) | [Free Support](https://forum.aspose.com/c/note) | [Temporary License](https://purchase.aspose.com/temporary-license)

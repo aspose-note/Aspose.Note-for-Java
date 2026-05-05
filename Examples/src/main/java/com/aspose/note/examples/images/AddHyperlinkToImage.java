@@ -16,8 +16,8 @@ public class AddHyperlinkToImage {
 		//ExStart: AddHyperlinkToImage
 		Document document = new Document();
 		Page page = new Page();
-		Image image = new Image(null, dataDir + "image1.jpg");
-		image.setHyperlinkUrl( "http://www.aspose.com");
+		Image image = new Image(dataDir + "image1.jpg");
+		image.setHyperlinkUrl("https://www.aspose.com");
 		page.appendChildLast(image);
 		document.appendChildLast(page);
 		document.save(dataDir + "HyperlinkToImage_out.one");

@@ -11,7 +11,7 @@ public class AddChildNode {
 		// ExStart:AddChildNode
 		String dataDir = Utils.getSharedDataDir(AddChildNode.class) + "Notebook/";
 		// Load a OneNote Notebook
-		Notebook notebook = new Notebook(dataDir + "Notizbuch öffnen.onetoc2");
+		Notebook notebook = new Notebook(dataDir + "Notebook.onetoc2");
 
 		// Append a new child to the Notebook
 		notebook.appendChild(new Document(dataDir + "Neuer Abschnitt 1.one"));
